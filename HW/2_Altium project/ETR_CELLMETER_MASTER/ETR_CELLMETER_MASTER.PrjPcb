@@ -390,48 +390,48 @@ GenerateClassCluster=0
 DocumentUniqueId=NESVRMZM
 
 [Parameter1]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=Version
-Value=v0.1
-
-[Parameter3]
-Name=Variant
-Value=0
-
-[Parameter4]
-Name=Size
-Value=A4
-
-[Parameter5]
-Name=ReviewerName
-Value=Andreu Senis
-
-[Parameter6]
-Name=Project
-Value=ETR Cellmeter
-
-[Parameter7]
-Name=DesignerName
-Value=Bernat Costa, Yosra Azzouz
-
-[Parameter8]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
-
-[Parameter9]
-Name=Departament
-Value=ECUs
-
-[Parameter10]
 Name=Date
 Value=22/09/2024
 
+[Parameter3]
+Name=Departament
+Value=ECUs
+
+[Parameter4]
+Name=DesignedByURL
+Value=github.com/etechracing
+
+[Parameter5]
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
+
+[Parameter6]
+Name=DesignerName
+Value=Bernat Costa, Yosra Azzouz
+
+[Parameter7]
+Name=Project
+Value=ETR Cellmeter
+
+[Parameter8]
+Name=ReviewerName
+Value=Andreu Senis
+
+[Parameter9]
+Name=Size
+Value=A4
+
+[Parameter10]
+Name=Variant
+Value=0
+
 [Parameter11]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [Configuration1]
 Name=Sources
