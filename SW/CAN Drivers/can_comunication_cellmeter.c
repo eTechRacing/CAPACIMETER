@@ -13,9 +13,9 @@ CAN_TxHeaderTypeDef TxHeader;
 CAN_RxHeaderTypeDef RxHeader;
 CAN_FilterTypeDef CANFilter;
 
-uint32_t RxMailbox = 0;
-uint8_t TxData[8];
-uint8_t RxData[8];
+//uint32_t RxMailbox = 0;
+//uint8_t TxData[8];
+//uint8_t RxData[8];
 
 	void canfilter(CAN_FilterTypeDef filtercan){
 		filtercan.FilterActivation = ENABLE;          		      // This activates the filter as it is enable
@@ -30,162 +30,217 @@ uint8_t RxData[8];
 		filtercan.SlaveStartFilterBank = 14;                     // Indicates the first filter slave number. In this case it is the principal filter.
 	}
 
-	void CAN_TxCurrent1_4(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *txdata, uint32_t txmailbox, uint16_t currentcell1, uint16_t currentcell2, uint16_t currentcell3, uint16_t currentcell4){
+	void CAN_TxCellErrors(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *cellerrors1_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
+		txheader.DLC = DLC_CELLERRORS;
+		txheader.StdId = ID_CELLERRORS;
+		txheader.RTR = CAN_RTR_DATA;
+		txheader.IDE = CAN_ID_STD;
+
+		txdata[0] = cellerrors1_8[0];
+		txdata[1] = cellerrors1_8[1];
+		txdata[2] = cellerrors1_8[2];
+		txdata[3] = cellerrors1_8[3];
+		txdata[4] = cellerrors1_8[4];
+		txdata[5] = cellerrors1_8[5];
+
+		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
+			Error_Handler();
+		}
+	}
+
+	void CAN_TxCurrent1_4(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint16_t *currentcell1_4){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_CURRENT1_4;
 		txheader.StdId = ID_CURRENT1_4;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = currentcell1;
-		txdata[1] = currentcell1 << 4;
-		txdata[2] = currentcell2;
-		txdata[3] = currentcell2 << 4;
-		txdata[4] = currentcell3;
-		txdata[5] = currentcell3 << 4;
-		txdata[6] = currentcell4;
-		txdata[7] = currentcell4 << 4;
+		txdata[0] = currentcell1_4[0];
+		txdata[1] = currentcell1_4[0] << 4;
+		txdata[2] = currentcell1_4[1];
+		txdata[3] = currentcell1_4[1] << 4;
+		txdata[4] = currentcell1_4[2];
+		txdata[5] = currentcell1_4[2] << 4;
+		txdata[6] = currentcell1_4[3];
+		txdata[7] = currentcell1_4[3] << 4;
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxCurrent5_8(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint16_t currentcell5, uint16_t currentcell6, uint16_t currentcell7, uint16_t currentcell8){
+	void CAN_TxCurrent5_8(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint16_t *currentcell5_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_CURRENT5_8;
 		txheader.StdId = ID_CURRENT5_8;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = currentcell5;
-		txdata[1] = currentcell5 << 4;
-		txdata[2] = currentcell6;
-		txdata[3] = currentcell6 << 4;
-		txdata[4] = currentcell7;
-		txdata[5] = currentcell7 << 4;
-		txdata[6] = currentcell8;
-		txdata[7] = currentcell8 << 4;
+		txdata[0] = currentcell5_8[0];
+		txdata[1] = currentcell5_8[0] << 4;
+		txdata[2] = currentcell5_8[1];
+		txdata[3] = currentcell5_8[1] << 4;
+		txdata[4] = currentcell5_8[2];
+		txdata[5] = currentcell5_8[2] << 4;
+		txdata[6] = currentcell5_8[3];
+		txdata[7] = currentcell5_8[3] << 4;
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxDischargeCurrent(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t currentdischarge){
-		txheader.DLC = DLC_DISCHARGECURRENT;
-		txheader.StdId = ID_DISCHARGECURRENT;
+	void CAN_TxTimerCell(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *timercell1_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
+		txheader.DLC = DLC_TIMERCELL;
+		txheader.StdId = ID_TIMERCELL;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = currentdischarge;
+		txdata[0] = timercell1_8[0];
+		txdata[1] = timercell1_8[1];
+		txdata[2] = timercell1_8[2];
+		txdata[3] = timercell1_8[3];
+		txdata[4] = timercell1_8[4];
+		txdata[5] = timercell1_8[5];
+		txdata[6] = timercell1_8[6];
+		txdata[7] = timercell1_8[7];
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_ControlCurrent(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t entrancecurrent, uint8_t microcurrent, uint8_t refricurrent){
+	void CAN_TxControlCurrent(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *controlcurrent){
+		/* controlcurrent array is a 3 position array where:
+		 * 		--> controlcurrent[0] contains the Entrance Current
+		 * 		--> controlcurrent[1] contains the Micro Current
+		 * 		--> controlcurrent[2] contains the Refri Current
+		*/
+
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_CONTROLCURRENT;
 		txheader.StdId = ID_CONTROLCURRENT;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = entrancecurrent;
-		txdata[1] = microcurrent;
-		txdata[2] = refricurrent;
+		txdata[0] = controlcurrent[0];
+		txdata[1] = controlcurrent[1];
+		txdata[2] = controlcurrent[2];
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxVoltage1_4(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t voltagecell1, uint8_t voltagecell2, uint8_t voltagecell3, uint8_t voltagecell4){
+	void CAN_TxVoltage1_4(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint16_t *voltagecell1_4){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_VOLTAGE1_4;
 		txheader.StdId = ID_VOLTAGE1_4;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = voltagecell1;
-		txdata[1] = voltagecell1 << 4;
-		txdata[2] = voltagecell2;
-		txdata[3] = voltagecell2 << 4;
-		txdata[4] = voltagecell3;
-		txdata[5] = voltagecell3 << 4;
-		txdata[6] = voltagecell4;
-		txdata[7] = voltagecell4 << 4;
+		txdata[0] = voltagecell1_4[0];
+		txdata[1] = voltagecell1_4[0] << 4;
+		txdata[2] = voltagecell1_4[1];
+		txdata[3] = voltagecell1_4[1] << 4;
+		txdata[4] = voltagecell1_4[2];
+		txdata[5] = voltagecell1_4[2] << 4;
+		txdata[6] = voltagecell1_4[3];
+		txdata[7] = voltagecell1_4[3] << 4;
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxVoltage5_8(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t voltagecell5, uint8_t voltagecell6, uint8_t voltagecell7, uint8_t voltagecell8){
+	void CAN_TxVoltage5_8(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *voltagecell5_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_VOLTAGE5_8;
 		txheader.StdId = ID_VOLTAGE5_8;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = voltagecell5;
-		txdata[1] = voltagecell5 << 4;
-		txdata[2] = voltagecell6;
-		txdata[3] = voltagecell6 << 4;
-		txdata[4] = voltagecell7;
-		txdata[5] = voltagecell7 << 4;
-		txdata[6] = voltagecell8;
-		txdata[7] = voltagecell8 << 4;
+		txdata[0] = voltagecell5_8[0];
+		txdata[1] = voltagecell5_8[0] << 4;
+		txdata[2] = voltagecell5_8[1];
+		txdata[3] = voltagecell5_8[1] << 4;
+		txdata[4] = voltagecell5_8[2];
+		txdata[5] = voltagecell5_8[2] << 4;
+		txdata[6] = voltagecell5_8[3];
+		txdata[7] = voltagecell5_8[3] << 4;
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxTemperatures(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t temperaturecell1, uint8_t temperaturecell2, uint8_t temperaturecell3, uint8_t temperaturecell4, uint8_t temperaturecell5, uint8_t temperaturecell6, uint8_t temperaturecell7, uint8_t temperaturecell8){
+	void CAN_TxTemperatures(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *temperaturecell1_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_TEMPERATURES;
 		txheader.StdId = ID_TEMPERATURES;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = temperaturecell1;
-		txdata[1] = temperaturecell2;
-		txdata[2] = temperaturecell3;
-		txdata[3] = temperaturecell4;
-		txdata[4] = temperaturecell5;
-		txdata[5] = temperaturecell6;
-		txdata[6] = temperaturecell7;
-		txdata[7] = temperaturecell8;
+		txdata[0] = temperaturecell1_8[0];
+		txdata[1] = temperaturecell1_8[1];
+		txdata[2] = temperaturecell1_8[2];
+		txdata[3] = temperaturecell1_8[3];
+		txdata[4] = temperaturecell1_8[4];
+		txdata[5] = temperaturecell1_8[5];
+		txdata[6] = temperaturecell1_8[6];
+		txdata[7] = temperaturecell1_8[7];
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxDischargeReTemp(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t dischargeresistance1, uint8_t dischargeresistance2, uint8_t dischargeresistance3, uint8_t dischargeresistance4, uint8_t dischargeresistance5, uint8_t dischargeresistance6, uint8_t dischargeresistance7, uint8_t dischargeresistance8){
+	void CAN_TxDischargeReTemp(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *dischargeresistance1_8){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_DISCHARGERTEMP;
 		txheader.StdId = ID_DISCHARGERTEMP;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = dischargeresistance1;
-		txdata[1] = dischargeresistance2;
-		txdata[2] = dischargeresistance3;
-		txdata[3] = dischargeresistance4;
-		txdata[4] = dischargeresistance5;
-		txdata[5] = dischargeresistance6;
-		txdata[6] = dischargeresistance7;
-		txdata[7] = dischargeresistance8;
+		txdata[0] = dischargeresistance1_8[0];
+		txdata[1] = dischargeresistance1_8[1];
+		txdata[2] = dischargeresistance1_8[2];
+		txdata[3] = dischargeresistance1_8[3];
+		txdata[4] = dischargeresistance1_8[4];
+		txdata[5] = dischargeresistance1_8[5];
+		txdata[6] = dischargeresistance1_8[6];
+		txdata[7] = dischargeresistance1_8[7];
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 			Error_Handler();
 		}
 	}
 
-	void CAN_TxRPMRefri(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t RPMFan1, uint8_t RPMFan2){
+	void CAN_TxRPMRefri(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t *RPMFan){
+		/* RPMFan array is a 3 position array where:
+		 * 		--> RPMFan[0] contains the RPMs of the 1st Fan
+		 * 		--> RPMFan[1] contains the RPMs of the 2nd Fan
+		 */
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_RPMREFRI;
 		txheader.StdId = ID_RPMREFRI;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
-		txdata[0] = RPMFan1;
-		txdata[1] = RPMFan2;
+		txdata[0] = RPMFan[0];
+		txdata[1] = RPMFan[1];
 
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
@@ -193,29 +248,15 @@ uint8_t RxData[8];
 		}
 	}
 
-	void CAN_CellDisconnect(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t celldisconnect){
+	void CAN_TxCellDisconnect(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint8_t celldisconnect){
+		uint8_t txdata[7];
+		uint32_t txmailbox;
 		txheader.DLC = DLC_CELLDISCONNECT;
 		txheader.StdId = ID_CELLDISCONNECT;
 		txheader.RTR = CAN_RTR_DATA;
 		txheader.IDE = CAN_ID_STD;
 
 		txdata[0] = celldisconnect;
-
-
-		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
-			Error_Handler();
-		}
-	}
-
-	void CAN_TxCellErrors(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader, uint32_t txmailbox, uint8_t *txdata, uint8_t cellovervoltage, uint8_t cellovercurrent, uint8_t cellovertemperature){
-		txheader.DLC = DLC_CELLERRORS;
-		txheader.StdId = ID_CELLERRORS;
-		txheader.RTR = CAN_RTR_DATA;
-		txheader.IDE = CAN_ID_STD;
-
-		txdata[0] = cellovervoltage;
-		txdata[1] = cellovercurrent;
-		txdata[2] = cellovertemperature;
 
 
 		if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
@@ -230,7 +271,9 @@ uint8_t RxData[8];
 		}
 
 		if (HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING)){
-			if (rxheader.StdId == ID_CELLSSTATE){
+			switch(rxheader.StdId)
+
+			case ID_CELLSSTATE:
 				*statecell1 = rxdata[0];
 				*statecell2 = rxdata[1];
 				*statecell3 = rxdata[2];
@@ -239,7 +282,7 @@ uint8_t RxData[8];
 				*statecell6 = rxdata[5];
 				*statecell7 = rxdata[6];
 				*statecell8 = rxdata[7];
-			}
+
 		}
 
 	}
