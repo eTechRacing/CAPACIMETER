@@ -8,10 +8,15 @@
 #ifndef INC_I2C_H_
 #define INC_I2C_H_
 
+
+
 // Parameters
 
 #define Slaves 8
 #define Timeout 10
+#define ADCTime 10
+
+extern uint8_t AllSlaves[Slaves];
 
 // Slaves addresses
 
@@ -54,15 +59,33 @@
 #define REG19h 0x19 // IC address and boost LS-FET peak current limit.
 #define REG1Ah 0x1A // OTP configuration control register.
 
+// Initial parameters
+
+#define InitREG00h 0b00011000
+#define InitREG01h 0b10101101
+#define InitREG02h 0b11011101
+#define InitREG03h 0b01100001
+#define InitREG04h 0b10010100
+#define InitREG08h 0b00000000
+#define InitREG0Ah 0b01101110
+#define InitREG0Bh 0b00001100
+#define InitREG0Ch 0b00000001
+#define InitREG0Dh 0b00011000
+
 
 // Functions
 
 
-void mp2770_etr_ReadAllSlaves(I2C_HandleTypeDef *i2c, uint8_t *Rxdata, uint8_t reg, uint8_t num);
-void mp2770_etr_WriteAllSlaves(I2C_HandleTypeDef *i2c, uint8_t Txdata[], uint8_t reg, uint8_t num);
+void mp2770_etr_ReadAllSlaves(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t reg, uint8_t num);
+void mp2770_etr_ReadOneSlave(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t reg, uint8_t address);
+void mp2770_etr_WriteAllSlaves(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t reg, uint8_t num);
+void mp2770_etr_WriteOneSlave(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t reg, uint8_t address);
 
-void mp2770_etr_init(I2C_HandleTypeDef *i2c, uint8_t *Txdata);
-void mp2770_etr_ReadSortADC(I2C_HandleTypeDef *i2c, uint8_t *Rxdata, uint8_t *VINOK_STAT, uint8_t *CHG_STAT, uint8_t *VINDPM_STAT, uint8_t *IINDPM_STAT, uint8_t *THERM_REG, uint8_t, uint8_t *Q2_NO_LOAD, uint8_t *INPUT_OV, uint8_t *INPUT_REMOVED, uint8_t *TSD_FAULT, uint8_t *WD_FAULT, uint8_t *BATT_FAULT, uint8_t *CHGTMR_FAULT, uint8_t *IN_OC, uint8_t *SYS_OC, uint8_t *BOOST_OV, uint8_t *NTC_FAULT, uint16_t *VIN, uint16_t *VSYS, uint16_t *VBATT, uint16_t *IBATT, uint16_t *IQ, uint16_t *ISYS, uint16_t *NTC, uint16_t *VPMID);
+void mp2770_etr_init(I2C_HandleTypeDef i2c, uint8_t *data);
+void mp2770_etr_ReadSortADC(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t *VINOK_STAT, uint8_t *CHG_STAT, uint8_t *VINDPM_STAT, uint8_t *IINDPM_STAT, uint8_t *THERM_REG, uint8_t *Q2_NO_LOAD, uint16_t *VIN, uint16_t *VSYS, uint16_t *VBATT, uint16_t *IBATT, uint16_t *IQ, uint16_t *ISYS, uint16_t *NTC, uint16_t *VPMID);
+void mp2770_etr_FaultRead(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t *INPUT_OV, uint8_t *INPUT_REMOVED, uint8_t *TSD_FAULT, uint8_t *WD_FAULT, uint8_t *BATT_FAULT, uint8_t *CHGTMR_FAULT, uint8_t *IN_OC, uint8_t *SYS_OC, uint8_t *BOOST_OV, uint8_t *NTC_FAULT);
+void mp2770_etr_StartOneCharge(I2C_HandleTypeDef i2c, uint8_t *data, uint8_t address);
+void mp2770_etr_StartAllCharge(I2C_HandleTypeDef i2c, uint8_t *data);
 
 #endif /* INC_I2C_H_ */
 
