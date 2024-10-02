@@ -1400,10 +1400,11 @@ Net4=NetName=+3.3|NetColor=clYellow
 Net5=NetName=+3.3V|NetColor=clYellow
 Net6=NetName=+5|NetColor=$00FF6EFF
 Net7=NetName=+5V|NetColor=$00FF6EFF
-Net8=NetName=CAN1_H|NetColor=$006EFF6E
-Net9=NetName=CAN1_L|NetColor=$006EFF6E
-Net10=NetName=GND|NetColor=$00575860
-Net11=NetName=LV+in|NetColor=$006E6EFF
+Net8=NetName=3V3_MCU|NetColor=clYellow
+Net9=NetName=CAN1_H|NetColor=$006EFF6E
+Net10=NetName=CAN1_L|NetColor=$006EFF6E
+Net11=NetName=GND|NetColor=$00575860
+Net12=NetName=LV+in|NetColor=$006E6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
