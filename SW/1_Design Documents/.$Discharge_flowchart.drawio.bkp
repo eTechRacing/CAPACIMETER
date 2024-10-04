@@ -1,0 +1,156 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Página-1" id="kBtVGtu_bxvtu7DlfcyI">
+    <mxGraphModel dx="2049" dy="1194" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-3yo1unR4BZM2bziMhxl-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-2" target="-3yo1unR4BZM2bziMhxl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-2" value="Discharge order for cell n" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-3" target="-3yo1unR4BZM2bziMhxl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-6" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-5">
+          <mxGeometry x="-0.1296" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-3" target="-3yo1unR4BZM2bziMhxl-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-16" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-15">
+          <mxGeometry x="-0.1698" y="-2" relative="1" as="geometry">
+            <mxPoint x="-2" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-3" value="Is discharge previous state?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="316" y="150" width="196" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-4" value="Send discharge error message" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-14" target="-3yo1unR4BZM2bziMhxl-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-14" value="Voltage, current and temperature measure" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-17" target="-3yo1unR4BZM2bziMhxl-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-55" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-22">
+          <mxGeometry x="-0.3192" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-17" target="-3yo1unR4BZM2bziMhxl-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-54" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-53">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint x="-5" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-17" value="Values inside&lt;div&gt;correct margins?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="300" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-21" target="-3yo1unR4BZM2bziMhxl-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-21" value="Send &quot;ready to discharge&quot; message" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-25" target="-3yo1unR4BZM2bziMhxl-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-29" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-28">
+          <mxGeometry x="-0.0736" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-25" target="-3yo1unR4BZM2bziMhxl-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-32" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-31">
+          <mxGeometry x="-0.1644" y="2" relative="1" as="geometry">
+            <mxPoint x="-2" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-25" value="Requested discharge&amp;nbsp;&lt;div&gt;current&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;value&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;lower than 4*VCell?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="545" width="200" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-27" value="Send &quot;overcurrent requested&quot; message" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="562.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-30" target="-3yo1unR4BZM2bziMhxl-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-30" value="Set DAC output analog value" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-33" target="-3yo1unR4BZM2bziMhxl-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-33" value="Kn2 to DISCHARGE position" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-34" value="Kn1 to OPEN position&lt;div&gt;Send discharge error&lt;/div&gt;&lt;div&gt;message&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-36" target="-3yo1unR4BZM2bziMhxl-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-36" value="&lt;br&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Kn1 to CLOSE position&lt;/span&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-37" target="-3yo1unR4BZM2bziMhxl-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="316" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-40" value="After 200ms" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-39">
+          <mxGeometry x="-0.085" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-37" value="Call discharge monitor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-41" target="-3yo1unR4BZM2bziMhxl-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-46" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-43">
+          <mxGeometry x="-0.1252" y="-2" relative="1" as="geometry">
+            <mxPoint x="-3" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-3yo1unR4BZM2bziMhxl-41" target="-3yo1unR4BZM2bziMhxl-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-45" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-3yo1unR4BZM2bziMhxl-44">
+          <mxGeometry x="-0.0998" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-41" value="Discharge monitor&lt;div&gt;output OK&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="451" y="1040" width="146" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-42" value="Send discharge started correctly" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-50" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;ETR CELLMETER DISCHARGE FLOWCHART&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-51" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;STATE MANEGER: DISCHARGE&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="512" y="40" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-3yo1unR4BZM2bziMhxl-52" value="Send &quot;value error&quot; message" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
