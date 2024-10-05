@@ -24,7 +24,7 @@ ReorderDocumentsOnCompile=1
 NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=0
-AutoCrossReferences=1
+AutoCrossReferences=0
 NewIndexingOfSheetSymbols=1
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
@@ -322,23 +322,6 @@ GenerateClassCluster=0
 DocumentUniqueId=HJHAZPGP
 
 [Document17]
-DocumentPath=Slaves_Supply.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TJYSYTTU
-
-[Document18]
 DocumentPath=MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NHPNRKDT
 
-[Document19]
+[Document18]
 DocumentPath=CAN.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +355,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UEECABHV
 
-[Document20]
+[Document19]
 DocumentPath=Cooling.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,49 +372,83 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NESVRMZM
 
+[Document20]
+DocumentPath=Slave_Supply.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KHKURGII
+
+[Document21]
+DocumentPath=eFuse_Slave_Supply.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PEUCEIZE
+
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [Parameter2]
-Name=Date
-Value=22/09/2024
+Name=Variant
+Value=0
 
 [Parameter3]
-Name=Departament
-Value=ECUs
+Name=Size
+Value=A4
 
 [Parameter4]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter5]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
+Name=Project
+Value=ETR Cellmeter
 
 [Parameter6]
 Name=DesignerName
 Value=Bernat Costa, Yosra Azzouz
 
 [Parameter7]
-Name=Project
-Value=ETR Cellmeter
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
 
 [Parameter8]
-Name=ReviewerName
-Value=Andreu Senis
+Name=DesignedByURL
+Value=github.com/etechracing
 
 [Parameter9]
-Name=Size
-Value=A4
+Name=Departament
+Value=ECUs
 
 [Parameter10]
-Name=Variant
-Value=0
+Name=Date
+Value=22/09/2024
 
 [Parameter11]
-Name=Version
-Value=v0.1
+Name=Company
+Value=e-Tech Racing
 
 [Configuration1]
 Name=Sources
