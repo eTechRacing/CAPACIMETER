@@ -83,37 +83,41 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSEKATTB
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\Design Rule Check - ETR_CELLMETER_CELL_HOLDER.html
+DItemRevisionGUID=
+
 [Parameter1]
-Name=ReviewerName
-Value=Yosra Azzouz
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
-
-[Parameter3]
-Name=DesignerName
-Value=Bernat Costa Cesari
-
-[Parameter4]
 Name=Departament
 Value=ECU
 
+[Parameter3]
+Name=DesignedByURL
+Value=etechracing.es
+
+[Parameter4]
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
+
 [Parameter5]
-Name=Version
-Value=1.0
+Name=DesignerName
+Value=Bernat Costa Cesari
 
 [Parameter6]
 Name=Project
 Value=ETR Cellmeter
 
 [Parameter7]
-Name=DesignedByURL
-Value=etechracing.es
+Name=ReviewerName
+Value=Yosra Azzouz
 
 [Parameter8]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=1.0
 
 [Configuration1]
 Name=Sources
