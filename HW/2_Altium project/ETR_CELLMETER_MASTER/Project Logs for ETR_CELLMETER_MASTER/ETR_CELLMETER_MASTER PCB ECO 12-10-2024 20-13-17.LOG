@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=D*1 NewDesignator=D4
+Change Component Designator: OldDesignator=D*2 NewDesignator=D5
+Change Component Designator: OldDesignator=D*3 NewDesignator=D6
+Change Component Designator: OldDesignator=D*4 NewDesignator=ta1
+Change Component Designator: OldDesignator=NTC*1 NewDesignator=NTC2
+Change Net Name : Old Net Name=NetD*1_A New Net Name=NetD4_A
+Change Net Name : Old Net Name=NetD*2_A New Net Name=NetD5_A
+Change Net Name : Old Net Name=NetD*3_A New Net Name=NetD6_A
+Change Net Name : Old Net Name=NetD*4_A New Net Name=NetR21_2
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J1 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J4 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J5 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J6 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J7 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J8 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J9 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J10 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_MASTER Member=Component J11 J_2x1_14A_TE
