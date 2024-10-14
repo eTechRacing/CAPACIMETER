@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=NTC1_DCDC Pin=U4-29
+Added Pin To Net: NetName=NTC2_DCDC Pin=U4-30
+Change Net Name : Old Net Name=NTC1_DCDC New Net Name=NTC1_ADC
+Change Net Name : Old Net Name=NTC2_DCDC New Net Name=NTC2_ADC
