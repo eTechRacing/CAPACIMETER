@@ -339,6 +339,23 @@ GenerateClassCluster=0
 DocumentUniqueId=NHPNRKDT
 
 [Document18]
+DocumentPath=CAN.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=4
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UEECABHV
+
+[Document19]
 DocumentPath=Cooling.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NESVRMZM
 
-[Document19]
+[Document20]
 DocumentPath=Slave_Supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +389,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KHKURGII
 
-[Document20]
+[Document21]
 DocumentPath=eFuse_Slave_Supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -388,23 +405,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PEUCEIZE
-
-[Document21]
-DocumentPath=CAN.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ISOQTKPP
 
 [Parameter1]
 Name=Version
@@ -449,10 +449,6 @@ Value=22/09/2024
 [Parameter11]
 Name=Company
 Value=e-Tech Racing
-
-[DiffPairSuffix1]
-Positive=_H
-Negative=_L
 
 [Configuration1]
 Name=Sources
@@ -1417,24 +1413,15 @@ PartTypes=0
 Net1=NetName=+12|NetColor=$0089007D
 Net2=NetName=+12V|NetColor=$00FF6E6E
 Net3=NetName=+24|NetColor=$006E6EFF
-Net4=NetName=+24V|NetColor=$006E6EFF
-Net5=NetName=+3.3|NetColor=clYellow
-Net6=NetName=+3.3V|NetColor=clYellow
-Net7=NetName=+5|NetColor=$00FF6EFF
-Net8=NetName=+5V|NetColor=$00FF6EFF
-Net9=NetName=3V3_MCU|NetColor=clYellow
-Net10=NetName=CAN1_H|NetColor=$006EFF6E
-Net11=NetName=CAN1_L|NetColor=$006EFF6E
-Net12=NetName=GND|NetColor=$00575860
-Net13=NetName=LV+in|NetColor=$006E6EFF
-Net14=NetName=NetC?_SS1_1|NetColor=$006E6EFF
-Net15=NetName=NetC?_SS2_1|NetColor=$006E6EFF
-Net16=NetName=NetR*?_2|NetColor=$00FF6EFF
-Net17=NetName=NetR*?_FUSE1_2|NetColor=$00FF6EFF
-Net18=NetName=NetR*?_FUSE2_2|NetColor=$00FF6EFF
-Net19=NetName=VCC_5V|NetColor=$00FF6EFF
-Net20=NetName=VCC_5V_SS1|NetColor=$00FF6EFF
-Net21=NetName=VCC_5V_SS2|NetColor=$00FF6EFF
+Net4=NetName=+3.3|NetColor=clYellow
+Net5=NetName=+3.3V|NetColor=clYellow
+Net6=NetName=+5|NetColor=$00FF6EFF
+Net7=NetName=+5V|NetColor=$00FF6EFF
+Net8=NetName=3V3_MCU|NetColor=clYellow
+Net9=NetName=CAN1_H|NetColor=$006EFF6E
+Net10=NetName=CAN1_L|NetColor=$006EFF6E
+Net11=NetName=GND|NetColor=$00575860
+Net12=NetName=LV+in|NetColor=$006E6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
