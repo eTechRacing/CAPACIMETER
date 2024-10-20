@@ -1,0 +1,9 @@
+Removed Member From Class: ClassName=Master_Supply Member=D6
+Added Pin To Net: NetName=GND Pin=D9-1
+Added Pin To Net: NetName=CAN1_H Pin=D9-2
+Added Pin To Net: NetName=CAN1_L Pin=D10-1
+Added Pin To Net: NetName=GND Pin=D10-2
+Added Member To Class: ClassName=Master_Supply Member=Component D1 T4F36AHM3/I
+Added Member To Class: ClassName=Master_Supply Member=Component D3 150080VS75000
+Added Member To Class: ClassName=Master_Supply Member=Component D4 150080VS75000
+Added Member To Class: ClassName=MCU Member=Component D5 LEDBS-0805-145
