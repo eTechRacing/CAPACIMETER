@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CAN1_H Pin=TP16-1
+Removed Pin From Net: NetName=CAN1_L Pin=TP17-1
+Removed Member From Class: ClassName=CAN Member=TP16
+Removed Member From Class: ClassName=CAN Member=TP17

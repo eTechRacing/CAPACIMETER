@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+24V Pin=J2-1
+Removed Pin From Net: NetName=+24V Pin=J3-1
+Added Pin To Net: NetName=+12 Pin=J2-1
+Added Pin To Net: NetName=+12 Pin=J3-1
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 110)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(110, 255, 110)

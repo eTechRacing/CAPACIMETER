@@ -424,48 +424,48 @@ GenerateClassCluster=0
 DocumentUniqueId=BMQWXHKB
 
 [Parameter1]
-Name=Version
-Value=v0.1
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=Variant
-Value=0
+Name=Date
+Value=22/09/2024
 
 [Parameter3]
-Name=Size
-Value=A4
+Name=Departament
+Value=ECUs
 
 [Parameter4]
-Name=ReviewerName
-Value=Andreu Senis
+Name=DesignedByURL
+Value=github.com/etechracing
 
 [Parameter5]
-Name=Project
-Value=ETR Cellmeter
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
 
 [Parameter6]
 Name=DesignerName
 Value=Bernat Costa, Yosra Azzouz
 
 [Parameter7]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
+Name=Project
+Value=ETR Cellmeter
 
 [Parameter8]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter9]
-Name=Departament
-Value=ECUs
+Name=Size
+Value=A4
 
 [Parameter10]
-Name=Date
-Value=22/09/2024
+Name=Variant
+Value=0
 
 [Parameter11]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [DiffPairSuffix1]
 Positive=_H
@@ -1440,18 +1440,20 @@ Net6=NetName=+3.3V|NetColor=clYellow
 Net7=NetName=+5|NetColor=$00FF6EFF
 Net8=NetName=+5V|NetColor=$00FF6EFF
 Net9=NetName=3V3_MCU|NetColor=clYellow
-Net10=NetName=CAN1_H|NetColor=$0000BE00
-Net11=NetName=CAN1_L|NetColor=$0000BE00
-Net12=NetName=GND|NetColor=$00575860
-Net13=NetName=LV+in|NetColor=$006E6EFF
-Net14=NetName=NetC?_SS1_1|NetColor=$006E6EFF
-Net15=NetName=NetC?_SS2_1|NetColor=$006E6EFF
-Net16=NetName=NetR*?_2|NetColor=$00FF6EFF
-Net17=NetName=NetR*?_FUSE1_2|NetColor=$00FF6EFF
-Net18=NetName=NetR*?_FUSE2_2|NetColor=$00FF6EFF
-Net19=NetName=VCC_5V|NetColor=$00FF6EFF
-Net20=NetName=VCC_5V_SS1|NetColor=$00FF6EFF
-Net21=NetName=VCC_5V_SS2|NetColor=$00FF6EFF
+Net10=NetName=CAN_FIL_H|NetColor=$006EFF6E
+Net11=NetName=CAN_FIL_L|NetColor=$006EFF6E
+Net12=NetName=CAN1_H|NetColor=$0000BE00
+Net13=NetName=CAN1_L|NetColor=$0000BE00
+Net14=NetName=GND|NetColor=$00575860
+Net15=NetName=LV+in|NetColor=$006E6EFF
+Net16=NetName=NetC?_SS1_1|NetColor=$006E6EFF
+Net17=NetName=NetC?_SS2_1|NetColor=$006E6EFF
+Net18=NetName=NetR*?_2|NetColor=$00FF6EFF
+Net19=NetName=NetR*?_FUSE1_2|NetColor=$00FF6EFF
+Net20=NetName=NetR*?_FUSE2_2|NetColor=$00FF6EFF
+Net21=NetName=VCC_5V|NetColor=$00FF6EFF
+Net22=NetName=VCC_5V_SS1|NetColor=$00FF6EFF
+Net23=NetName=VCC_5V_SS2|NetColor=$00FF6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
