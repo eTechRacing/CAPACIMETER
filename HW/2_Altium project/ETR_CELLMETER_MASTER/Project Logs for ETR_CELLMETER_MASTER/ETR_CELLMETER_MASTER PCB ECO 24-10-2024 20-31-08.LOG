@@ -1,0 +1,15 @@
+Change Component Designator: OldDesignator=J10_SS1 NewDesignator=U5_SS1
+Change Component Designator: OldDesignator=J10_SS2 NewDesignator=U5_SS2
+Change Component Designator: OldDesignator=U5_FUSE1 NewDesignator=U6_FUSE1
+Change Component Designator: OldDesignator=U5_FUSE2 NewDesignator=U6_FUSE2
+Change Component Designator: OldDesignator=U6 NewDesignator=U7
+Change Net Name : Old Net Name=NetJ10_SS1_1 New Net Name=NetR26_SS1_2
+Change Net Name : Old Net Name=NetJ10_SS1_4 New Net Name=NetR28_SS1_2
+Change Net Name : Old Net Name=NetJ10_SS1_5 New Net Name=NetR30_SS1_1
+Change Net Name : Old Net Name=NetJ10_SS1_6 New Net Name=NetU5_SS1_6
+Change Net Name : Old Net Name=NetJ10_SS1_12 New Net Name=NetR27_SS1_2
+Change Net Name : Old Net Name=NetJ10_SS2_1 New Net Name=NetR26_SS2_2
+Change Net Name : Old Net Name=NetJ10_SS2_4 New Net Name=NetR28_SS2_2
+Change Net Name : Old Net Name=NetJ10_SS2_5 New Net Name=NetR30_SS2_1
+Change Net Name : Old Net Name=NetJ10_SS2_6 New Net Name=NetU5_SS2_6
+Change Net Name : Old Net Name=NetJ10_SS2_12 New Net Name=NetR27_SS2_2

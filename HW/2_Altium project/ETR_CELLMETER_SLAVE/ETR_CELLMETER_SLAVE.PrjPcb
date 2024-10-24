@@ -424,23 +424,6 @@ GenerateClassCluster=0
 DocumentUniqueId=IVEVCGGY
 
 [Document23]
-DocumentPath=Current_Sense.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=8
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=GBUIYWEK
-
-[Document24]
 DocumentPath=Discharge.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +440,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HCSTGVWT
 
-[Document25]
+[Document24]
 DocumentPath=Supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -474,49 +457,70 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YQRDVKDT
 
+[Document25]
+DocumentPath=ETR_CELLMETER_SLAVE.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QEBXVDED
+
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [Parameter2]
-Name=Date
-Value=08/10/2024
+Name=Variant
+Value=0
 
 [Parameter3]
-Name=Departament
-Value=ECUs
+Name=Size
+Value=A4
 
 [Parameter4]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter5]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
+Name=Project
+Value=ETR Cellmeter
 
 [Parameter6]
 Name=DesignerName
 Value=Bernat Costa, Yosra Azzouz
 
 [Parameter7]
-Name=Project
-Value=ETR Cellmeter
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
 
 [Parameter8]
-Name=ReviewerName
-Value=Andreu Senis
+Name=DesignedByURL
+Value=github.com/etechracing
 
 [Parameter9]
-Name=Size
-Value=A4
+Name=Departament
+Value=ECUs
 
 [Parameter10]
-Name=Variant
-Value=0
+Name=Date
+Value=08/10/2024
 
 [Parameter11]
-Name=Version
-Value=v0.1
+Name=Company
+Value=e-Tech Racing
+
+[DiffPairSuffix1]
+Positive=_H
+Negative=_L
 
 [Configuration1]
 Name=Sources
@@ -1482,8 +1486,14 @@ Net1=NetName=+12V|NetColor=$00FFFF6E
 Net2=NetName=+3V3|NetColor=clYellow
 Net3=NetName=+5V|NetColor=$006E6EFF
 Net4=NetName=3V3_MCU|NetColor=clYellow
-Net5=NetName=GND|NetColor=$00575860
-Net6=NetName=NetC54_2|NetColor=$006E6EFF
+Net5=NetName=CAN_FIL_H|NetColor=$006EFF6E
+Net6=NetName=CAN_FIL_L|NetColor=$006EFF6E
+Net7=NetName=CAN_H|NetColor=$006EFF6E
+Net8=NetName=CAN_L|NetColor=$006EFF6E
+Net9=NetName=GND|NetColor=$00575860
+Net10=NetName=NetC54_2|NetColor=$006E6EFF
+Net11=NetName=NetC57_2|NetColor=$006EFF6E
+Net12=NetName=NetC61_1|NetColor=$006EFF6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0

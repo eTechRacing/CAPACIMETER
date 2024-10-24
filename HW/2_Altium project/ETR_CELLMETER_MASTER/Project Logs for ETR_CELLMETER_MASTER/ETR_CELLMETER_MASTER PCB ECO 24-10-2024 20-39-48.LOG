@@ -1,0 +1,30 @@
+Change Component Footprint: Designator=R29_SS1 Old Footprint=R1206FTK-W New Footprint=FP-CR0805-IPC_A
+Change Component Footprint: Designator=R29_SS2 Old Footprint=R1206FTK-W New Footprint=FP-CR0805-IPC_A
+Change Component Comment : Designator=R29_SS1 Old Comment=R4.3K-1206FTK New Comment=R60.4K-0805
+Change Component Comment : Designator=R29_SS2 Old Comment=R4.3K-1206FTK New Comment=R60.4K-0805
+Change Managed Component Library Link : Designator=R29_SS1 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=ECE531D0-1A2D-456C-865D-7266F7E8AE96 New ItemGUID=04f3101f-1b57-4256-a1b1-201c899e6ea6 Old RevisionGUID=902531D7-F49F-43B4-9485-555F76BA392B New RevisionGUID=9d235a5e-d74f-47cc-a4f5-3ef49f87423e
+Change Managed Component Library Link : Designator=R29_SS2 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=ECE531D0-1A2D-456C-865D-7266F7E8AE96 New ItemGUID=04f3101f-1b57-4256-a1b1-201c899e6ea6 Old RevisionGUID=902531D7-F49F-43B4-9485-555F76BA392B New RevisionGUID=9d235a5e-d74f-47cc-a4f5-3ef49f87423e
+Change component parameters: Designator = "R29_SS1" ("R29"); Footprint = "R1206FTK-W"; UniqueID = "\GVRJVXGA\ZQONSYFE" ("\GVRJVXGA\ZQONSYFE")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5.3k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R29_SS2" ("R29"); Footprint = "R1206FTK-W"; UniqueID = "\CQBAJYCB\ZQONSYFE" ("\CQBAJYCB\ZQONSYFE")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5.3k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
