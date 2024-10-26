@@ -12,21 +12,6 @@
 
 #define CS1_PIN 	GPIO_PIN_6
 #define CS1_PORT 	GPIOB
-#define CS2_PIN 	GPIO_PIN_6
-#define CS2_PORT 	GPIOB
-#define CS3_PIN 	GPIO_PIN_6
-#define CS3_PORT 	GPIOB
-#define CS4_PIN 	GPIO_PIN_6
-#define CS4_PORT 	GPIOB
-#define CS5_PIN 	GPIO_PIN_6
-#define CS5_PORT 	GPIOB
-#define CS6_PIN 	GPIO_PIN_6
-#define CS6_PORT 	GPIOB
-#define CS7_PIN 	GPIO_PIN_6
-#define CS7_PORT 	GPIOB
-#define CS8_PIN 	GPIO_PIN_6
-#define CS8_PORT 	GPIOB
-#define TOTAL_IC	8
 /*
  * SELECCIÓ DE CANAL 1-4 Voltatges / 5-8 Temp-Curr
  * 1 -> DIFF CH0 = IN+ i CH1 = IN-
@@ -38,18 +23,14 @@
  * 7 -> Single ended CH2
  * 8 -> Single ended CH3
  */
-#define ADC_CHANNEL 1
-#define TEMP_CHANNEL 5
-#define CURR_CHANNEL 6
+#define DIFF_ADC_0_1 1
+#define DIFF_ADC_2_3 4
 
 extern uint8_t LECTURA_ADC[3];
-extern uint16_t VOLTATGES[TOTAL_IC];
-extern uint16_t CORRENT[TOTAL_IC];
-extern uint16_t TEMPERATURA[TOTAL_IC];
+extern uint16_t VOLTATGES[2];
 
-
-void outputCS(uint8_t CS_INPUT, uint8_t SLAVE_NUM);
-void ADC_LEC(SPI_HandleTypeDef spi_channel, uint8_t channel);
+void outputCS(uint8_t CS_INPUT);
+void ADC_VOLT(SPI_HandleTypeDef spi_channel, uint8_t channel);
 void ADC_TOT(SPI_HandleTypeDef spi_channel);
 
 #endif /* INC_MCP3302_H_ */

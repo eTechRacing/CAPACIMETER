@@ -9,78 +9,17 @@
 #include "stdlib.h"
 #include "main.h"
 
-uint16_t VOLTATGES[TOTAL_IC];
+uint16_t VOLTATGES[2];
 uint16_t CORRENT[TOTAL_IC];
 uint16_t TEMPERATURA[TOTAL_IC];
 
-void outputCS(uint8_t CS_INPUT, uint8_t SLAVE_NUM){
-	switch(SLAVE_NUM){
-	case 1:
+void outputCS(uint8_t CS_INPUT){
 		if(CS_INPUT == 1){
 			HAL_GPIO_WritePin(CS1_PORT, CS1_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
 		}
 		else{
 			HAL_GPIO_WritePin(CS1_PORT, CS1_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
 		}
-		break;
-	case 2:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS2_PORT, CS2_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS2_PORT, CS2_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 3:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS3_PORT, CS3_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS3_PORT, CS3_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 4:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 5:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 6:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 7:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	case 8:
-		if(CS_INPUT == 1){
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_SET);			//The High state of the chip select pin is set
-		}
-		else{
-			HAL_GPIO_WritePin(CS4_PORT, CS4_PIN, GPIO_PIN_RESET);		//The Low state of the chip select pin is set
-		}
-		break;
-	}
-
 }
 
 /* MODES
@@ -148,21 +87,15 @@ void ADC_LEC(SPI_HandleTypeDef spi_channel, uint8_t channel){
  */
 
 
-void ADC_TOT(SPI_HandleTypeDef spi_channel){
-for(int i = 0; i>TOTAL_IC;i++){
-		outputCS(0, i);
-		ADC_LEC(spi_channel, ADC_CHANNEL);
+void ADC_VOLT(SPI_HandleTypeDef spi_channel){
+		outputCS(0);
+		ADC_LEC(spi_channel, DIFF_ADC_0_1);
 		LECTURA_ADC[1] = LECTURA_ADC[1] & 0b000111111;
 		LECTURA_ADC[2] = LECTURA_ADC[2] & 0b111111111;
-		VOLTATGES[i] = LECTURA_ADC[1] + LECTURA_ADC[2];
-		ADC_LEC(spi_channel, TEMP_CHANNEL);
+		VOLTATGES[0] = LECTURA_ADC[1] + LECTURA_ADC[2];
+		ADC_LEC(spi_channel, DIFF_ADC_2_3);
 		LECTURA_ADC[1] = LECTURA_ADC[1] & 0b000111111;
 		LECTURA_ADC[2] = LECTURA_ADC[2] & 0b111111111;
-		CORRENT[i] = LECTURA_ADC[1] + LECTURA_ADC[2];
-		ADC_LEC(spi_channel, CURR_CHANNEL);
-		LECTURA_ADC[1] = LECTURA_ADC[1] & 0b000111111;
-		LECTURA_ADC[2] = LECTURA_ADC[2] & 0b111111111;
-		TEMPERATURA[i] = LECTURA_ADC[1] + LECTURA_ADC[2];
-		outputCS(1, i);
-	}
+		VOLTATGES[1] = LECTURA_ADC[1] + LECTURA_ADC[2];
+		outputCS(1);
 }
