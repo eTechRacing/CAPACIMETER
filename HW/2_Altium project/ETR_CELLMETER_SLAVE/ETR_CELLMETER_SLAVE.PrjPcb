@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=1
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -475,48 +475,48 @@ GenerateClassCluster=0
 DocumentUniqueId=QEBXVDED
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [Parameter2]
-Name=Date
-Value=08/10/2024
+Name=Variant
+Value=0
 
 [Parameter3]
-Name=Departament
-Value=ECUs
+Name=Size
+Value=A4
 
 [Parameter4]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter5]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
+Name=Project
+Value=ETR Cellmeter
 
 [Parameter6]
 Name=DesignerName
 Value=Bernat Costa, Yosra Azzouz
 
 [Parameter7]
-Name=Project
-Value=ETR Cellmeter
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
 
 [Parameter8]
-Name=ReviewerName
-Value=Andreu Senis
+Name=DesignedByURL
+Value=github.com/etechracing
 
 [Parameter9]
-Name=Size
-Value=A4
+Name=Departament
+Value=ECUs
 
 [Parameter10]
-Name=Variant
-Value=0
+Name=Date
+Value=08/10/2024
 
 [Parameter11]
-Name=Version
-Value=v0.1
+Name=Company
+Value=e-Tech Racing
 
 [DiffPairSuffix1]
 Positive=_H
@@ -1491,9 +1491,18 @@ Net6=NetName=CAN_FIL_L|NetColor=$006EFF6E
 Net7=NetName=CAN_H|NetColor=$006EFF6E
 Net8=NetName=CAN_L|NetColor=$006EFF6E
 Net9=NetName=GND|NetColor=$00575860
-Net10=NetName=NetC54_2|NetColor=$006E6EFF
-Net11=NetName=NetC57_2|NetColor=$006EFF6E
-Net12=NetName=NetC61_1|NetColor=$006EFF6E
+Net10=NetName=NetC?_1|NetColor=$006E6EFF
+Net11=NetName=NetC?_DCH1_1|NetColor=$006E6EFF
+Net12=NetName=NetC?_DCH2_1|NetColor=$006E6EFF
+Net13=NetName=NetC1_2|NetColor=$006E6EFF
+Net14=NetName=NetC21_2|NetColor=$006E6EFF
+Net15=NetName=NetC40_2|NetColor=$006E6EFF
+Net16=NetName=NetC54_2|NetColor=$006E6EFF
+Net17=NetName=NetC57_2|NetColor=$006EFF6E
+Net18=NetName=NetC61_1|NetColor=$006EFF6E
+Net19=NetName=NetR7_2|NetColor=$006E6EFF
+Net20=NetName=NetR7_NTC1_2|NetColor=$006E6EFF
+Net21=NetName=NetR7_NTC2_2|NetColor=$006E6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
