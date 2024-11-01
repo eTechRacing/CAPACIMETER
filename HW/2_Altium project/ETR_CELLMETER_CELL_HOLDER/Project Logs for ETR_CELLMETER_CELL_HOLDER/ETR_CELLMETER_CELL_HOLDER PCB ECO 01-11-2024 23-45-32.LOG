@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Pin From Net: NetName=GND Pin=MH3-1
+Removed Pin From Net: NetName=GND Pin=MH3-1
+Removed Member From Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=MH1
+Removed Member From Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=MH3
+Added Member To Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=Component MH4 Mounting_Hole_M4

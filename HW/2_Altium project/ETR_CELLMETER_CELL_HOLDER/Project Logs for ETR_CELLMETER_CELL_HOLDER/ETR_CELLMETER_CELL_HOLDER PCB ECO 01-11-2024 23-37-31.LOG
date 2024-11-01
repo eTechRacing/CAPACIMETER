@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=J2 NewDesignator=J1
+Change Component Designator: OldDesignator=MH? NewDesignator=MH1
+Change Component Designator: OldDesignator=MH? NewDesignator=MH2
+Change Component Designator: OldDesignator=MH? NewDesignator=MH3
+Change Component Designator: OldDesignator=MH? NewDesignator=MH4
+Added Member To Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=Component MH1 Mounting_Hole_M4
+Added Member To Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=Component MH2 Mounting_Hole_M4
+Added Member To Class: ClassName=ETR_CELLMETER_CELL_HOLDER Member=Component MH3 Mounting_Hole_M4
