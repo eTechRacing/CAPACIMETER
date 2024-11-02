@@ -1,6 +1,6 @@
 ﻿[Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=4
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -424,48 +424,48 @@ GenerateClassCluster=0
 DocumentUniqueId=BMQWXHKB
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=v0.1
 
 [Parameter2]
-Name=Date
-Value=22/09/2024
+Name=Variant
+Value=0
 
 [Parameter3]
-Name=Departament
-Value=ECUs
+Name=Size
+Value=A4
 
 [Parameter4]
-Name=DesignedByURL
-Value=github.com/etechracing
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter5]
-Name=DesignerMail
-Value=bernat.costa.cesari@estudiantat.upc.edu
+Name=Project
+Value=ETR Cellmeter
 
 [Parameter6]
 Name=DesignerName
 Value=Bernat Costa, Yosra Azzouz
 
 [Parameter7]
-Name=Project
-Value=ETR Cellmeter
+Name=DesignerMail
+Value=bernat.costa.cesari@estudiantat.upc.edu
 
 [Parameter8]
-Name=ReviewerName
-Value=Andreu Senis
+Name=DesignedByURL
+Value=github.com/etechracing
 
 [Parameter9]
-Name=Size
-Value=A4
+Name=Departament
+Value=ECUs
 
 [Parameter10]
-Name=Variant
-Value=0
+Name=Date
+Value=22/09/2024
 
 [Parameter11]
-Name=Version
-Value=v0.1
+Name=Company
+Value=e-Tech Racing
 
 [DiffPairSuffix1]
 Positive=_H

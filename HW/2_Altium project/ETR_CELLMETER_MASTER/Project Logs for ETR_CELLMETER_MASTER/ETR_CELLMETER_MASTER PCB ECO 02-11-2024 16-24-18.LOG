@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+5 Pin=C20-2
+Removed Pin From Net: NetName=+5 Pin=U3-3
+Change Component Footprint: Designator=V1 Old Footprint=Portapilas CR1220-Footprint-1 New Footprint=Portapilas CR1220-Footprint-1
+Change Managed Component Library Link : Designator=V1 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=454533b1-a76d-4a56-a23a-fbd7a5ac6c48 New ItemGUID=454533b1-a76d-4a56-a23a-fbd7a5ac6c48 Old RevisionGUID=b616c5f0-be19-4351-b497-d447ea5bc199 New RevisionGUID=04291ef4-ff25-4801-98f5-734759dabdbc
+Add Net: Net with name "+5" already exists

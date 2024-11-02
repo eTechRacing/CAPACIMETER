@@ -83,8 +83,114 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSEKATTB
 
+[Document3]
+DocumentPath=ETR_CELLMETER_CELL_HOLDER_OJ.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document4]
+DocumentPath=ETR_CELLMETER_CELL_HOLDER.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BGEWZQRJ
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\Design Rule Check - ETR_CELLMETER_CELL_HOLDER.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\NC Drill\ETR_CELLMETER_CELL_HOLDER.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\NC Drill\ETR_CELLMETER_CELL_HOLDER.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER.REP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\ExportSTEP\ETR_CELLMETER_CELL_HOLDER.step
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\NC Drill\ETR_CELLMETER_CELL_HOLDER.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Mechanical_1.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_NPTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_PTH_Drill.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for ETR_CELLMETER_CELL_HOLDER\GerberX2\ETR_CELLMETER_CELL_HOLDER_Soldermask_Top.gbr
 DItemRevisionGUID=
 
 [Parameter1]

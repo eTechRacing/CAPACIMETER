@@ -1,0 +1,75 @@
+Removed Pin From Net: NetName=+24V Pin=U5_SS1-4
+Removed Pin From Net: NetName=GND Pin=U5_SS1-6
+Removed Pin From Net: NetName=NetC37_SS1_2 Pin=U5_SS1-7
+Removed Pin From Net: NetName=GND Pin=U5_SS1-8
+Removed Pin From Net: NetName=+24V Pin=U5_SS1-10
+Removed Pin From Net: NetName=NetC37_SS1_1 Pin=U5_SS1-11
+Removed Pin From Net: NetName=NetC45_SS1_1 Pin=U5_SS1-13
+Removed Pin From Net: NetName=+5 Pin=U5_SS1-14
+Removed Pin From Net: NetName=NetC45_SS1_1 Pin=U5_SS1-15
+Removed Pin From Net: NetName=GND Pin=U5_SS1-16
+Removed Pin From Net: NetName=+24V Pin=U5_SS2-4
+Removed Pin From Net: NetName=GND Pin=U5_SS2-6
+Removed Pin From Net: NetName=NetC37_SS2_2 Pin=U5_SS2-7
+Removed Pin From Net: NetName=GND Pin=U5_SS2-8
+Removed Pin From Net: NetName=+24V Pin=U5_SS2-10
+Removed Pin From Net: NetName=NetC37_SS2_1 Pin=U5_SS2-11
+Removed Pin From Net: NetName=NetC45_SS2_1 Pin=U5_SS2-13
+Removed Pin From Net: NetName=+5 Pin=U5_SS2-14
+Removed Pin From Net: NetName=NetC45_SS2_1 Pin=U5_SS2-15
+Removed Pin From Net: NetName=GND Pin=U5_SS2-16
+Removed Member From Class: ClassName=SS1 Member=U5_SS1
+Removed Member From Class: ClassName=SS2 Member=U5_SS2
+Change Component Designator: OldDesignator=U6_FUSE1 NewDesignator=U5_FUSE1
+Change Component Designator: OldDesignator=U6_FUSE2 NewDesignator=U5_FUSE2
+Change Component Designator: OldDesignator=U7 NewDesignator=U6
+Added Component: Designator=J10_SS1(MPQ4371-AEQ1)
+Added Component: Designator=J10_SS2(MPQ4371-AEQ1)
+Added Pin To Net: NetName=+24V Pin=J10_SS1-4
+Added Pin To Net: NetName=GND Pin=J10_SS1-6
+Added Pin To Net: NetName=NetC37_SS1_2 Pin=J10_SS1-7
+Added Pin To Net: NetName=GND Pin=J10_SS1-8
+Added Pin To Net: NetName=+24V Pin=J10_SS1-10
+Added Pin To Net: NetName=NetC37_SS1_1 Pin=J10_SS1-11
+Added Pin To Net: NetName=NetC45_SS1_1 Pin=J10_SS1-13
+Added Pin To Net: NetName=+5 Pin=J10_SS1-14
+Added Pin To Net: NetName=NetC45_SS1_1 Pin=J10_SS1-15
+Added Pin To Net: NetName=GND Pin=J10_SS1-16
+Added Pin To Net: NetName=+24V Pin=J10_SS2-4
+Added Pin To Net: NetName=GND Pin=J10_SS2-6
+Added Pin To Net: NetName=NetC37_SS2_2 Pin=J10_SS2-7
+Added Pin To Net: NetName=GND Pin=J10_SS2-8
+Added Pin To Net: NetName=+24V Pin=J10_SS2-10
+Added Pin To Net: NetName=NetC37_SS2_1 Pin=J10_SS2-11
+Added Pin To Net: NetName=NetC45_SS2_1 Pin=J10_SS2-13
+Added Pin To Net: NetName=+5 Pin=J10_SS2-14
+Added Pin To Net: NetName=NetC45_SS2_1 Pin=J10_SS2-15
+Added Pin To Net: NetName=GND Pin=J10_SS2-16
+Added Pin To Net: NetName=NetJ10_SS1_1 Pin=R26_SS1-2
+Added Pin To Net: NetName=NetJ10_SS1_1 Pin=J10_SS1-3
+Added Net: Name=NetJ10_SS1_1
+Added Pin To Net: NetName=NetJ10_SS1_4 Pin=R28_SS1-2
+Added Pin To Net: NetName=NetJ10_SS1_4 Pin=J10_SS1-1
+Added Net: Name=NetJ10_SS1_4
+Added Pin To Net: NetName=NetJ10_SS1_5 Pin=R30_SS1-1
+Added Pin To Net: NetName=NetJ10_SS1_5 Pin=J10_SS1-18
+Added Net: Name=NetJ10_SS1_5
+Added Pin To Net: NetName=NetJ10_SS1_12 Pin=R27_SS1-2
+Added Pin To Net: NetName=NetJ10_SS1_12 Pin=R29_SS1-1
+Added Pin To Net: NetName=NetJ10_SS1_12 Pin=J10_SS1-17
+Added Net: Name=NetJ10_SS1_12
+Added Pin To Net: NetName=NetJ10_SS2_1 Pin=R26_SS2-2
+Added Pin To Net: NetName=NetJ10_SS2_1 Pin=J10_SS2-3
+Added Net: Name=NetJ10_SS2_1
+Added Pin To Net: NetName=NetJ10_SS2_4 Pin=R28_SS2-2
+Added Pin To Net: NetName=NetJ10_SS2_4 Pin=J10_SS2-1
+Added Net: Name=NetJ10_SS2_4
+Added Pin To Net: NetName=NetJ10_SS2_5 Pin=R30_SS2-1
+Added Pin To Net: NetName=NetJ10_SS2_5 Pin=J10_SS2-18
+Added Net: Name=NetJ10_SS2_5
+Added Pin To Net: NetName=NetJ10_SS2_12 Pin=R27_SS2-2
+Added Pin To Net: NetName=NetJ10_SS2_12 Pin=R29_SS2-1
+Added Pin To Net: NetName=NetJ10_SS2_12 Pin=J10_SS2-17
+Added Net: Name=NetJ10_SS2_12
+Added Member To Class: ClassName=SS1 Member=Component J10_SS1 (J10) MPQ4371
+Added Member To Class: ClassName=SS2 Member=Component J10_SS2 (J10) MPQ4371
