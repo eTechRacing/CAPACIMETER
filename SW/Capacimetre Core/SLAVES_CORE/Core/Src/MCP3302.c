@@ -10,8 +10,7 @@
 #include "main.h"
 
 uint16_t VOLTATGES[2];
-uint16_t CORRENT[TOTAL_IC];
-uint16_t TEMPERATURA[TOTAL_IC];
+
 
 void outputCS(uint8_t CS_INPUT){
 		if(CS_INPUT == 1){

@@ -30,7 +30,7 @@ extern uint8_t LECTURA_ADC[3];
 extern uint16_t VOLTATGES[2];
 
 void outputCS(uint8_t CS_INPUT);
-void ADC_VOLT(SPI_HandleTypeDef spi_channel, uint8_t channel);
+void ADC_VOLT(SPI_HandleTypeDef spi_channel);
 void ADC_TOT(SPI_HandleTypeDef spi_channel);
 
 #endif /* INC_MCP3302_H_ */
