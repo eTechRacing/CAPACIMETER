@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Pin From Net: NetName=GND Pin=MH2-1
+Removed Pin From Net: NetName=GND Pin=MH3-1
+Removed Pin From Net: NetName=GND Pin=MH4-1
+Removed Member From Class: ClassName=CAN Member=D603
+Removed Member From Class: ClassName=ETR_CELLMETER_SLAVE Member=MH1
+Removed Member From Class: ClassName=ETR_CELLMETER_SLAVE Member=MH2
+Removed Member From Class: ClassName=ETR_CELLMETER_SLAVE Member=MH3
+Removed Member From Class: ClassName=ETR_CELLMETER_SLAVE Member=MH4
+Add Net: Net with name "+5V" already exists
+Added Member To Class: ClassName=CAN Member=Component D501 TVS 6V
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J7 ST Link
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J8 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J9 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J10 J_2x1_14A_TE
+Added Room: Name=ADC
+Added Room: Name=CAN
+Added Room: Name=CH1
+Added Room: Name=CH2
+Added Room: Name=DCH1
+Added Room: Name=DCH2
+Added Room: Name=ETR_CELLMETER_SLAVE
+Added Room: Name=KCELL1
+Added Room: Name=KCELL2
+Added Room: Name=Level_Shifter
+Added Room: Name=MCU
+Added Room: Name=NTC1
+Added Room: Name=NTC2
+Added Room: Name=NTC3
+Added Room: Name=NTC4
+Added Room: Name=U_Supply
