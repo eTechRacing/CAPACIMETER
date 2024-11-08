@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=U8 Old DesignItemId=CMP-031-00007-1 New DesignItemId=CMP-031-00007-2
+Change Managed Component Library Link : Designator=U8 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=0ecd1d8b-d082-4c4f-bf02-75eab8efe79a New ItemGUID=0ecd1d8b-d082-4c4f-bf02-75eab8efe79a Old RevisionGUID=6c4f5caf-9773-45d8-825e-8ca051d8886a New RevisionGUID=93f3a6a2-9d2e-4341-ba70-94caa06c737c
+Added Pin To Net: NetName=+12V Pin=U8-10
+Added Pin To Net: NetName=GND Pin=U8-11
+Add Net: Net with name "+5V" already exists
