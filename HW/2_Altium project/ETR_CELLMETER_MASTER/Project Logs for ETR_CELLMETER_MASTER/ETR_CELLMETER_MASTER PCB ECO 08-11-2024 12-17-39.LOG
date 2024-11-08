@@ -1,0 +1,388 @@
+Removed Pin From Net: NetName=+24V Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Member From Class: ClassName=Master_Supply Member=D1
+Change Component Designator: OldDesignator=C1 NewDesignator=C101
+Change Component Designator: OldDesignator=C2 NewDesignator=C102
+Change Component Designator: OldDesignator=C3 NewDesignator=C103
+Change Component Designator: OldDesignator=C4 NewDesignator=C104
+Change Component Designator: OldDesignator=C5 NewDesignator=C105
+Change Component Designator: OldDesignator=C6 NewDesignator=C106
+Change Component Designator: OldDesignator=C7 NewDesignator=C107
+Change Component Designator: OldDesignator=C8 NewDesignator=C108
+Change Component Designator: OldDesignator=C9 NewDesignator=C109
+Change Component Designator: OldDesignator=C10 NewDesignator=C110
+Change Component Designator: OldDesignator=C11 NewDesignator=C111
+Change Component Designator: OldDesignator=C12 NewDesignator=C112
+Change Component Designator: OldDesignator=C13 NewDesignator=C113
+Change Component Designator: OldDesignator=C14 NewDesignator=C114
+Change Component Designator: OldDesignator=C15 NewDesignator=C115
+Change Component Designator: OldDesignator=C16 NewDesignator=C116
+Change Component Designator: OldDesignator=C17 NewDesignator=C117
+Change Component Designator: OldDesignator=C18 NewDesignator=C118
+Change Component Designator: OldDesignator=C19 NewDesignator=C119
+Change Component Designator: OldDesignator=C20 NewDesignator=C120
+Change Component Designator: OldDesignator=C21 NewDesignator=C121
+Change Component Designator: OldDesignator=C22 NewDesignator=C201
+Change Component Designator: OldDesignator=C23 NewDesignator=C202
+Change Component Designator: OldDesignator=C24 NewDesignator=C203
+Change Component Designator: OldDesignator=C25 NewDesignator=C204
+Change Component Designator: OldDesignator=C26 NewDesignator=C205
+Change Component Designator: OldDesignator=C27 NewDesignator=C206
+Change Component Designator: OldDesignator=C28 NewDesignator=C207
+Change Component Designator: OldDesignator=C29 NewDesignator=C208
+Change Component Designator: OldDesignator=C30 NewDesignator=C209
+Change Component Designator: OldDesignator=C31 NewDesignator=C210
+Change Component Designator: OldDesignator=C32 NewDesignator=C211
+Change Component Designator: OldDesignator=C33 NewDesignator=C212
+Change Component Designator: OldDesignator=C34 NewDesignator=C213
+Change Component Designator: OldDesignator=C35 NewDesignator=C214
+Change Component Designator: OldDesignator=C36 NewDesignator=C215
+Change Component Designator: OldDesignator=C37_SS1 NewDesignator=C401_SS1
+Change Component Designator: OldDesignator=C37_SS2 NewDesignator=C401_SS2
+Change Component Designator: OldDesignator=C38_SS1 NewDesignator=C402_SS1
+Change Component Designator: OldDesignator=C38_SS2 NewDesignator=C402_SS2
+Change Component Designator: OldDesignator=C39_SS1 NewDesignator=C403_SS1
+Change Component Designator: OldDesignator=C39_SS2 NewDesignator=C403_SS2
+Change Component Designator: OldDesignator=C40_SS1 NewDesignator=C404_SS1
+Change Component Designator: OldDesignator=C40_SS2 NewDesignator=C404_SS2
+Change Component Designator: OldDesignator=C41_SS1 NewDesignator=C405_SS1
+Change Component Designator: OldDesignator=C41_SS2 NewDesignator=C405_SS2
+Change Component Designator: OldDesignator=C42_SS1 NewDesignator=C406_SS1
+Change Component Designator: OldDesignator=C42_SS2 NewDesignator=C406_SS2
+Change Component Designator: OldDesignator=C43_SS1 NewDesignator=C407_SS1
+Change Component Designator: OldDesignator=C43_SS2 NewDesignator=C407_SS2
+Change Component Designator: OldDesignator=C44_SS1 NewDesignator=C408_SS1
+Change Component Designator: OldDesignator=C44_SS2 NewDesignator=C408_SS2
+Change Component Designator: OldDesignator=C45_SS1 NewDesignator=C409_SS1
+Change Component Designator: OldDesignator=C45_SS2 NewDesignator=C409_SS2
+Change Component Designator: OldDesignator=C46_FUSE1 NewDesignator=C501_FUSE1
+Change Component Designator: OldDesignator=C46_FUSE2 NewDesignator=C501_FUSE2
+Change Component Designator: OldDesignator=C47_FUSE1 NewDesignator=C502_FUSE1
+Change Component Designator: OldDesignator=C47_FUSE2 NewDesignator=C502_FUSE2
+Change Component Designator: OldDesignator=C48_FUSE1 NewDesignator=C503_FUSE1
+Change Component Designator: OldDesignator=C48_FUSE2 NewDesignator=C503_FUSE2
+Change Component Designator: OldDesignator=C49_FUSE1 NewDesignator=C504_FUSE1
+Change Component Designator: OldDesignator=C49_FUSE2 NewDesignator=C504_FUSE2
+Change Component Designator: OldDesignator=C50_FUSE1 NewDesignator=C505_FUSE1
+Change Component Designator: OldDesignator=C50_FUSE2 NewDesignator=C505_FUSE2
+Change Component Designator: OldDesignator=C51_FUSE1 NewDesignator=C506_FUSE1
+Change Component Designator: OldDesignator=C51_FUSE2 NewDesignator=C506_FUSE2
+Change Component Designator: OldDesignator=C52_FUSE1 NewDesignator=C507_FUSE1
+Change Component Designator: OldDesignator=C52_FUSE2 NewDesignator=C507_FUSE2
+Change Component Designator: OldDesignator=C53_FUSE1 NewDesignator=C508_FUSE1
+Change Component Designator: OldDesignator=C53_FUSE2 NewDesignator=C508_FUSE2
+Change Component Designator: OldDesignator=C54 NewDesignator=C601
+Change Component Designator: OldDesignator=C55 NewDesignator=C602
+Change Component Designator: OldDesignator=C56 NewDesignator=C603
+Change Component Designator: OldDesignator=C57 NewDesignator=C604
+Change Component Designator: OldDesignator=C58 NewDesignator=C605
+Change Component Designator: OldDesignator=C59 NewDesignator=C606
+Change Component Designator: OldDesignator=C60 NewDesignator=C607
+Change Component Designator: OldDesignator=C61 NewDesignator=C608
+Change Component Designator: OldDesignator=D2 NewDesignator=D102
+Change Component Designator: OldDesignator=D3 NewDesignator=D103
+Change Component Designator: OldDesignator=D4 NewDesignator=D104
+Change Component Designator: OldDesignator=D5 NewDesignator=D201
+Change Component Designator: OldDesignator=D6 NewDesignator=D202
+Change Component Designator: OldDesignator=D7 NewDesignator=D203
+Change Component Designator: OldDesignator=D8 NewDesignator=D204
+Change Component Designator: OldDesignator=D9 NewDesignator=D601
+Change Component Designator: OldDesignator=D10 NewDesignator=D602
+Change Component Designator: OldDesignator=J3 NewDesignator=J4
+Change Component Designator: OldDesignator=J4 NewDesignator=J3
+Change Component Designator: OldDesignator=L1 NewDesignator=L101
+Change Component Designator: OldDesignator=L2 NewDesignator=L102
+Change Component Designator: OldDesignator=L3 NewDesignator=L201
+Change Component Designator: OldDesignator=L4_SS1 NewDesignator=L401_SS1
+Change Component Designator: OldDesignator=L4_SS2 NewDesignator=L401_SS2
+Change Component Designator: OldDesignator=L5 NewDesignator=L601
+Change Component Designator: OldDesignator=LS1 NewDesignator=LS201
+Change Component Designator: OldDesignator=NTC1 NewDesignator=NTC201
+Change Component Designator: OldDesignator=NTC2 NewDesignator=NTC202
+Change Component Designator: OldDesignator=Q1 NewDesignator=Q201
+Change Component Designator: OldDesignator=Q2 NewDesignator=Q301
+Change Component Designator: OldDesignator=Q3 NewDesignator=Q302
+Change Component Designator: OldDesignator=R1 NewDesignator=R101
+Change Component Designator: OldDesignator=R2 NewDesignator=R102
+Change Component Designator: OldDesignator=R3 NewDesignator=R103
+Change Component Designator: OldDesignator=R4 NewDesignator=R104
+Change Component Designator: OldDesignator=R5 NewDesignator=R105
+Change Component Designator: OldDesignator=R6 NewDesignator=R106
+Change Component Designator: OldDesignator=R7 NewDesignator=R107
+Change Component Designator: OldDesignator=R8 NewDesignator=R108
+Change Component Designator: OldDesignator=R9 NewDesignator=R109
+Change Component Designator: OldDesignator=R10 NewDesignator=R110
+Change Component Designator: OldDesignator=R11 NewDesignator=R111
+Change Component Designator: OldDesignator=R12 NewDesignator=R201
+Change Component Designator: OldDesignator=R13 NewDesignator=R202
+Change Component Designator: OldDesignator=R14 NewDesignator=R203
+Change Component Designator: OldDesignator=R15 NewDesignator=R204
+Change Component Designator: OldDesignator=R16 NewDesignator=R205
+Change Component Designator: OldDesignator=R17 NewDesignator=R206
+Change Component Designator: OldDesignator=R18 NewDesignator=R207
+Change Component Designator: OldDesignator=R19 NewDesignator=R208
+Change Component Designator: OldDesignator=R20 NewDesignator=R301
+Change Component Designator: OldDesignator=R21 NewDesignator=R302
+Change Component Designator: OldDesignator=R22 NewDesignator=R303
+Change Component Designator: OldDesignator=R23 NewDesignator=R304
+Change Component Designator: OldDesignator=R24 NewDesignator=R305
+Change Component Designator: OldDesignator=R25 NewDesignator=R306
+Change Component Designator: OldDesignator=R26_SS1 NewDesignator=R401_SS1
+Change Component Designator: OldDesignator=R26_SS2 NewDesignator=R401_SS2
+Change Component Designator: OldDesignator=R27_SS1 NewDesignator=R402_SS1
+Change Component Designator: OldDesignator=R27_SS2 NewDesignator=R402_SS2
+Change Component Designator: OldDesignator=R28_SS1 NewDesignator=R403_SS1
+Change Component Designator: OldDesignator=R28_SS2 NewDesignator=R403_SS2
+Change Component Designator: OldDesignator=R29_SS1 NewDesignator=R404_SS1
+Change Component Designator: OldDesignator=R29_SS2 NewDesignator=R404_SS2
+Change Component Designator: OldDesignator=R30_SS1 NewDesignator=R405_SS1
+Change Component Designator: OldDesignator=R30_SS2 NewDesignator=R405_SS2
+Change Component Designator: OldDesignator=R31_FUSE1 NewDesignator=R501_FUSE1
+Change Component Designator: OldDesignator=R31_FUSE2 NewDesignator=R501_FUSE2
+Change Component Designator: OldDesignator=R32_FUSE1 NewDesignator=R502_FUSE1
+Change Component Designator: OldDesignator=R32_FUSE2 NewDesignator=R502_FUSE2
+Change Component Designator: OldDesignator=R33_FUSE1 NewDesignator=R503_FUSE1
+Change Component Designator: OldDesignator=R33_FUSE2 NewDesignator=R503_FUSE2
+Change Component Designator: OldDesignator=R34_FUSE1 NewDesignator=R504_FUSE1
+Change Component Designator: OldDesignator=R34_FUSE2 NewDesignator=R504_FUSE2
+Change Component Designator: OldDesignator=R35_FUSE1 NewDesignator=R505_FUSE1
+Change Component Designator: OldDesignator=R35_FUSE2 NewDesignator=R505_FUSE2
+Change Component Designator: OldDesignator=R36_FUSE1 NewDesignator=R506_FUSE1
+Change Component Designator: OldDesignator=R36_FUSE2 NewDesignator=R506_FUSE2
+Change Component Designator: OldDesignator=R37 NewDesignator=R601
+Change Component Designator: OldDesignator=R38 NewDesignator=R602
+Change Component Designator: OldDesignator=TP2 NewDesignator=TP101
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP102
+Change Component Designator: OldDesignator=TP4 NewDesignator=TP103
+Change Component Designator: OldDesignator=TP5 NewDesignator=TP104
+Change Component Designator: OldDesignator=TP6 NewDesignator=TP201
+Change Component Designator: OldDesignator=TP7 NewDesignator=TP202
+Change Component Designator: OldDesignator=TP8 NewDesignator=TP301
+Change Component Designator: OldDesignator=TP9 NewDesignator=TP302
+Change Component Designator: OldDesignator=TP10 NewDesignator=TP303
+Change Component Designator: OldDesignator=TP11 NewDesignator=TP304
+Change Component Designator: OldDesignator=TP12_SS1 NewDesignator=TP401_SS1
+Change Component Designator: OldDesignator=TP12_SS2 NewDesignator=TP401_SS2
+Change Component Designator: OldDesignator=TP13_SS1 NewDesignator=TP402_SS1
+Change Component Designator: OldDesignator=TP13_SS2 NewDesignator=TP402_SS2
+Change Component Designator: OldDesignator=TP14_FUSE1 NewDesignator=TP501_FUSE1
+Change Component Designator: OldDesignator=TP14_FUSE2 NewDesignator=TP501_FUSE2
+Change Component Designator: OldDesignator=TP15_FUSE1 NewDesignator=TP502_FUSE1
+Change Component Designator: OldDesignator=TP15_FUSE2 NewDesignator=TP502_FUSE2
+Change Component Designator: OldDesignator=U1 NewDesignator=U101
+Change Component Designator: OldDesignator=U2 NewDesignator=U102
+Change Component Designator: OldDesignator=U3 NewDesignator=U103
+Change Component Designator: OldDesignator=U4 NewDesignator=U201
+Change Component Designator: OldDesignator=U5_SS1 NewDesignator=U401_SS1
+Change Component Designator: OldDesignator=U5_SS2 NewDesignator=U401_SS2
+Change Component Designator: OldDesignator=U6_FUSE1 NewDesignator=U501_FUSE1
+Change Component Designator: OldDesignator=U6_FUSE2 NewDesignator=U501_FUSE2
+Change Component Designator: OldDesignator=U7 NewDesignator=U601
+Change Component Designator: OldDesignator=V1 NewDesignator=V201
+Change Component Designator: OldDesignator=XTAL1 NewDesignator=XTAL201
+Change Component Designator: OldDesignator=XTAL2 NewDesignator=XTAL202
+Added Component: Designator=D101(WE-TVSP_DO-214AC_Bidirectional)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Inverse Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Added Component: Designator=D301(DTVS-DO-214AC)
+Add component (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Breakdown Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TVS Diodes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage"; Value = "10.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/en/WE-TVSP?sq=824501600#824501600"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2036401.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2036401.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/824501600.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/824501600.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "DTVS-6V-DO-214AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diode Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Direction"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESD Protection"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "7.02V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "824501600"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Leakage Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Breakdown Voltage"; Value = "7.02V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bidirectional Channels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Pulse Current"; Value = "38.8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Pulse Power"; Value = "400W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Line Protection"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,28000, 10=0,26100, 50=0,26100, 100=0,23400, 500=0,20400, 1000=0,17400, 10000=0,17400 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Zener"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Breakdown Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Standoff Voltage"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "Filter components.SchLib"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "780"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Zener Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Zener Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D302(DTVS-DO-214AC)
+Add component (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Breakdown Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TVS Diodes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Clamping Voltage"; Value = "10.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/en/WE-TVSP?sq=824501600#824501600"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2036401.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2036401.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://katalog.we-online.de/pbs/datasheet/824501600.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://katalog.we-online.de/pbs/datasheet/824501600.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "DTVS-6V-DO-214AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diode Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Direction"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESD Protection"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "7.02V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Leakage Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "824501600"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Leakage Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Breakdown Voltage"; Value = "7.02V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Bidirectional Channels"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Channels"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Pulse Current"; Value = "38.8A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Pulse Power"; Value = "400W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Line Protection"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,28000, 10=0,26100, 50=0,26100, 100=0,23400, 500=0,20400, 1000=0,17400, 10000=0,17400 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Zener"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Breakdown Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Standoff Voltage"; Value = "6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "Filter components.SchLib"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "780"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Zener Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Zener Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D101-1
+Added Pin To Net: NetName=+24V Pin=D101-2
+Added Pin To Net: NetName=GND Pin=D301-1
+Added Pin To Net: NetName=RPM_FAN1 Pin=D301-2
+Added Pin To Net: NetName=GND Pin=D302-1
+Added Pin To Net: NetName=RPM_FAN2 Pin=D302-2
+Change Net Name : Old Net Name=NetC1_1 New Net Name=NetC101_1
+Change Net Name : Old Net Name=NetC1_2 New Net Name=NetC101_2
+Change Net Name : Old Net Name=NetC5_1 New Net Name=NetC105_1
+Change Net Name : Old Net Name=NetC10_2 New Net Name=NetC110_2
+Change Net Name : Old Net Name=NetC11_1 New Net Name=NetC111_1
+Change Net Name : Old Net Name=NetC11_2 New Net Name=NetC111_2
+Change Net Name : Old Net Name=NetC14_1 New Net Name=NetC114_1
+Change Net Name : Old Net Name=NetC19_2 New Net Name=NetC119_2
+Change Net Name : Old Net Name=NetC22_1 New Net Name=NetC201_1
+Change Net Name : Old Net Name=NetC23_1 New Net Name=NetC202_1
+Change Net Name : Old Net Name=NetC37_SS1_1 New Net Name=NetC401_SS1_1
+Change Net Name : Old Net Name=NetC37_SS1_2 New Net Name=NetC401_SS1_2
+Change Net Name : Old Net Name=NetC37_SS2_1 New Net Name=NetC401_SS2_1
+Change Net Name : Old Net Name=NetC37_SS2_2 New Net Name=NetC401_SS2_2
+Change Net Name : Old Net Name=NetC40_SS1_1 New Net Name=NetC404_SS1_1
+Change Net Name : Old Net Name=NetC40_SS2_1 New Net Name=NetC404_SS2_1
+Change Net Name : Old Net Name=NetC45_SS1_1 New Net Name=NetC409_SS1_1
+Change Net Name : Old Net Name=NetC45_SS2_1 New Net Name=NetC409_SS2_1
+Change Net Name : Old Net Name=NetC51_FUSE1_2 New Net Name=NetC506_FUSE1_2
+Change Net Name : Old Net Name=NetC51_FUSE2_2 New Net Name=NetC506_FUSE2_2
+Change Net Name : Old Net Name=NetC52_FUSE1_2 New Net Name=NetC507_FUSE1_2
+Change Net Name : Old Net Name=NetC52_FUSE2_2 New Net Name=NetC507_FUSE2_2
+Change Net Name : Old Net Name=NetC59_1 New Net Name=NetC606_1
+Change Net Name : Old Net Name=NetD4_A New Net Name=NetD104_A
+Change Net Name : Old Net Name=NetD5_A New Net Name=NetD201_A
+Change Net Name : Old Net Name=NetD6_A New Net Name=NetD202_A
+Change Net Name : Old Net Name=NetD7_A New Net Name=NetD203_A
+Change Net Name : Old Net Name=NetD8_A New Net Name=NetD204_A
+Change Net Name : Old Net Name=NetLS1_N New Net Name=NetLS201_N
+Change Net Name : Old Net Name=NetLS1_P New Net Name=NetLS201_P
+Change Net Name : Old Net Name=NetQ1_B New Net Name=NetQ201_B
+Change Net Name : Old Net Name=NetQ2_G New Net Name=NetQ301_G
+Change Net Name : Old Net Name=NetQ3_G New Net Name=NetQ302_G
+Change Net Name : Old Net Name=NetR1_1 New Net Name=NetR101_1
+Change Net Name : Old Net Name=NetR5_2 New Net Name=NetR105_2
+Change Net Name : Old Net Name=NetR6_1 New Net Name=NetR106_1
+Change Net Name : Old Net Name=NetR10_2 New Net Name=NetR110_2
+Change Net Name : Old Net Name=NetR20_1 New Net Name=NetR301_1
+Change Net Name : Old Net Name=NetR23_1 New Net Name=NetR304_1
+Change Net Name : Old Net Name=NetR26_SS1_2 New Net Name=NetR401_SS1_2
+Change Net Name : Old Net Name=NetR26_SS2_2 New Net Name=NetR401_SS2_2
+Change Net Name : Old Net Name=NetR27_SS1_2 New Net Name=NetR402_SS1_2
+Change Net Name : Old Net Name=NetR27_SS2_2 New Net Name=NetR402_SS2_2
+Change Net Name : Old Net Name=NetR28_SS1_2 New Net Name=NetR403_SS1_2
+Change Net Name : Old Net Name=NetR28_SS2_2 New Net Name=NetR403_SS2_2
+Change Net Name : Old Net Name=NetR30_SS1_1 New Net Name=NetR405_SS1_1
+Change Net Name : Old Net Name=NetR30_SS2_1 New Net Name=NetR405_SS2_1
+Change Net Name : Old Net Name=NetR31_FUSE1_1 New Net Name=NetR501_FUSE1_1
+Change Net Name : Old Net Name=NetR31_FUSE2_1 New Net Name=NetR501_FUSE2_1
+Change Net Name : Old Net Name=NetR32_FUSE1_1 New Net Name=NetR502_FUSE1_1
+Change Net Name : Old Net Name=NetR32_FUSE2_1 New Net Name=NetR502_FUSE2_1
+Change Net Name : Old Net Name=NetR33_FUSE1_2 New Net Name=NetR503_FUSE1_2
+Change Net Name : Old Net Name=NetR33_FUSE2_2 New Net Name=NetR503_FUSE2_2
+Change Net Name : Old Net Name=NetU4_70 New Net Name=NetU201_70
+Change Net Name : Old Net Name=NetU4_71 New Net Name=NetU201_71
+Added Member To Class: ClassName=Master_Supply Member=Component D101 TVS 33V 400W
+Added Member To Class: ClassName=Cooling Member=Component D301 TVS 6V
+Added Member To Class: ClassName=Cooling Member=Component D302 TVS 6V

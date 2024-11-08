@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SS2_PG Pin=U201-64
+Removed Pin From Net: NetName=SS2_EN Pin=U201-65
+Added Pin To Net: NetName=SS2_EN Pin=U201-64
+Added Pin To Net: NetName=SS2_PG Pin=U201-65
