@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=S_EN Pin=U201-64
+Removed Pin From Net: NetName=S_PG Pin=U201-65
+Removed Pin From Net: NetName=M_EN Pin=U201-67
+Removed Pin From Net: NetName=M_PG Pin=U201-68
+Change Component Designator: OldDesignator=C601 NewDesignator=C501
+Change Component Designator: OldDesignator=C602 NewDesignator=C502
+Change Component Designator: OldDesignator=C603 NewDesignator=C503
+Change Component Designator: OldDesignator=C604 NewDesignator=C504
+Change Component Designator: OldDesignator=C605 NewDesignator=C505
+Change Component Designator: OldDesignator=C606 NewDesignator=C506
+Change Component Designator: OldDesignator=C607 NewDesignator=C507
+Change Component Designator: OldDesignator=C608 NewDesignator=C508
+Change Component Designator: OldDesignator=D601 NewDesignator=D501
+Change Component Designator: OldDesignator=D602 NewDesignator=D502
+Change Component Designator: OldDesignator=L601 NewDesignator=L501
+Change Component Designator: OldDesignator=R601 NewDesignator=R501
+Change Component Designator: OldDesignator=R602 NewDesignator=R502
+Change Component Designator: OldDesignator=U601 NewDesignator=U501
+Added Pin To Net: NetName=M_EN Pin=U201-64
+Added Pin To Net: NetName=M_PG Pin=U201-65
+Added Pin To Net: NetName=S_EN Pin=U201-67
+Added Pin To Net: NetName=S_PG Pin=U201-68
+Change Net Name : Old Net Name=NetC606_1 New Net Name=NetC506_1

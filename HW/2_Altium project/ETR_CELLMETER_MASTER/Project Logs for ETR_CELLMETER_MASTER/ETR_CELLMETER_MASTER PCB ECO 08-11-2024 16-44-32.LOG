@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=F_EN Pin=U201-55
+Removed Pin From Net: NetName=F_FAULT Pin=U201-56
+Added Pin To Net: NetName=F_FAULT Pin=U201-55
+Added Pin To Net: NetName=F_EN Pin=U201-56
