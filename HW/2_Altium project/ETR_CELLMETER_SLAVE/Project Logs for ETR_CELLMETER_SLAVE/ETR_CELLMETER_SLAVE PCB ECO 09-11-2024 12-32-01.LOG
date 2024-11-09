@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+5V Pin=C106-2
+Removed Pin From Net: NetName=GND Pin=C107-1
+Removed Pin From Net: NetName=NetC107_2 Pin=C107-2
+Removed Member From Class: ClassName=ADC Member=C107
+Added Pin To Net: NetName=NetC107_2 Pin=C106-2
+Change Net Name : Old Net Name=NetC107_2 New Net Name=NetC106_2

@@ -1,0 +1,34 @@
+Change Component Footprint: Designator=C902 Old Footprint=C1206FNPC-RW New Footprint=FP-GRM32E-0_3-0_2-IPC_C
+Change Component Footprint: Designator=C903 Old Footprint=C1206FNPC-RW New Footprint=FP-GRM32E-0_3-0_2-IPC_C
+Change Component Comment : Designator=C902 Old Comment=C47u-10V-1206FNPC-X5R New Comment=C47µF 1210
+Change Component Comment : Designator=C903 Old Comment=C47u-10V-1206FNPC-X5R New Comment=C47µF 1210
+Change Managed Component Library Link : Designator=C902 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=86032F79-8142-435E-8D98-F568507BC1A6 New ItemGUID=9ce1a1da-1b02-40fa-850b-590f5301e22f Old RevisionGUID=4FC3AD37-67E3-406D-AA23-64C7CE3467E3 New RevisionGUID=7FB28C99-AD2A-4A50-B39F-177DEFBCA974
+Change Managed Component Library Link : Designator=C903 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=86032F79-8142-435E-8D98-F568507BC1A6 New ItemGUID=9ce1a1da-1b02-40fa-850b-590f5301e22f Old RevisionGUID=4FC3AD37-67E3-406D-AA23-64C7CE3467E3 New RevisionGUID=7FB28C99-AD2A-4A50-B39F-177DEFBCA974
+Change component parameters: Designator = "C902" ("C902"); Footprint = "C1206FNPC-RW"; UniqueID = "\MZCCKMFO\XRHTVMCN" ("\MZCCKMFO\XRHTVMCN")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C903" ("C903"); Footprint = "C1206FNPC-RW"; UniqueID = "\MZCCKMFO\MDSDIBWQ" ("\MZCCKMFO\MDSDIBWQ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "1210"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47µF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"

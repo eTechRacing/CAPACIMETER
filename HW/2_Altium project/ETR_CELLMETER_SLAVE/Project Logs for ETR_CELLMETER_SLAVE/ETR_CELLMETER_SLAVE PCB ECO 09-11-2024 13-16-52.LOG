@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C603 Old Footprint=C1206FNPC-RW New Footprint=C0805FNPC-R
+Change Component Footprint: Designator=C604 Old Footprint=C1206FNPC-RW New Footprint=C0805FNPC-R
+Change Component Comment : Designator=C603 Old Comment=C100n-10V-1206FNPC-X7R New Comment=C100n
+Change Component Comment : Designator=C604 Old Comment=C100n-10V-1206FNPC-X7R New Comment=C100n

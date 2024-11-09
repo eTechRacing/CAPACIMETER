@@ -1,0 +1,625 @@
+Removed Member From Class: ClassName=ADC Member=.Designator
+Removed Member From Class: ClassName=CAN Member=.Designator
+Removed Member From Class: ClassName=CH2 Member=.Designator
+Removed Member From Class: ClassName=DCH1 Member=.Designator
+Removed Member From Class: ClassName=DCH2 Member=.Designator
+Removed Member From Class: ClassName=KCELL1 Member=.Designator
+Removed Member From Class: ClassName=KCELL2 Member=.Designator
+Removed Member From Class: ClassName=Level_Shifter Member=.Designator
+Removed Member From Class: ClassName=MCU Member=.Designator
+Removed Member From Class: ClassName=NTC1 Member=.Designator
+Removed Member From Class: ClassName=NTC2 Member=.Designator
+Removed Member From Class: ClassName=NTC3 Member=.Designator
+Removed Member From Class: ClassName=NTC4 Member=.Designator
+Removed Member From Class: ClassName=U_Supply Member=.Designator
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=150080VS75000
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=782853561
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=782853561
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=830030819
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=885012207096
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=ATA6561-GAQW-N
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=BZD27B5V1P-M3-08
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C1u 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C1u 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C1u-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C1uF-10V-0603
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C1uF-10V-0603
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C10pF 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C10pF 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C10pF_0805_50V
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C10u 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C10u 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C22uF-25V-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C22uF-25V-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C22uF-25V-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C22uF-25V-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF 1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF-10V-1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C47µF-10V-1210
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-10V-1206FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-10V-1206FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100n-50V-0805FNPC-X7R
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100nF-25V-0603
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100nF-25V-0603
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p-50V-0805FNPC-C0G/NP0
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p-50V-0805FNPC-C0G/NP0
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p-50V-0805FNPC-C0G/NP0
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p-50V-0805FNPC-C0G/NP0
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=C100p-50V-0805FNPC-C0G/NP0
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=CR0805-FX-1000ELF
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=DLW32SH510XF2L
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=DSC-0.5/30-SOD123
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=DSC-0.5/30-SOD123
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=DSC-0.5/30-SOD123
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=DSC-0.5/30-SOD123
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=J_2x1_14A_TE
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=J_2x1_14A_TE
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=J_2x1_14A_TE
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=L1uH_120V_8A
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=L1uH_120V_8A
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=L2.2uH
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LEDBS-0805-145
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LEDBS-0805-145
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LEDBS-0805-145
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LEDBS-0805-145
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LM1117IMP-3.3/NOPB
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LM2904AVQDRQ1
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=LM2904AVQDRQ1
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MCP3302-CI/SL
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MCQ1805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MCQ1805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Mounting_Hole_M4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Mounting_Hole_M4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Mounting_Hole_M4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Mounting_Hole_M4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MP2770
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MP2770
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPQ4323GDE-AEC1
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=MPT35A1R0F
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x2
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x2
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x2
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x2
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NanoFit 1x4
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NTC SMD 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=NTC SMD 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1K_0805_0.125W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1K_0805_0.125W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1K_0805_0.125W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R1K_0805_0.125W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R4.7k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R4.7k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R4.7k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R4.7k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k-0805FTK
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10k_0805_0.25W
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10m-1206
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R10m-1206
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R15K-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R19.1k_0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R60-0805FTN
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R60-0805FTN
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100k-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100k-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100k-0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R100 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R470 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R470 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R470 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=R470 0805
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Relay_RZ01-1C4-D005
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Relay_RZ01-1C4-D005
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Relay_RZ01-1C4-D005
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=Relay_RZ01-1C4-D005
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SIHP25N60EFL-BE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SIHP25N60EFL-BE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SMBJ26CAHE3_B/H
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SQ2318CES-T1_GE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SQ2318CES-T1_GE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SQ2318CES-T1_GE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=SQ2318CES-T1_GE3
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=ST2378ETTR
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=ST Link
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=STM32F105VCT6
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TestPoint
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TVS 6V
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TVS 6V
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TVS 6V DO-214AC
+Change Component Comment : Designator=.Designator Old Comment=.Designator New Comment=TVS 6V DO-214AC
+Change Component Designator: OldDesignator=.Designator NewDesignator=C101
+Change Component Designator: OldDesignator=.Designator NewDesignator=C102
+Change Component Designator: OldDesignator=.Designator NewDesignator=C103
+Change Component Designator: OldDesignator=.Designator NewDesignator=C104
+Change Component Designator: OldDesignator=.Designator NewDesignator=C105
+Change Component Designator: OldDesignator=.Designator NewDesignator=C106
+Change Component Designator: OldDesignator=.Designator NewDesignator=C201
+Change Component Designator: OldDesignator=.Designator NewDesignator=C202
+Change Component Designator: OldDesignator=.Designator NewDesignator=C401_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C401_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C401_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=C401_NTC4
+Change Component Designator: OldDesignator=.Designator NewDesignator=C402_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C402_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C402_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=C402_NTC4
+Change Component Designator: OldDesignator=.Designator NewDesignator=C501
+Change Component Designator: OldDesignator=.Designator NewDesignator=C502
+Change Component Designator: OldDesignator=.Designator NewDesignator=C503
+Change Component Designator: OldDesignator=.Designator NewDesignator=C504
+Change Component Designator: OldDesignator=.Designator NewDesignator=C505
+Change Component Designator: OldDesignator=.Designator NewDesignator=C506
+Change Component Designator: OldDesignator=.Designator NewDesignator=C507
+Change Component Designator: OldDesignator=.Designator NewDesignator=C508
+Change Component Designator: OldDesignator=.Designator NewDesignator=C601
+Change Component Designator: OldDesignator=.Designator NewDesignator=C602
+Change Component Designator: OldDesignator=.Designator NewDesignator=C603
+Change Component Designator: OldDesignator=.Designator NewDesignator=C604
+Change Component Designator: OldDesignator=.Designator NewDesignator=C605
+Change Component Designator: OldDesignator=.Designator NewDesignator=C606
+Change Component Designator: OldDesignator=.Designator NewDesignator=C607
+Change Component Designator: OldDesignator=.Designator NewDesignator=C608
+Change Component Designator: OldDesignator=.Designator NewDesignator=C609
+Change Component Designator: OldDesignator=.Designator NewDesignator=C701_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C701_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C702_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C702_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C703_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C703_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C704_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C704_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C705_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C705_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C706_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C706_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C801_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C801_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C802_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C802_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C803_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=C803_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=C901
+Change Component Designator: OldDesignator=.Designator NewDesignator=C902
+Change Component Designator: OldDesignator=.Designator NewDesignator=C903
+Change Component Designator: OldDesignator=.Designator NewDesignator=C904
+Change Component Designator: OldDesignator=.Designator NewDesignator=C905
+Change Component Designator: OldDesignator=.Designator NewDesignator=C906
+Change Component Designator: OldDesignator=.Designator NewDesignator=C907
+Change Component Designator: OldDesignator=.Designator NewDesignator=C908
+Change Component Designator: OldDesignator=.Designator NewDesignator=C909
+Change Component Designator: OldDesignator=.Designator NewDesignator=C910
+Change Component Designator: OldDesignator=.Designator NewDesignator=C911
+Change Component Designator: OldDesignator=.Designator NewDesignator=D1
+Change Component Designator: OldDesignator=.Designator NewDesignator=D2
+Change Component Designator: OldDesignator=.Designator NewDesignator=D301_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=D301_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=D302_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=D302_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=D501
+Change Component Designator: OldDesignator=.Designator NewDesignator=D502
+Change Component Designator: OldDesignator=.Designator NewDesignator=D601
+Change Component Designator: OldDesignator=.Designator NewDesignator=D602
+Change Component Designator: OldDesignator=.Designator NewDesignator=D603
+Change Component Designator: OldDesignator=.Designator NewDesignator=D604
+Change Component Designator: OldDesignator=.Designator NewDesignator=D901
+Change Component Designator: OldDesignator=.Designator NewDesignator=D902
+Change Component Designator: OldDesignator=.Designator NewDesignator=J1
+Change Component Designator: OldDesignator=.Designator NewDesignator=J2
+Change Component Designator: OldDesignator=.Designator NewDesignator=J3
+Change Component Designator: OldDesignator=.Designator NewDesignator=J4
+Change Component Designator: OldDesignator=.Designator NewDesignator=J5
+Change Component Designator: OldDesignator=.Designator NewDesignator=J6
+Change Component Designator: OldDesignator=.Designator NewDesignator=J7
+Change Component Designator: OldDesignator=.Designator NewDesignator=J8
+Change Component Designator: OldDesignator=.Designator NewDesignator=J9
+Change Component Designator: OldDesignator=.Designator NewDesignator=J10
+Change Component Designator: OldDesignator=.Designator NewDesignator=K301_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=K301_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=K302_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=K302_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=L101
+Change Component Designator: OldDesignator=.Designator NewDesignator=L501
+Change Component Designator: OldDesignator=.Designator NewDesignator=L601
+Change Component Designator: OldDesignator=.Designator NewDesignator=L701_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=L701_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=L901
+Change Component Designator: OldDesignator=.Designator NewDesignator=MH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=MH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=MH3
+Change Component Designator: OldDesignator=.Designator NewDesignator=MH4
+Change Component Designator: OldDesignator=.Designator NewDesignator=NTC801_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=NTC801_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q301_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q301_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q302_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q302_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q801_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=Q801_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R101
+Change Component Designator: OldDesignator=.Designator NewDesignator=R102
+Change Component Designator: OldDesignator=.Designator NewDesignator=R103
+Change Component Designator: OldDesignator=.Designator NewDesignator=R104
+Change Component Designator: OldDesignator=.Designator NewDesignator=R301_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R301_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R302_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R302_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R303_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R303_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R304_KCELL1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R304_KCELL2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R401_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R401_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R401_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=R401_NTC4
+Change Component Designator: OldDesignator=.Designator NewDesignator=R402_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R402_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R402_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=R402_NTC4
+Change Component Designator: OldDesignator=.Designator NewDesignator=R501
+Change Component Designator: OldDesignator=.Designator NewDesignator=R502
+Change Component Designator: OldDesignator=.Designator NewDesignator=R601
+Change Component Designator: OldDesignator=.Designator NewDesignator=R602
+Change Component Designator: OldDesignator=.Designator NewDesignator=R603
+Change Component Designator: OldDesignator=.Designator NewDesignator=R604
+Change Component Designator: OldDesignator=.Designator NewDesignator=R605
+Change Component Designator: OldDesignator=.Designator NewDesignator=R606
+Change Component Designator: OldDesignator=.Designator NewDesignator=R607
+Change Component Designator: OldDesignator=.Designator NewDesignator=R608
+Change Component Designator: OldDesignator=.Designator NewDesignator=R609
+Change Component Designator: OldDesignator=.Designator NewDesignator=R610
+Change Component Designator: OldDesignator=.Designator NewDesignator=R611
+Change Component Designator: OldDesignator=.Designator NewDesignator=R612
+Change Component Designator: OldDesignator=.Designator NewDesignator=R701_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R701_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R702_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R702_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R703_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R703_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R801_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R801_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R802_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R802_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R803_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R803_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R804_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R804_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R805_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R805_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R806_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R806_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R807_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R807_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R808_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R808_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R809_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=R809_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=R901
+Change Component Designator: OldDesignator=.Designator NewDesignator=R902
+Change Component Designator: OldDesignator=.Designator NewDesignator=R903
+Change Component Designator: OldDesignator=.Designator NewDesignator=R904
+Change Component Designator: OldDesignator=.Designator NewDesignator=R905
+Change Component Designator: OldDesignator=.Designator NewDesignator=R906
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP401_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP401_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP401_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP401_NTC4
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP701_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP701_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP702_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP702_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP901
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP902
+Change Component Designator: OldDesignator=.Designator NewDesignator=TP903
+Change Component Designator: OldDesignator=.Designator NewDesignator=U101
+Change Component Designator: OldDesignator=.Designator NewDesignator=U201
+Change Component Designator: OldDesignator=.Designator NewDesignator=U501
+Change Component Designator: OldDesignator=.Designator NewDesignator=U601
+Change Component Designator: OldDesignator=.Designator NewDesignator=U701_CH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=U701_CH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=U801_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=U801_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=U802_DCH1
+Change Component Designator: OldDesignator=.Designator NewDesignator=U802_DCH2
+Change Component Designator: OldDesignator=.Designator NewDesignator=U901
+Change Component Designator: OldDesignator=.Designator NewDesignator=U902
+Change Component Designator: OldDesignator=.Designator NewDesignator=Y601
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z101
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z102
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z103
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z104
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z401_NTC1
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z401_NTC2
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z401_NTC3
+Change Component Designator: OldDesignator=.Designator NewDesignator=Z401_NTC4
+Added Member To Class: ClassName=ADC Member=Component C101 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=ADC Member=Component C102 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=ADC Member=Component C103 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=ADC Member=Component C104 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=ADC Member=Component C105 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=ADC Member=Component C106 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=Level_Shifter Member=Component C201 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=Level_Shifter Member=Component C202 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=NTC1 Member=Component C401_NTC1 (C401) C100n 0805
+Added Member To Class: ClassName=NTC2 Member=Component C401_NTC2 (C401) C100n 0805
+Added Member To Class: ClassName=NTC3 Member=Component C401_NTC3 (C401) C100n 0805
+Added Member To Class: ClassName=NTC4 Member=Component C401_NTC4 (C401) C100n 0805
+Added Member To Class: ClassName=NTC1 Member=Component C402_NTC1 (C402) C100n 0805
+Added Member To Class: ClassName=NTC2 Member=Component C402_NTC2 (C402) C100n 0805
+Added Member To Class: ClassName=NTC3 Member=Component C402_NTC3 (C402) C100n 0805
+Added Member To Class: ClassName=NTC4 Member=Component C402_NTC4 (C402) C100n 0805
+Added Member To Class: ClassName=CAN Member=Component C501 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C502 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C503 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component C504 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component C505 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C506 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component C507 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component C508 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=MCU Member=Component C601 C10pF 0805
+Added Member To Class: ClassName=MCU Member=Component C602 C10pF 0805
+Added Member To Class: ClassName=MCU Member=Component C603 C100n-10V-1206FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C604 C100n-10V-1206FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C605 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C606 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C607 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C608 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=MCU Member=Component C609 C100n 0805
+Added Member To Class: ClassName=CH1 Member=Component C701_CH1 (C701) C100nF-25V-0603
+Added Member To Class: ClassName=CH2 Member=Component C701_CH2 (C701) C100nF-25V-0603
+Added Member To Class: ClassName=CH1 Member=Component C702_CH1 (C702) C22uF-25V-0805
+Added Member To Class: ClassName=CH2 Member=Component C702_CH2 (C702) C22uF-25V-0805
+Added Member To Class: ClassName=CH1 Member=Component C703_CH1 (C703) C22uF-25V-0805
+Added Member To Class: ClassName=CH2 Member=Component C703_CH2 (C703) C22uF-25V-0805
+Added Member To Class: ClassName=CH1 Member=Component C704_CH1 (C704) C47µF 1210
+Added Member To Class: ClassName=CH2 Member=Component C704_CH2 (C704) C47µF 1210
+Added Member To Class: ClassName=CH1 Member=Component C705_CH1 (C705) C47µF 1210
+Added Member To Class: ClassName=CH2 Member=Component C705_CH2 (C705) C47µF 1210
+Added Member To Class: ClassName=CH1 Member=Component C706_CH1 (C706) C1uF-10V-0603
+Added Member To Class: ClassName=CH2 Member=Component C706_CH2 (C706) C1uF-10V-0603
+Added Member To Class: ClassName=DCH1 Member=Component C801_DCH1 (C801) C1u 0805
+Added Member To Class: ClassName=DCH2 Member=Component C801_DCH2 (C801) C1u 0805
+Added Member To Class: ClassName=DCH1 Member=Component C802_DCH1 (C802) C100p 0805
+Added Member To Class: ClassName=DCH2 Member=Component C802_DCH2 (C802) C100p 0805
+Added Member To Class: ClassName=DCH1 Member=Component C803_DCH1 (C803) C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=DCH2 Member=Component C803_DCH2 (C803) C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=U_Supply Member=Component C901 885012207096
+Added Member To Class: ClassName=U_Supply Member=Component C902 C47µF 1210
+Added Member To Class: ClassName=U_Supply Member=Component C903 C47µF 1210
+Added Member To Class: ClassName=U_Supply Member=Component C904 C10pF_0805_50V
+Added Member To Class: ClassName=U_Supply Member=Component C905 C47µF-10V-1210
+Added Member To Class: ClassName=U_Supply Member=Component C906 C47µF-10V-1210
+Added Member To Class: ClassName=U_Supply Member=Component C907 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=U_Supply Member=Component C908 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=U_Supply Member=Component C909 C1u-50V-0805FNPC-X7R
+Added Member To Class: ClassName=U_Supply Member=Component C910 C10u 0805
+Added Member To Class: ClassName=U_Supply Member=Component C911 C10u 0805
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component D1 TVS 6V DO-214AC
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component D2 TVS 6V DO-214AC
+Added Member To Class: ClassName=KCELL1 Member=Component D301_KCELL1 (D301) DSC-0.5/30-SOD123
+Added Member To Class: ClassName=KCELL2 Member=Component D301_KCELL2 (D301) DSC-0.5/30-SOD123
+Added Member To Class: ClassName=KCELL1 Member=Component D302_KCELL1 (D302) DSC-0.5/30-SOD123
+Added Member To Class: ClassName=KCELL2 Member=Component D302_KCELL2 (D302) DSC-0.5/30-SOD123
+Added Member To Class: ClassName=CAN Member=Component D501 TVS 6V
+Added Member To Class: ClassName=CAN Member=Component D502 TVS 6V
+Added Member To Class: ClassName=MCU Member=Component D601 LEDBS-0805-145
+Added Member To Class: ClassName=MCU Member=Component D602 LEDBS-0805-145
+Added Member To Class: ClassName=MCU Member=Component D603 LEDBS-0805-145
+Added Member To Class: ClassName=MCU Member=Component D604 LEDBS-0805-145
+Added Member To Class: ClassName=U_Supply Member=Component D901 SMBJ26CAHE3_B/H
+Added Member To Class: ClassName=U_Supply Member=Component D902 150080VS75000
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J1 NanoFit 1x4
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J3 NanoFit 1x2
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J4 NanoFit 1x2
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J5 NanoFit 1x2
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J6 NanoFit 1x2
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J7 ST Link
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J8 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J9 J_2x1_14A_TE
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component J10 J_2x1_14A_TE
+Added Member To Class: ClassName=KCELL1 Member=Component K301_KCELL1 (K301) Relay_RZ01-1C4-D005
+Added Member To Class: ClassName=KCELL2 Member=Component K301_KCELL2 (K301) Relay_RZ01-1C4-D005
+Added Member To Class: ClassName=KCELL1 Member=Component K302_KCELL1 (K302) Relay_RZ01-1C4-D005
+Added Member To Class: ClassName=KCELL2 Member=Component K302_KCELL2 (K302) Relay_RZ01-1C4-D005
+Added Member To Class: ClassName=ADC Member=Component L101 782853561
+Added Member To Class: ClassName=CAN Member=Component L501 DLW32SH510XF2L
+Added Member To Class: ClassName=MCU Member=Component L601 782853561
+Added Member To Class: ClassName=CH1 Member=Component L701_CH1 (L701) L1uH_120V_8A
+Added Member To Class: ClassName=CH2 Member=Component L701_CH2 (L701) L1uH_120V_8A
+Added Member To Class: ClassName=U_Supply Member=Component L901 L2.2uH
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component MH1 Mounting_Hole_M4
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component MH2 Mounting_Hole_M4
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component MH3 Mounting_Hole_M4
+Added Member To Class: ClassName=ETR_CELLMETER_SLAVE Member=Component MH4 Mounting_Hole_M4
+Added Member To Class: ClassName=DCH1 Member=Component NTC801_DCH1 (NTC801) NTC SMD 0805
+Added Member To Class: ClassName=DCH2 Member=Component NTC801_DCH2 (NTC801) NTC SMD 0805
+Added Member To Class: ClassName=KCELL1 Member=Component Q301_KCELL1 (Q301) SQ2318CES-T1_GE3
+Added Member To Class: ClassName=KCELL2 Member=Component Q301_KCELL2 (Q301) SQ2318CES-T1_GE3
+Added Member To Class: ClassName=KCELL1 Member=Component Q302_KCELL1 (Q302) SQ2318CES-T1_GE3
+Added Member To Class: ClassName=KCELL2 Member=Component Q302_KCELL2 (Q302) SQ2318CES-T1_GE3
+Added Member To Class: ClassName=DCH1 Member=Component Q801_DCH1 (Q801) SIHP25N60EFL-BE3
+Added Member To Class: ClassName=DCH2 Member=Component Q801_DCH2 (Q801) SIHP25N60EFL-BE3
+Added Member To Class: ClassName=ADC Member=Component R101 R1K_0805_0.125W
+Added Member To Class: ClassName=ADC Member=Component R102 R1K_0805_0.125W
+Added Member To Class: ClassName=ADC Member=Component R103 R1K_0805_0.125W
+Added Member To Class: ClassName=ADC Member=Component R104 R1K_0805_0.125W
+Added Member To Class: ClassName=KCELL1 Member=Component R301_KCELL1 (R301) R100 0805
+Added Member To Class: ClassName=KCELL2 Member=Component R301_KCELL2 (R301) R100 0805
+Added Member To Class: ClassName=KCELL1 Member=Component R302_KCELL1 (R302) R10k-0805FTK
+Added Member To Class: ClassName=KCELL2 Member=Component R302_KCELL2 (R302) R10k-0805FTK
+Added Member To Class: ClassName=KCELL1 Member=Component R303_KCELL1 (R303) R100 0805
+Added Member To Class: ClassName=KCELL2 Member=Component R303_KCELL2 (R303) R100 0805
+Added Member To Class: ClassName=KCELL1 Member=Component R304_KCELL1 (R304) R10k-0805FTK
+Added Member To Class: ClassName=KCELL2 Member=Component R304_KCELL2 (R304) R10k-0805FTK
+Added Member To Class: ClassName=NTC1 Member=Component R401_NTC1 (R401) R10k-0805FTK
+Added Member To Class: ClassName=NTC2 Member=Component R401_NTC2 (R401) R10k-0805FTK
+Added Member To Class: ClassName=NTC3 Member=Component R401_NTC3 (R401) R10k-0805FTK
+Added Member To Class: ClassName=NTC4 Member=Component R401_NTC4 (R401) R10k-0805FTK
+Added Member To Class: ClassName=NTC1 Member=Component R402_NTC1 (R402) R4.7k 0805
+Added Member To Class: ClassName=NTC2 Member=Component R402_NTC2 (R402) R4.7k 0805
+Added Member To Class: ClassName=NTC3 Member=Component R402_NTC3 (R402) R4.7k 0805
+Added Member To Class: ClassName=NTC4 Member=Component R402_NTC4 (R402) R4.7k 0805
+Added Member To Class: ClassName=CAN Member=Component R501 R60-0805FTN
+Added Member To Class: ClassName=CAN Member=Component R502 R60-0805FTN
+Added Member To Class: ClassName=MCU Member=Component R601 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R602 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R603 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R604 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R605 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R606 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R607 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R608 R10k_0805_0.25W
+Added Member To Class: ClassName=MCU Member=Component R609 R470 0805
+Added Member To Class: ClassName=MCU Member=Component R610 R470 0805
+Added Member To Class: ClassName=MCU Member=Component R611 R470 0805
+Added Member To Class: ClassName=MCU Member=Component R612 R470 0805
+Added Member To Class: ClassName=CH1 Member=Component R701_CH1 (R701) R10m-1206
+Added Member To Class: ClassName=CH2 Member=Component R701_CH2 (R701) R10m-1206
+Added Member To Class: ClassName=CH1 Member=Component R702_CH1 (R702) R10k-0805FTK
+Added Member To Class: ClassName=CH2 Member=Component R702_CH2 (R702) R10k-0805FTK
+Added Member To Class: ClassName=CH1 Member=Component R703_CH1 (R703) R10k-0805FTK
+Added Member To Class: ClassName=CH2 Member=Component R703_CH2 (R703) R10k-0805FTK
+Added Member To Class: ClassName=DCH1 Member=Component R801_DCH1 (R801) R10k_0805_0.25W
+Added Member To Class: ClassName=DCH2 Member=Component R801_DCH2 (R801) R10k_0805_0.25W
+Added Member To Class: ClassName=DCH1 Member=Component R802_DCH1 (R802) R100 0805
+Added Member To Class: ClassName=DCH2 Member=Component R802_DCH2 (R802) R100 0805
+Added Member To Class: ClassName=DCH1 Member=Component R803_DCH1 (R803) R10k 0805
+Added Member To Class: ClassName=DCH2 Member=Component R803_DCH2 (R803) R10k 0805
+Added Member To Class: ClassName=DCH1 Member=Component R804_DCH1 (R804) R10k 0805
+Added Member To Class: ClassName=DCH2 Member=Component R804_DCH2 (R804) R10k 0805
+Added Member To Class: ClassName=DCH1 Member=Component R805_DCH1 (R805) R1k 0805
+Added Member To Class: ClassName=DCH2 Member=Component R805_DCH2 (R805) R1k 0805
+Added Member To Class: ClassName=DCH1 Member=Component R806_DCH1 (R806) MPT35A1R0F
+Added Member To Class: ClassName=DCH2 Member=Component R806_DCH2 (R806) MPT35A1R0F
+Added Member To Class: ClassName=DCH1 Member=Component R807_DCH1 (R807) MPT35A1R0F
+Added Member To Class: ClassName=DCH2 Member=Component R807_DCH2 (R807) MPT35A1R0F
+Added Member To Class: ClassName=DCH1 Member=Component R808_DCH1 (R808) MPT35A1R0F
+Added Member To Class: ClassName=DCH2 Member=Component R808_DCH2 (R808) MPT35A1R0F
+Added Member To Class: ClassName=DCH1 Member=Component R809_DCH1 (R809) MPT35A1R0F
+Added Member To Class: ClassName=DCH2 Member=Component R809_DCH2 (R809) MPT35A1R0F
+Added Member To Class: ClassName=U_Supply Member=Component R901 R100k-0805
+Added Member To Class: ClassName=U_Supply Member=Component R902 R100k-0805
+Added Member To Class: ClassName=U_Supply Member=Component R903 R100k-0805
+Added Member To Class: ClassName=U_Supply Member=Component R904 R19.1k_0805
+Added Member To Class: ClassName=U_Supply Member=Component R905 R15K-0805
+Added Member To Class: ClassName=U_Supply Member=Component R906 CR0805-FX-1000ELF
+Added Member To Class: ClassName=NTC1 Member=Component TP401_NTC1 (TP401) TestPoint
+Added Member To Class: ClassName=NTC2 Member=Component TP401_NTC2 (TP401) TestPoint
+Added Member To Class: ClassName=NTC3 Member=Component TP401_NTC3 (TP401) TestPoint
+Added Member To Class: ClassName=NTC4 Member=Component TP401_NTC4 (TP401) TestPoint
+Added Member To Class: ClassName=CH1 Member=Component TP701_CH1 (TP701) TestPoint
+Added Member To Class: ClassName=CH2 Member=Component TP701_CH2 (TP701) TestPoint
+Added Member To Class: ClassName=CH1 Member=Component TP702_CH1 (TP702) TestPoint
+Added Member To Class: ClassName=CH2 Member=Component TP702_CH2 (TP702) TestPoint
+Added Member To Class: ClassName=U_Supply Member=Component TP901 TestPoint
+Added Member To Class: ClassName=U_Supply Member=Component TP902 TestPoint
+Added Member To Class: ClassName=U_Supply Member=Component TP903 TestPoint
+Added Member To Class: ClassName=ADC Member=Component U101 MCP3302-CI/SL
+Added Member To Class: ClassName=Level_Shifter Member=Component U201 ST2378ETTR
+Added Member To Class: ClassName=CAN Member=Component U501 ATA6561-GAQW-N
+Added Member To Class: ClassName=MCU Member=Component U601 STM32F105VCT6
+Added Member To Class: ClassName=CH1 Member=Component U701_CH1 (U701) MP2770
+Added Member To Class: ClassName=CH2 Member=Component U701_CH2 (U701) MP2770
+Added Member To Class: ClassName=DCH1 Member=Component U801_DCH1 (U801) MCQ1805
+Added Member To Class: ClassName=DCH2 Member=Component U801_DCH2 (U801) MCQ1805
+Added Member To Class: ClassName=DCH1 Member=Component U802_DCH1 (U802A) LM2904AVQDRQ1
+Added Member To Class: ClassName=DCH2 Member=Component U802_DCH2 (U802A) LM2904AVQDRQ1
+Added Member To Class: ClassName=U_Supply Member=Component U901 MPQ4323GDE-AEC1
+Added Member To Class: ClassName=U_Supply Member=Component U902 LM1117IMP-3.3/NOPB
+Added Member To Class: ClassName=MCU Member=Component Y601 830030819
+Added Member To Class: ClassName=ADC Member=Component Z101 BZD27B5V1P-M3-08
+Added Member To Class: ClassName=ADC Member=Component Z102 BZD27B5V1P-M3-08
+Added Member To Class: ClassName=ADC Member=Component Z103 BZD27B5V1P-M3-08
+Added Member To Class: ClassName=ADC Member=Component Z104 BZD27B5V1P-M3-08
+Added Member To Class: ClassName=NTC1 Member=Component Z401_NTC1 (Z401) BZD27B5V1P-M3-08
+Added Member To Class: ClassName=NTC2 Member=Component Z401_NTC2 (Z401) BZD27B5V1P-M3-08
+Added Member To Class: ClassName=NTC3 Member=Component Z401_NTC3 (Z401) BZD27B5V1P-M3-08
+Added Member To Class: ClassName=NTC4 Member=Component Z401_NTC4 (Z401) BZD27B5V1P-M3-08

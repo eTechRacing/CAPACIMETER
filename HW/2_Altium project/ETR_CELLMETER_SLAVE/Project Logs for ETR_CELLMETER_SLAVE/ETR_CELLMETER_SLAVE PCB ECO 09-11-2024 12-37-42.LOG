@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=GND Pin=C201-1
+Removed Pin From Net: NetName=3V3_MCU Pin=C201-2
+Removed Pin From Net: NetName=GND Pin=C203-1
+Removed Pin From Net: NetName=+5V Pin=C203-2
+Removed Member From Class: ClassName=Level_Shifter Member=C203
+Removed Member From Class: ClassName=Level_Shifter Member=C204
+Change Component Designator: OldDesignator=C202 NewDesignator=C201
+Change Component Designator: OldDesignator=C204 NewDesignator=C202
+Added Room: Name=ADC
+Added Room: Name=CAN
+Added Room: Name=CH1
+Added Room: Name=CH2
+Added Room: Name=DCH1
+Added Room: Name=DCH2
+Added Room: Name=ETR_CELLMETER_SLAVE
+Added Room: Name=KCELL1
+Added Room: Name=KCELL2
+Added Room: Name=Level_Shifter
+Added Room: Name=MCU
+Added Room: Name=NTC1
+Added Room: Name=NTC2
+Added Room: Name=NTC3
+Added Room: Name=NTC4
+Added Room: Name=U_Supply
