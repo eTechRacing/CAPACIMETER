@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=CELL1_LED1 Pin=U601-42
+Removed Pin From Net: NetName=CELL1_LED2 Pin=U601-43
+Added Pin To Net: NetName=CELL1_LED1 Pin=U601-84
+Added Pin To Net: NetName=CELL1_LED2 Pin=U601-85
+Added Member To Class: ClassName=CAN Member=Component D502 TVS 6V
+Added Member To Class: ClassName=MCU Member=Component R602 R10k_0805_0.25W

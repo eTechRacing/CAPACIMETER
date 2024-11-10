@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetR303_KCELL2_1 Pin=U601-61
+Removed Pin From Net: NetName=NetR301_KCELL2_1 Pin=U601-62
+Added Pin To Net: NetName=NetR303_KCELL2_1 Pin=U601-2
+Added Pin To Net: NetName=NetR301_KCELL2_1 Pin=U601-3
