@@ -1,0 +1,116 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc
+Date     : 10/11/2024
+Time     : 17:19:02
+
+WARNING: Zero hole size multi-layer pad(s) detected
+   Pad MH4-1(5mm,5mm) on Multi-Layer on Net GND
+   Pad MH3-1(105mm,5mm) on Multi-Layer on Net GND
+   Pad MH2-1(105mm,65mm) on Multi-Layer on Net GND
+   Pad MH1-1(5mm,65mm) on Multi-Layer on Net GND
+
+WARNING: Multilayer Pads with 0 size Hole found
+   Pad MH4-1(5mm,5mm) on Multi-Layer
+   Pad MH3-1(105mm,5mm) on Multi-Layer
+   Pad MH2-1(105mm,65mm) on Multi-Layer
+   Pad MH1-1(5mm,65mm) on Multi-Layer
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsPad And InComponent('V1')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=6mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.1mm) Between Pad J2-0(82.042mm,3.81mm) on Multi-Layer And Pad J2-2(80.792mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.1mm) Between Pad J2-0(82.042mm,3.81mm) on Multi-Layer And Pad J2-3(83.292mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.1mm) Between Pad J4-0(66.675mm,3.81mm) on Multi-Layer And Pad J4-2(65.425mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.1mm) Between Pad J4-0(66.675mm,3.81mm) on Multi-Layer And Pad J4-3(67.925mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.1mm) Between Pad R105-1(19.159mm,14.224mm) on Bottom Layer And Via (18.1mm,14.2mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.1mm) Between Pad U101-4(24.09mm,11.645mm) on Top Layer And Pad U101-5(23.365mm,11.295mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.1mm) Between Pad U101-7(23.365mm,10.295mm) on Top Layer And Pad U101-8(24.09mm,9.945mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.1mm) Between Pad U102-4(47.664mm,7.707mm) on Top Layer And Pad U102-5(48.014mm,6.982mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.1mm) Between Pad U102-7(49.014mm,6.982mm) on Top Layer And Pad U102-8(49.364mm,7.707mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (103mm,3mm) from Top Layer to Bottom Layer And Via (105mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (103mm,63mm) from Top Layer to Bottom Layer And Via (105mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (103mm,67mm) from Top Layer to Bottom Layer And Via (105mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (103mm,7mm) from Top Layer to Bottom Layer And Via (105mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (105mm,5mm) from Top Layer to Bottom Layer And Via (107mm,3mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (105mm,5mm) from Top Layer to Bottom Layer And Via (107mm,7mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (105mm,65mm) from Top Layer to Bottom Layer And Via (107mm,63mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (105mm,65mm) from Top Layer to Bottom Layer And Via (107mm,67mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (3mm,3mm) from Top Layer to Bottom Layer And Via (5mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (3mm,63mm) from Top Layer to Bottom Layer And Via (5mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (3mm,67mm) from Top Layer to Bottom Layer And Via (5mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (3mm,7mm) from Top Layer to Bottom Layer And Via (5mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (5mm,5mm) from Top Layer to Bottom Layer And Via (7mm,3mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (5mm,5mm) from Top Layer to Bottom Layer And Via (7mm,7mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (5mm,65mm) from Top Layer to Bottom Layer And Via (7mm,63mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Via (5mm,65mm) from Top Layer to Bottom Layer And Via (7mm,67mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]
+Rule Violations :25
+
+Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C107-1(27.213mm,18.288mm) on Top Layer And Text "C109" (24.409mm,16.561mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C107-2(25.111mm,18.288mm) on Top Layer And Text "C109" (24.409mm,16.561mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C108-2(25.212mm,6.604mm) on Top Layer And Text "C106" (23.927mm,5.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C109-1(26.985mm,15.24mm) on Top Layer And Text "L101" (27.381mm,15.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C417-1(75.5mm,33.849mm) on Top Layer And Text "C416" (76.711mm,34.669mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad C417-2(75.5mm,35.951mm) on Top Layer And Text "C416" (76.711mm,34.669mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad J4-2(65.425mm,2.47mm) on Multi-Layer And Text "D302" (66.059mm,5.262mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad R402-2(90.6mm,55.823mm) on Top Layer And Text "C419" (90.687mm,54.243mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad R407-2(67.7mm,55.3mm) on Top Layer And Text "U402" (66.292mm,54.597mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad TP303-1(64.516mm,5.715mm) on Bottom Layer And Text "D302" (66.059mm,5.262mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad U201-26(24.607mm,27.885mm) on Top Layer And Text "C208" (22.504mm,26.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.1mm) Between Pad U401-1(85.989mm,52.153mm) on Top Layer And Track (85.335mm,52.982mm)(86.01mm,52.982mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.1mm) Between Pad U401-13(89.589mm,52.153mm) on Top Layer And Track (89.568mm,52.982mm)(90.243mm,52.982mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.1mm) Between Pad U402-1(65.9mm,52.286mm) on Top Layer And Track (65.246mm,53.115mm)(65.921mm,53.115mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.078mm < 0.1mm) Between Pad U402-13(69.5mm,52.286mm) on Top Layer And Track (69.479mm,53.115mm)(70.154mm,53.115mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.05mm < 0.1mm) Between Pad U501-10(76.745mm,16.477mm) on Top Layer And Track (75.545mm,16.177mm)(76.47mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.05mm < 0.1mm) Between Pad U501-11(77.745mm,16.477mm) on Top Layer And Track (78.02mm,16.177mm)(78.945mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.055mm < 0.1mm) Between Pad U501-25(77.245mm,21.002mm) on Top Layer And Track (75.545mm,21.577mm)(76.47mm,21.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.055mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.05mm < 0.1mm) Between Pad U501-25(77.245mm,21.002mm) on Top Layer And Track (78.02mm,21.577mm)(78.945mm,21.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad XTAL201-4(19.299mm,33.775mm) on Top Layer And Text "L201" (16.612mm,33.172mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+Rule Violations :20
+
+Processing Rule : Silk to Silk (Clearance=0.1mm) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.1mm) Between Text "C106" (23.927mm,5.918mm) on Top Overlay And Track (26.012mm,5.954mm)(26.312mm,5.954mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.1mm) Between Text "C109" (24.409mm,16.561mm) on Top Overlay And Track (24.26mm,16.538mm)(28.064mm,16.538mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.1mm) Between Text "ETR Cellmeter Master v1" (72.403mm,65mm) on Top Overlay And Text "R405" (75.397mm,65.843mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.1mm) Between Text "L201" (16.612mm,33.172mm) on Top Overlay And Track (16.599mm,33.275mm)(18.199mm,33.275mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.1mm) Between Text "U402" (66.292mm,54.597mm) on Top Overlay And Track (66.569mm,54.671mm)(66.569mm,57.883mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+Rule Violations :5
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 50
+Waived Violations : 0
+Time Elapsed        : 00:00:00

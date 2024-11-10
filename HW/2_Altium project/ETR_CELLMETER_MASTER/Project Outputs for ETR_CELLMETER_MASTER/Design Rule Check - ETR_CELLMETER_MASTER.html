@@ -1,0 +1,534 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/11/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">17:19:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc" class="file"><acronym title="C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc">C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">8</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">50</td></tr>
+</table>
+</td>
+</table><a name="IDGXQ1H2D1B351JODFB0SRPWFGN2XCD0IUUBUCPNTRFTDQLSRHQRJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMBVH4T0XGI5CHXUPQ4QJEUZ3NJOGTOEGLAZY0SPTYRXQCDJVVX0F">Zero hole size multi-layer pad(s) detected</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDKSORGLVL1GDDL4HF1533GRARFPUMLBHPLK3OQHB45XONJFUHQ3C">Multilayer Pads with 0 size Hole found</a></td>
+<td class="column2">4</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">8</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1UMEP0PCV1H4NCNYCYLUS5YMZPQE43NKJIMGTNKJPHOZGIF55R3J">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXM0444KG4PR1FAX2B40BBBTGQFZCQ50L1DMTSMGENRS44YN315C">Clearance Constraint (Gap=0mm) (IsPad And InComponent('V1')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMR0P0I5ERBODLJIXX0EU5XY3SNH5UOHJGGZIT2EPJJ12MYTFWVX">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEM0LG3NDKBPUMA1LUHDOLCKYSBCYQXPVYBJX44PVNVNB55HJJF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN4EOEHH1V2MIK5XBZFGAPOFGMFP0GVPAJ313V1JAFYAHQBHATSYC">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFORR5DHI5GK1IHX0UKXZD12WLHJ4YSFGXPLCBELYMU2JBQXTX5CH">Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLQAOFBPFF52ROONLQGYD3ISTWPJB5E2EOYUQ2VHFBDH4N0WY301B">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNABIUKRPO2HTL3505CUTOOZGRK4TJ4NLHCDQYNENYPPIT0FGXCCD">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTGNGDQCPLYSQOIYZUT0IU2BOFHBN533QCZIPEYOGATJG3YAM31XN">Hole Size Constraint (Min=0.025mm) (Max=6mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBDAMKP3I0YH3KVT4DOV1DVJK0OEXSB0JONXKJLEKTIICTPUX2F1K">Hole To Hole Clearance (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3AGFBTPNCZBIP3EFOB2YJ3YRAMCHXSBLG1ZHJIGW1IDYA0GAF1S">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">25</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4UNFQEL0XVTCNI2HMKPMOEKBRLZXNQQPOHOVBCMYNTPZ0OYPIRGJ">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</a></td>
+<td class="column2">20</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHCB1HTYVDF4APVYYD4QQRXPQFOCEM32IMLX5VJHNFWBIVIB4BT2K">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDODNUT0LZCKBSCPZN2RR3SJVRCCSATDO23UCSVNB0Z1WQVGUP4EFB">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4HIPN4QXM40LGU53BHFIFKAJYKKXOGZ0SJRJ43IIZE13RX354WGN">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">50</td>
+</tr>
+</table><br><a name="IDGDE1WBGDDBN2ORJIVEP2EBEH1N2H4P1IE00TKLM1ASI22JSSQ4O"><h2>Warnings</h2></a><a name="IDMBVH4T0XGI5CHXUPQ4QJEUZ3NJOGTOEGLAZY0SPTYRXQCDJVVX0F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Zero hole size multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True">Pad MH4-1(5mm,5mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True">Pad MH3-1(105mm,5mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True">Pad MH2-1(105mm,65mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True">Pad MH1-1(5mm,65mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=5275.654mil|Location1.Y=1832.244mil|Location2.Y=4485.85mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDDKSORGLVL1GDDL4HF1533GRARFPUMLBHPLK3OQHB45XONJFUHQ3C"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Multilayer Pads with 0 size Hole found</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True">Pad MH4-1(5mm,5mm) on Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=1840.055mil|Location2.Y=2123.646mil|Absolute=True">Pad MH3-1(105mm,5mm) on Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4992.063mil|Location2.X=5275.654mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True">Pad MH2-1(105mm,65mm) on Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1055.055mil|Location2.X=1338.646mil|Location1.Y=4202.26mil|Location2.Y=4485.85mil|Absolute=True">Pad MH1-1(5mm,65mm) on Multi-Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3AGFBTPNCZBIP3EFOB2YJ3YRAMCHXSBLG1ZHJIGW1IDYA0GAF1S"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4205.486mil|Location2.X=4212.536mil|Location1.Y=1907.169mil|Location2.Y=1914.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4205.486mil|Location2.X=4212.536mil|Location1.Y=1907.169mil|Location2.Y=1914.094mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.1mm) Between Pad J2-0(82.042mm,3.81mm) on Multi-Layer And Pad J2-2(80.792mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.327mil|Location2.X=4256.31mil|Location1.Y=1908.907mil|Location2.Y=1915.906mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4249.327mil|Location2.X=4256.31mil|Location1.Y=1908.907mil|Location2.Y=1915.906mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.1mm) Between Pad J2-0(82.042mm,3.81mm) on Multi-Layer And Pad J2-3(83.292mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3600.486mil|Location2.X=3607.536mil|Location1.Y=1907.169mil|Location2.Y=1914.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3600.486mil|Location2.X=3607.536mil|Location1.Y=1907.169mil|Location2.Y=1914.094mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.1mm) Between Pad J4-0(66.675mm,3.81mm) on Multi-Layer And Pad J4-2(65.425mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3644.327mil|Location2.X=3651.31mil|Location1.Y=1908.907mil|Location2.Y=1915.906mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3644.327mil|Location2.X=3651.31mil|Location1.Y=1908.907mil|Location2.Y=1915.906mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.1mm) Between Pad J4-0(66.675mm,3.81mm) on Multi-Layer And Pad J4-3(67.925mm,2.47mm) on Multi-Layer [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1724.879mil|Location2.X=1730.066mil|Location1.Y=2341.462mil|Location2.Y=2346.649mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1724.879mil|Location2.X=1730.066mil|Location1.Y=2341.462mil|Location2.Y=2346.649mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.1mm) Between Pad R105-1(19.159mm,14.224mm) on Bottom Layer And Via (18.1mm,14.2mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1936.973mil|Location2.X=1942.16mil|Location1.Y=2234.178mil|Location2.Y=2239.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1936.973mil|Location2.X=1942.16mil|Location1.Y=2234.178mil|Location2.Y=2239.365mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.09mm &lt; 0.1mm) Between Pad U101-4(24.09mm,11.645mm) on Top Layer And Pad U101-5(23.365mm,11.295mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1936.973mil|Location2.X=1942.16mil|Location1.Y=2180.635mil|Location2.Y=2185.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1936.973mil|Location2.X=1942.16mil|Location1.Y=2180.635mil|Location2.Y=2185.822mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.09mm &lt; 0.1mm) Between Pad U101-7(23.365mm,10.295mm) on Top Layer And Pad U101-8(24.09mm,9.945mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2880.635mil|Location2.X=2885.822mil|Location1.Y=2076.973mil|Location2.Y=2082.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2880.635mil|Location2.X=2885.822mil|Location1.Y=2076.973mil|Location2.Y=2082.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.09mm &lt; 0.1mm) Between Pad U102-4(47.664mm,7.707mm) on Top Layer And Pad U102-5(48.014mm,6.982mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2934.178mil|Location2.X=2939.365mil|Location1.Y=2076.973mil|Location2.Y=2082.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2934.178mil|Location2.X=2939.365mil|Location1.Y=2076.973mil|Location2.Y=2082.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.09mm &lt; 0.1mm) Between Pad U102-7(49.014mm,6.982mm) on Top Layer And Pad U102-8(49.364mm,7.707mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.168mil|Location1.Y=1912.369mil|Location2.Y=1919.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.168mil|Location1.Y=1912.369mil|Location2.Y=1919.323mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (103mm,3mm) from Top Layer to Bottom Layer And Via (105mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.168mil|Location1.Y=4274.574mil|Location2.Y=4281.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.168mil|Location1.Y=4274.574mil|Location2.Y=4281.528mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (103mm,63mm) from Top Layer to Bottom Layer And Via (105mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.097mil|Location1.Y=4406.583mil|Location2.Y=4413.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.097mil|Location1.Y=4406.583mil|Location2.Y=4413.607mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (103mm,67mm) from Top Layer to Bottom Layer And Via (105mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.097mil|Location1.Y=2044.378mil|Location2.Y=2051.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5066.144mil|Location2.X=5073.097mil|Location1.Y=2044.378mil|Location2.Y=2051.402mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (103mm,7mm) from Top Layer to Bottom Layer And Via (105mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.339mil|Location1.Y=1914.136mil|Location2.Y=1921.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.339mil|Location1.Y=1914.136mil|Location2.Y=1921.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (105mm,5mm) from Top Layer to Bottom Layer And Via (107mm,3mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.41mil|Location1.Y=2042.611mil|Location2.Y=2049.565mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.41mil|Location1.Y=2042.611mil|Location2.Y=2049.565mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (105mm,5mm) from Top Layer to Bottom Layer And Via (107mm,7mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.339mil|Location1.Y=4276.341mil|Location2.Y=4283.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.339mil|Location1.Y=4276.341mil|Location2.Y=4283.365mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (105mm,65mm) from Top Layer to Bottom Layer And Via (107mm,63mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.41mil|Location1.Y=4404.816mil|Location2.Y=4411.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5196.386mil|Location2.X=5203.41mil|Location1.Y=4404.816mil|Location2.Y=4411.77mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (105mm,65mm) from Top Layer to Bottom Layer And Via (107mm,67mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.16mil|Location1.Y=1912.369mil|Location2.Y=1919.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.16mil|Location1.Y=1912.369mil|Location2.Y=1919.323mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (3mm,3mm) from Top Layer to Bottom Layer And Via (5mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.16mil|Location1.Y=4274.574mil|Location2.Y=4281.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.16mil|Location1.Y=4274.574mil|Location2.Y=4281.528mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (3mm,63mm) from Top Layer to Bottom Layer And Via (5mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.09mil|Location1.Y=4406.583mil|Location2.Y=4413.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.09mil|Location1.Y=4406.583mil|Location2.Y=4413.607mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (3mm,67mm) from Top Layer to Bottom Layer And Via (5mm,65mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.09mil|Location1.Y=2044.378mil|Location2.Y=2051.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.136mil|Location2.X=1136.09mil|Location1.Y=2044.378mil|Location2.Y=2051.402mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (3mm,7mm) from Top Layer to Bottom Layer And Via (5mm,5mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.332mil|Location1.Y=1914.136mil|Location2.Y=1921.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.332mil|Location1.Y=1914.136mil|Location2.Y=1921.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (5mm,5mm) from Top Layer to Bottom Layer And Via (7mm,3mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.402mil|Location1.Y=2042.611mil|Location2.Y=2049.565mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.402mil|Location1.Y=2042.611mil|Location2.Y=2049.565mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (5mm,5mm) from Top Layer to Bottom Layer And Via (7mm,7mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.332mil|Location1.Y=4276.341mil|Location2.Y=4283.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.332mil|Location1.Y=4276.341mil|Location2.Y=4283.365mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (5mm,65mm) from Top Layer to Bottom Layer And Via (7mm,63mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.402mil|Location1.Y=4404.816mil|Location2.Y=4411.77mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1259.378mil|Location2.X=1266.402mil|Location1.Y=4404.816mil|Location2.Y=4411.77mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Via (5mm,65mm) from Top Layer to Bottom Layer And Via (7mm,67mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.075mm] / [Bottom Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4UNFQEL0XVTCNI2HMKPMOEKBRLZXNQQPOHOVBCMYNTPZ0OYPIRGJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037.32mil|Location2.X=2040.945mil|Location1.Y=2451.885mil|Location2.Y=2455.509mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2037.32mil|Location2.X=2040.945mil|Location1.Y=2451.885mil|Location2.Y=2455.509mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C107-1(27.213mm,18.288mm) on Top Layer And Text "C109" (24.409mm,16.561mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1959.188mil|Location2.X=1962.812mil|Location1.Y=2451.885mil|Location2.Y=2455.509mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1959.188mil|Location2.X=1962.812mil|Location1.Y=2451.885mil|Location2.Y=2455.509mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C107-2(25.111mm,18.288mm) on Top Layer And Text "C109" (24.409mm,16.561mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1973.985mil|Location2.X=1977.61mil|Location1.Y=2017.597mil|Location2.Y=2021.222mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1973.985mil|Location2.X=1977.61mil|Location1.Y=2017.597mil|Location2.Y=2021.222mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C108-2(25.212mm,6.604mm) on Top Layer And Text "C106" (23.927mm,5.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2078.306mil|Location2.X=2081.93mil|Location1.Y=2384.188mil|Location2.Y=2387.812mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2078.306mil|Location2.X=2081.93mil|Location1.Y=2384.188mil|Location2.Y=2387.812mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C109-1(26.985mm,15.24mm) on Top Layer And Text "L101" (27.381mm,15.265mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3991.309mil|Location2.X=3994.934mil|Location1.Y=3149.363mil|Location2.Y=3152.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3991.309mil|Location2.X=3994.934mil|Location1.Y=3149.363mil|Location2.Y=3152.987mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C417-1(75.5mm,33.849mm) on Top Layer And Text "C416" (76.711mm,34.669mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3989.891mil|Location2.X=3993.516mil|Location1.Y=3165.044mil|Location2.Y=3168.669mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3989.891mil|Location2.X=3993.516mil|Location1.Y=3165.044mil|Location2.Y=3168.669mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad C417-2(75.5mm,35.951mm) on Top Layer And Text "C416" (76.711mm,34.669mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.384mil|Location2.X=3573.009mil|Location1.Y=1906.22mil|Location2.Y=1909.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.384mil|Location2.X=3573.009mil|Location1.Y=1906.22mil|Location2.Y=1909.844mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad J4-2(65.425mm,2.47mm) on Multi-Layer And Text "D302" (66.059mm,5.262mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.881mil|Location2.X=4542.506mil|Location1.Y=3956.177mil|Location2.Y=3959.802mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.881mil|Location2.X=4542.506mil|Location1.Y=3956.177mil|Location2.Y=3959.802mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad R402-2(90.6mm,55.823mm) on Top Layer And Text "C419" (90.687mm,54.243mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3645.934mil|Location2.X=3649.559mil|Location1.Y=3958.627mil|Location2.Y=3962.252mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3645.934mil|Location2.X=3649.559mil|Location1.Y=3958.627mil|Location2.Y=3962.252mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad R407-2(67.7mm,55.3mm) on Top Layer And Text "U402" (66.292mm,54.597mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.275mil|Location2.X=3572.9mil|Location1.Y=1984.007mil|Location2.Y=1987.632mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3569.275mil|Location2.X=3572.9mil|Location1.Y=1984.007mil|Location2.Y=1987.632mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad TP303-1(64.516mm,5.715mm) on Bottom Layer And Text "D302" (66.059mm,5.262mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.234mil|Location2.X=1974.859mil|Location1.Y=2844.234mil|Location2.Y=2847.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.234mil|Location2.X=1974.859mil|Location1.Y=2844.234mil|Location2.Y=2847.858mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad U201-26(24.607mm,27.885mm) on Top Layer And Text "C208" (22.504mm,26.213mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.596mil|Location2.X=4389.783mil|Location1.Y=3862.929mil|Location2.Y=3868.116mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4384.596mil|Location2.X=4389.783mil|Location1.Y=3862.929mil|Location2.Y=3868.116mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.078mm &lt; 0.1mm) Between Pad U401-1(85.989mm,52.153mm) on Top Layer And Track (85.335mm,52.982mm)(86.01mm,52.982mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4522.767mil|Location2.X=4527.954mil|Location1.Y=3862.929mil|Location2.Y=3868.116mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4522.767mil|Location2.X=4527.954mil|Location1.Y=3862.929mil|Location2.Y=3868.116mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.078mm &lt; 0.1mm) Between Pad U401-13(89.589mm,52.153mm) on Top Layer And Track (89.568mm,52.982mm)(90.243mm,52.982mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3593.656mil|Location2.X=3598.843mil|Location1.Y=3868.161mil|Location2.Y=3873.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3593.656mil|Location2.X=3598.843mil|Location1.Y=3868.161mil|Location2.Y=3873.348mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.078mm &lt; 0.1mm) Between Pad U402-1(65.9mm,52.286mm) on Top Layer And Track (65.246mm,53.115mm)(65.921mm,53.115mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3731.828mil|Location2.X=3737.015mil|Location1.Y=3868.161mil|Location2.Y=3873.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3731.828mil|Location2.X=3737.015mil|Location1.Y=3868.161mil|Location2.Y=3873.348mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.078mm &lt; 0.1mm) Between Pad U402-13(69.5mm,52.286mm) on Top Layer And Track (69.479mm,53.115mm)(70.154mm,53.115mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.078mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4012.973mil|Location2.X=4018.16mil|Location1.Y=2419.296mil|Location2.Y=2424.483mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4012.973mil|Location2.X=4018.16mil|Location1.Y=2419.296mil|Location2.Y=2424.483mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.05mm &lt; 0.1mm) Between Pad U501-10(76.745mm,16.477mm) on Top Layer And Track (75.545mm,16.177mm)(76.47mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4064.154mil|Location2.X=4069.341mil|Location1.Y=2419.296mil|Location2.Y=2424.483mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4064.154mil|Location2.X=4069.341mil|Location1.Y=2419.296mil|Location2.Y=2424.483mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.05mm &lt; 0.1mm) Between Pad U501-11(77.745mm,16.477mm) on Top Layer And Track (78.02mm,16.177mm)(78.945mm,16.177mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4013.071mil|Location2.X=4018.258mil|Location1.Y=2631.895mil|Location2.Y=2637.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4013.071mil|Location2.X=4018.258mil|Location1.Y=2631.895mil|Location2.Y=2637.082mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.055mm &lt; 0.1mm) Between Pad U501-25(77.245mm,21.002mm) on Top Layer And Track (75.545mm,21.577mm)(76.47mm,21.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.055mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4064.146mil|Location2.X=4069.333mil|Location1.Y=2631.895mil|Location2.Y=2637.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4064.146mil|Location2.X=4069.333mil|Location1.Y=2631.895mil|Location2.Y=2637.082mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.05mm &lt; 0.1mm) Between Pad U501-25(77.245mm,21.002mm) on Top Layer And Track (78.02mm,21.577mm)(78.945mm,21.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.05mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1726.495mil|Location2.X=1730.119mil|Location1.Y=3089.188mil|Location2.Y=3092.812mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1726.495mil|Location2.X=1730.119mil|Location1.Y=3089.188mil|Location2.Y=3092.812mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Pad XTAL201-4(19.299mm,33.775mm) on Top Layer And Text "L201" (16.612mm,33.172mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDHCB1HTYVDF4APVYYD4QQRXPQFOCEM32IMLX5VJHNFWBIVIB4BT2K"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2019.03mil|Location2.X=2022.655mil|Location1.Y=2016.788mil|Location2.Y=2020.413mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2019.03mil|Location2.X=2022.655mil|Location1.Y=2016.788mil|Location2.Y=2020.413mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "C106" (23.927mm,5.918mm) on Top Overlay And Track (26.012mm,5.954mm)(26.312mm,5.954mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.691mil|Location2.X=1975.316mil|Location1.Y=2435.188mil|Location2.Y=2438.812mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1971.691mil|Location2.X=1975.316mil|Location1.Y=2435.188mil|Location2.Y=2438.812mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "C109" (24.409mm,16.561mm) on Top Overlay And Track (24.26mm,16.538mm)(28.064mm,16.538mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.284mil|Location2.X=3879.908mil|Location1.Y=4345.893mil|Location2.Y=4349.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3876.284mil|Location2.X=3879.908mil|Location1.Y=4345.893mil|Location2.Y=4349.518mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "ETR Cellmeter Master v1" (72.403mm,65mm) on Top Overlay And Text "R405" (75.397mm,65.843mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1652.57mil|Location2.X=1656.195mil|Location1.Y=3089.297mil|Location2.Y=3092.921mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1652.57mil|Location2.X=1656.195mil|Location1.Y=3089.297mil|Location2.Y=3092.921mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "L201" (16.612mm,33.172mm) on Top Overlay And Track (16.599mm,33.275mm)(18.199mm,33.275mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.012mil|Location2.X=3622.636mil|Location1.Y=3935.586mil|Location2.Y=3939.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_MASTER\ETR_CELLMETER_MASTER.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3619.012mil|Location2.X=3622.636mil|Location1.Y=3935.586mil|Location2.Y=3939.211mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "U402" (66.292mm,54.597mm) on Top Overlay And Track (66.569mm,54.671mm)(66.569mm,57.883mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

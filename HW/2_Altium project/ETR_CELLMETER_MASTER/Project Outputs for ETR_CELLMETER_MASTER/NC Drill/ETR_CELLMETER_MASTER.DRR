@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ETR_CELLMETER_MASTER.PcbDoc   10/11/2024  19:53:28
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ETR_CELLMETER_MASTER.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)           +/-0mm (0mil)                     Round             44        PTH        204.84mm (8.06inch)
+T2      0.3mm (12mil)                                             Round             234       PTH        893.16mm (35.16inch)
+T3      0.5mm (20mil)                                             Round             32        PTH        312.31mm (12.30inch)
+T4      0.9mm (35mil)                                             Round             2         PTH        7.60mm (0.30inch)
+T5      1.04mm (41mil)                                            Round             9         PTH        22.55mm (0.89inch)
+T6      1.1mm (43mil)                                             Round             6         PTH        12.70mm (0.50inch)
+T7      1.2mm (47mil)                                             Round             11        PTH        176.05mm (6.93inch)
+T8      1.4mm (55mil)                                             Round             13        PTH        270.22mm (10.64inch)
+T9      2.3mm (91mil)                                             Round             5         PTH        236.67mm (9.32inch)
+T10     3.2mm (126mil)                                            Round             2         PTH        25.00mm (0.98inch)
+T11     4.2mm (165mil)                                            Round             4         PTH        260.00mm (10.24inch)
+T12     1.3mm (51mil)                                             Round             1         NPTH       0.00mm (0.00inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              363
+
+Total Processing Time (hh:mm:ss) : 00:00:00

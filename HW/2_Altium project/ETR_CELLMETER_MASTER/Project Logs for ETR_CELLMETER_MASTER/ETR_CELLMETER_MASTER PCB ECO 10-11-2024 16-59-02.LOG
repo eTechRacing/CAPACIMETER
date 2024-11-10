@@ -1,0 +1,25 @@
+Removed Member From Class: ClassName=CAN Member=C501
+Removed Member From Class: ClassName=CAN Member=C502
+Removed Member From Class: ClassName=CAN Member=C507
+Removed Member From Class: ClassName=CAN Member=R501
+Removed Member From Class: ClassName=CAN Member=U501
+Change Component Designator: OldDesignator=C501 NewDesignator=C601
+Change Component Designator: OldDesignator=C502 NewDesignator=C602
+Change Component Designator: OldDesignator=C503 NewDesignator=C603
+Change Component Designator: OldDesignator=C504 NewDesignator=C604
+Change Component Designator: OldDesignator=C505 NewDesignator=C605
+Change Component Designator: OldDesignator=C506 NewDesignator=C606
+Change Component Designator: OldDesignator=C507 NewDesignator=C607
+Change Component Designator: OldDesignator=C508 NewDesignator=C608
+Change Component Designator: OldDesignator=D501 NewDesignator=D601
+Change Component Designator: OldDesignator=D502 NewDesignator=D602
+Change Component Designator: OldDesignator=L501 NewDesignator=L601
+Change Component Designator: OldDesignator=R501 NewDesignator=R601
+Change Component Designator: OldDesignator=R502 NewDesignator=R602
+Change Component Designator: OldDesignator=U501 NewDesignator=U601
+Change Net Name : Old Net Name=NetC506_1 New Net Name=NetC606_1
+Added Member To Class: ClassName=CAN Member=Component C601 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C602 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C607 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component R601 R60-0805FTN
+Added Member To Class: ClassName=CAN Member=Component U601 ATA6561-GAQW-N
