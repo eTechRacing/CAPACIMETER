@@ -1,0 +1,68 @@
+Removed Pin From Net: NetName=NetR402_2 Pin=R404-1
+Removed Pin From Net: NetName=GND Pin=R404-2
+Removed Pin From Net: NetName=NetR407_2 Pin=R409-1
+Removed Pin From Net: NetName=GND Pin=R409-2
+Removed Pin From Net: NetName=F_FAULT Pin=U201-55
+Removed Pin From Net: NetName=F_EN Pin=U201-56
+Removed Member From Class: ClassName=FUSE1 Member=C601
+Removed Member From Class: ClassName=FUSE1 Member=C602
+Removed Member From Class: ClassName=FUSE1 Member=C603
+Removed Member From Class: ClassName=FUSE1 Member=C604
+Removed Member From Class: ClassName=FUSE1 Member=C605
+Removed Member From Class: ClassName=FUSE1 Member=C606
+Removed Member From Class: ClassName=FUSE1 Member=C607
+Removed Member From Class: ClassName=FUSE1 Member=C608
+Removed Member From Class: ClassName=FUSE1 Member=R601
+Removed Member From Class: ClassName=FUSE1 Member=R602
+Removed Member From Class: ClassName=FUSE1 Member=U601
+Change Component Footprint: Designator=R404 Old Footprint=FP-CR0805-IPC_A New Footprint=0805
+Change Component Footprint: Designator=R409 Old Footprint=FP-CR0805-IPC_A New Footprint=0805
+Change Component Comment : Designator=R404 Old Comment=R60.4K-0805 New Comment=R5.3k
+Change Component Comment : Designator=R409 Old Comment=R60.4K-0805 New Comment=R5.3k
+Change Managed Component Library Link : Designator=R404 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=04f3101f-1b57-4256-a1b1-201c899e6ea6 New ItemGUID=972fb5bc-35ce-4f3f-af05-802dbf50b296 Old RevisionGUID=9d235a5e-d74f-47cc-a4f5-3ef49f87423e New RevisionGUID=714da80a-ec0b-4846-b803-75020e37bb31
+Change Managed Component Library Link : Designator=R409 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=04f3101f-1b57-4256-a1b1-201c899e6ea6 New ItemGUID=972fb5bc-35ce-4f3f-af05-802dbf50b296 Old RevisionGUID=9d235a5e-d74f-47cc-a4f5-3ef49f87423e New RevisionGUID=714da80a-ec0b-4846-b803-75020e37bb31
+Change component parameters: Designator = "R404" ("R404"); Footprint = "FP-CR0805-IPC_A"; UniqueID = "\GVRJVXGA\PWZIJAZI" ("\GVRJVXGA\PWZIJAZI")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.vishay.com/docs/20008/dcrcw.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5.3k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R409" ("R409"); Footprint = "FP-CR0805-IPC_A"; UniqueID = "\GVRJVXGA\NTPMTVCW" ("\GVRJVXGA\NTPMTVCW")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.vishay.com/docs/20008/dcrcw.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5.3k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R404-1
+Added Pin To Net: NetName=NetR402_2 Pin=R404-2
+Added Pin To Net: NetName=GND Pin=R409-1
+Added Pin To Net: NetName=NetR407_2 Pin=R409-2
+Added Pin To Net: NetName=F_EN Pin=U201-55
+Added Pin To Net: NetName=F_FAULT Pin=U201-56
+Added Member To Class: ClassName=FUSE1 Member=Component C501 C47µF-10V-1210
+Added Member To Class: ClassName=FUSE1 Member=Component C502 C47µF 1210
+Added Member To Class: ClassName=FUSE1 Member=Component C503 C100n 0805
+Added Member To Class: ClassName=FUSE1 Member=Component C504 C47µF 1210
+Added Member To Class: ClassName=FUSE1 Member=Component C505 C47µF 1210
+Added Member To Class: ClassName=FUSE1 Member=Component C506 C220n 0805
+Added Member To Class: ClassName=FUSE1 Member=Component C507 C10n 0805
+Added Member To Class: ClassName=FUSE1 Member=Component C508 C100n 0805
+Added Member To Class: ClassName=FUSE1 Member=Component R501 R100k 0805
+Added Member To Class: ClassName=FUSE1 Member=Component R502 R100k 0805
+Added Member To Class: ClassName=FUSE1 Member=Component U501 MPQ5069GQV-AEC1

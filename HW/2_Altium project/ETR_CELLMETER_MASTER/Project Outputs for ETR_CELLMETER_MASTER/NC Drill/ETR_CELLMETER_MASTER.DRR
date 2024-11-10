@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: ETR_CELLMETER_MASTER.PcbDoc   10/11/2024  19:53:28
+NCDrill File Report For: ETR_CELLMETER_MASTER.PcbDoc   11/11/2024  0:15:28
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,7 +8,7 @@ ASCII RoundHoles File : ETR_CELLMETER_MASTER.TXT
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      0.3mm (12mil)           +/-0mm (0mil)                     Round             44        PTH        204.84mm (8.06inch)
-T2      0.3mm (12mil)                                             Round             234       PTH        893.16mm (35.16inch)
+T2      0.3mm (12mil)                                             Round             234       PTH        862.52mm (33.96inch)
 T3      0.5mm (20mil)                                             Round             32        PTH        312.31mm (12.30inch)
 T4      0.9mm (35mil)                                             Round             2         PTH        7.60mm (0.30inch)
 T5      1.04mm (41mil)                                            Round             9         PTH        22.55mm (0.89inch)
