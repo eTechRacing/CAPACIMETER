@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=GND Pin=R806_DCH1-1
+Removed Pin From Net: NetName=NetQ801_DCH1_3 Pin=R806_DCH1-2
+Removed Pin From Net: NetName=GND Pin=R806_DCH2-1
+Removed Pin From Net: NetName=NetQ801_DCH2_3 Pin=R806_DCH2-2
+Removed Pin From Net: NetName=GND Pin=R809_DCH1-1
+Removed Pin From Net: NetName=NetQ801_DCH1_3 Pin=R809_DCH1-2
+Removed Pin From Net: NetName=GND Pin=R809_DCH2-1
+Removed Pin From Net: NetName=NetQ801_DCH2_3 Pin=R809_DCH2-2
+Added Pin To Net: NetName=NetQ801_DCH1_3 Pin=R806_DCH1-1
+Added Pin To Net: NetName=GND Pin=R806_DCH1-2
+Added Pin To Net: NetName=NetQ801_DCH2_3 Pin=R806_DCH2-1
+Added Pin To Net: NetName=GND Pin=R806_DCH2-2
+Added Pin To Net: NetName=NetQ801_DCH1_3 Pin=R809_DCH1-1
+Added Pin To Net: NetName=GND Pin=R809_DCH1-2
+Added Pin To Net: NetName=NetQ801_DCH2_3 Pin=R809_DCH2-1
+Added Pin To Net: NetName=GND Pin=R809_DCH2-2
+Added Room: Name=ADC
+Added Room: Name=CAN
+Added Room: Name=CH1
+Added Room: Name=CH2
+Added Room: Name=DCH1
+Added Room: Name=DCH2
+Added Room: Name=ETR_CELLMETER_SLAVE
+Added Room: Name=KCELL1
+Added Room: Name=KCELL2
+Added Room: Name=Level_Shifter
+Added Room: Name=MCU
+Added Room: Name=NTC1
+Added Room: Name=NTC2
+Added Room: Name=NTC3
+Added Room: Name=NTC4
+Added Room: Name=U_Supply

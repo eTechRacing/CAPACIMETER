@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=CH2_INT Pin=U601-56
+Added Pin To Net: NetName=CH2_INT Pin=U601-7
+Added Member To Class: ClassName=DCH2 Member=Component R806_DCH2 (R806) MPT35A1R0F

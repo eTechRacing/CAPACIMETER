@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=MCU_ADC_S1 Pin=U601-15
+Added Pin To Net: NetName=MCU_ADC_S1 Pin=U601-34
