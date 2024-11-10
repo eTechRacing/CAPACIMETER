@@ -457,6 +457,64 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document25]
+DocumentPath=ETR_CELLMETER_MASTER.PCBDwf
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OFQOQPPV
+
+[Document26]
+DocumentPath=ETR_CELLMETER_MASTER.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\Design Rule Check - ETR_CELLMETER_MASTER.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\NC Drill\ETR_CELLMETER_MASTER.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\GerberX2\ETR_CELLMETER_MASTER.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\NC Drill\ETR_CELLMETER_MASTER.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\GerberX2\ETR_CELLMETER_MASTER.REP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for ETR_CELLMETER_MASTER\NC Drill\ETR_CELLMETER_MASTER.TXT
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Company
 Value=e-Tech Racing

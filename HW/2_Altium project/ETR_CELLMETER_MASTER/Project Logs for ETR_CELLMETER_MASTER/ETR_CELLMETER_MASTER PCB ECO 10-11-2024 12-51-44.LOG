@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetQ301_G Pin=U201-46
+Removed Pin From Net: NetName=NetR301_1 Pin=U201-47
+Added Pin To Net: NetName=NetR301_1 Pin=U201-46
+Added Pin To Net: NetName=NetQ301_G Pin=U201-47
