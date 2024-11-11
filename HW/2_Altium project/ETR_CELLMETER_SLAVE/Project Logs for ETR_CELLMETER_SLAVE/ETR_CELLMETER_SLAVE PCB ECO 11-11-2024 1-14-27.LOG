@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=NetR303_KCELL2_1 Pin=U601-2
+Removed Pin From Net: NetName=NetR301_KCELL2_1 Pin=U601-3
+Change Component Designator: OldDesignator=C501 NewDesignator=C601
+Change Component Designator: OldDesignator=C502 NewDesignator=C602
+Change Component Designator: OldDesignator=C503 NewDesignator=C603
+Change Component Designator: OldDesignator=C504 NewDesignator=C604
+Change Component Designator: OldDesignator=C505 NewDesignator=C605
+Change Component Designator: OldDesignator=C506 NewDesignator=C606
+Change Component Designator: OldDesignator=C507 NewDesignator=C607
+Change Component Designator: OldDesignator=C508 NewDesignator=C608
+Change Component Designator: OldDesignator=D501 NewDesignator=D601
+Change Component Designator: OldDesignator=D502 NewDesignator=D602
+Change Component Designator: OldDesignator=L501 NewDesignator=L601
+Change Component Designator: OldDesignator=R501 NewDesignator=R601
+Change Component Designator: OldDesignator=R502 NewDesignator=R602
+Change Component Designator: OldDesignator=U501 NewDesignator=U601
+Added Pin To Net: NetName=NetR301_KCELL2_1 Pin=U601-2
+Added Pin To Net: NetName=NetR303_KCELL2_1 Pin=U601-3
+Change Net Name : Old Net Name=NetC506_1 New Net Name=NetC606_1
+Change Net Name : Old Net Name=NetU501_1 New Net Name=NetU601_1
+Change Net Name : Old Net Name=NetU501_4 New Net Name=NetU601_4
+Added Member To Class: ClassName=DCH2 Member=Component R809_DCH2 (R809) MPT35A1R0F
+Added Member To Class: ClassName=Level_Shifter Member=Component U201 ST2378ETTR

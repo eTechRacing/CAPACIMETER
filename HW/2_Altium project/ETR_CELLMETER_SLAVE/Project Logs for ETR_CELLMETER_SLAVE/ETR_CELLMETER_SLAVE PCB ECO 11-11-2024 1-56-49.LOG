@@ -1,0 +1,42 @@
+Removed Member From Class: ClassName=CAN Member=C601
+Removed Member From Class: ClassName=CAN Member=C603
+Removed Member From Class: ClassName=CAN Member=C605
+Removed Member From Class: ClassName=CAN Member=D601
+Removed Member From Class: ClassName=CAN Member=L601
+Removed Member From Class: ClassName=CAN Member=U601
+Change Component Designator: OldDesignator=C601 NewDesignator=C501
+Change Component Designator: OldDesignator=C601 NewDesignator=C608
+Change Component Designator: OldDesignator=C602 NewDesignator=C502
+Change Component Designator: OldDesignator=C602 NewDesignator=C609
+Change Component Designator: OldDesignator=C603 NewDesignator=C503
+Change Component Designator: OldDesignator=C603 NewDesignator=C601
+Change Component Designator: OldDesignator=C604 NewDesignator=C504
+Change Component Designator: OldDesignator=C604 NewDesignator=C602
+Change Component Designator: OldDesignator=C605 NewDesignator=C505
+Change Component Designator: OldDesignator=C605 NewDesignator=C603
+Change Component Designator: OldDesignator=C606 NewDesignator=C506
+Change Component Designator: OldDesignator=C606 NewDesignator=C604
+Change Component Designator: OldDesignator=C607 NewDesignator=C507
+Change Component Designator: OldDesignator=C607 NewDesignator=C605
+Change Component Designator: OldDesignator=C608 NewDesignator=C508
+Change Component Designator: OldDesignator=C608 NewDesignator=C606
+Change Component Designator: OldDesignator=C609 NewDesignator=C607
+Change Component Designator: OldDesignator=D601 NewDesignator=D501
+Change Component Designator: OldDesignator=D602 NewDesignator=D502
+Change Component Designator: OldDesignator=L601 NewDesignator=L501
+Change Component Designator: OldDesignator=R601 NewDesignator=R501
+Change Component Designator: OldDesignator=R602 NewDesignator=R502
+Change Component Designator: OldDesignator=TP701_CH1 NewDesignator=TP702_CH1
+Change Component Designator: OldDesignator=TP701_CH2 NewDesignator=TP702_CH2
+Change Component Designator: OldDesignator=TP702_CH1 NewDesignator=TP701_CH1
+Change Component Designator: OldDesignator=TP702_CH2 NewDesignator=TP701_CH2
+Change Component Designator: OldDesignator=U601 NewDesignator=U501
+Change Net Name : Old Net Name=NetC606_1 New Net Name=NetC506_1
+Change Net Name : Old Net Name=NetU601_1 New Net Name=NetU501_1
+Change Net Name : Old Net Name=NetU601_4 New Net Name=NetU501_4
+Added Member To Class: ClassName=CAN Member=Component C501 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component C503 C100p-50V-0805FNPC-C0G/NP0
+Added Member To Class: ClassName=CAN Member=Component C505 C100n-50V-0805FNPC-X7R
+Added Member To Class: ClassName=CAN Member=Component D501 TVS 6V
+Added Member To Class: ClassName=CAN Member=Component L501 DLW32SH510XF2L
+Added Member To Class: ClassName=CAN Member=Component U501 ATA6561-GAQW-N

@@ -1,0 +1,34 @@
+Change Component Footprint: Designator=C706_CH1 Old Footprint=WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H1.25
+Change Component Footprint: Designator=C706_CH2 Old Footprint=WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow New Footprint=WCAP-CSGP_0805_L2W1.25H1.25
+Change Component Comment : Designator=C706_CH1 Old Comment=C1uF-10V-0603 New Comment=C1uF 0805
+Change Component Comment : Designator=C706_CH2 Old Comment=C1uF-10V-0603 New Comment=C1uF 0805
+Change Managed Component Library Link : Designator=C706_CH1 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=e0a5f9a7-ab42-4904-953f-697b4e1eaed9 New ItemGUID=0385860c-3d37-4f0b-bbc9-cc8d0db75ff7 Old RevisionGUID=ce9934aa-76d0-4e05-9762-3d0178779c77 New RevisionGUID=F1481452-62DC-4FD0-BB00-477DAC16745E
+Change Managed Component Library Link : Designator=C706_CH2 Old VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 New VaultGUID=082481D6-5331-4BED-BC73-1EE54992B059 Old ItemGUID=e0a5f9a7-ab42-4904-953f-697b4e1eaed9 New ItemGUID=0385860c-3d37-4f0b-bbc9-cc8d0db75ff7 Old RevisionGUID=ce9934aa-76d0-4e05-9762-3d0178779c77 New RevisionGUID=F1481452-62DC-4FD0-BB00-477DAC16745E
+Change component parameters: Designator = "C706_CH1" ("C706"); Footprint = "WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow"; UniqueID = "\OJRXHBZS\BAFDYZRZ" ("\OJRXHBZS\BAFDYZRZ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C706_CH2" ("C706"); Footprint = "WCAP-CSGP_0603_L1.6W0.8H0.8_Reflow"; UniqueID = "\HZAXTMJB\BAFDYZRZ" ("\HZAXTMJB\BAFDYZRZ")
+Change component parameters (AddParameter): Name = "Capacitance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
