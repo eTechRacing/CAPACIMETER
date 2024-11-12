@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [ETR_CELLMETER_SLAVE.PcbDoc]
+   Generated File[ETR_CELLMETER_SLAVE.TXT]
+   Generated File[ETR_CELLMETER_SLAVE.LDP]
+   Generated File[ETR_CELLMETER_SLAVE.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 19:33:09 On 11/11/2024

@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ETR_CELLMETER_SLAVE.PcbDoc   11/11/2024  19:33:09
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ETR_CELLMETER_SLAVE.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             195       PTH        1222.64mm (48.14inch)
+T2      0.5mm (20mil)                                             Round             32        PTH        489.73mm (19.28inch)
+T3      1.1mm (43mil)                                             Round             6         PTH        12.70mm (0.50inch)
+T4      1.2mm (47mil)                                             Round             16        PTH        159.84mm (6.29inch)
+T5      1.3mm (51mil)                                             Round             26        PTH        385.39mm (15.17inch)
+T6      1.4mm (55mil)                                             Round             8         PTH        204.99mm (8.07inch)
+T7      1.5mm (59mil)                                             Round             16        PTH        232.02mm (9.13inch)
+T8      2.3mm (91mil)                                             Round             3         PTH        158.89mm (6.26inch)
+T9      4.2mm (165mil)                                            Round             4         PTH        438.82mm (17.28inch)
+T10     1.3mm (51mil)                                             Round             4         NPTH       43.61mm (1.72inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              310
+
+Two holes at same point : 4
+-----------------------
+5709,197
+197,197
+197,3150
+5709,3150
+
+Total Processing Time (hh:mm:ss) : 00:00:00
