@@ -1,10 +1,21 @@
-Output: Export STEP
-Type  : ExportSTEP
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of PCB Document [ETR_CELLMETER_CELL_HOLDER.PcbDoc]
-   Generated File[ETR_CELLMETER_CELL_HOLDER.step]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GTO]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GTP]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GTS]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GTL]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GBL]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GBS]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GBP]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GBO]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GM1]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.GM]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.EXTREP]
+   Generated File[ETR_CELLMETER_CELL_HOLDER.REP]
 
 
-Files Generated   : 1
+Files Generated   : 12
 Documents Printed : 0
 
-Finished Output Generation At 15:24:55 On 02/11/2024
+Finished Output Generation At 22:02:51 On 12/11/2024
