@@ -17,11 +17,11 @@ RevisionNamingSchemeGUID=
 [OutputGroup1]
 Name=ETR_CELLMETER_CELL_HOLDER_OJ.OutJob
 Description=
-TargetOutputMedium=Folder Structure
+TargetOutputMedium=PDF
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -38,10 +38,10 @@ OutputName1=Export STEP
 OutputCategory1=Export
 OutputDocumentPath1=ETR_CELLMETER_CELL_HOLDER.PcbDoc
 OutputVariantName1=
-OutputEnabled1=1
+OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
 OutputEnabled1_OutputMedium2=0
-OutputEnabled1_OutputMedium3=3
+OutputEnabled1_OutputMedium3=0
 OutputEnabled1_OutputMedium4=0
 OutputDefault1=0
 Configuration1_Name1=OutputConfigurationParameter1
@@ -51,7 +51,7 @@ OutputName2=PCB Prints
 OutputCategory2=Documentation
 OutputDocumentPath2=ETR_CELLMETER_CELL_HOLDER.PcbDoc
 OutputVariantName2=
-OutputEnabled2=0
+OutputEnabled2=1
 OutputEnabled2_OutputMedium1=0
 OutputEnabled2_OutputMedium2=1
 OutputEnabled2_OutputMedium3=0
@@ -81,49 +81,49 @@ Configuration2_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Ful
 Configuration2_Name11=OutputConfigurationParameter11
 Configuration2_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELL_HOLDER.PcbDoc
 PcbPrintPreferences2=
-OutputType3=Gerber X2
-OutputName3=Gerber X2 Files
+OutputType3=NC Drill
+OutputName3=NC Drill Files
 OutputCategory3=Fabrication
 OutputDocumentPath3=ETR_CELLMETER_CELL_HOLDER.PcbDoc
 OutputVariantName3=
-OutputEnabled3=1
+OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
 OutputEnabled3_OutputMedium2=0
 OutputEnabled3_OutputMedium3=1
 OutputEnabled3_OutputMedium4=0
 OutputDefault3=0
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=BoardID=RSEKATTB|FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=False|GenerateReports=True|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=True|MergePadAndRegion=False|MinusApertureTolerance=50|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OutputFormat=Single|PlotBackDrillingPairs=False|PlotBlindViasPairs=False|PlotBoardProfile=True|PlotBoardProfileFileName= |PlotCounterHolesPairs=False|PlotDrillDrawingPairs=False|PlotDrillGuidePairs=False|PlotMicroViasPairs=False|PlotNPTHPair0_Backdrill=False|PlotNPTHPair0_Checked=True|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_FileName= |PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPairs=False|PlotPTHPair0_Backdrill=False|PlotPTHPair0_Checked=True|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_FileName= |PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPairs=False|PlotViaTypeDrillDrawingPairs=False|PlotViaTypeDrillGuidePairs=False|PlotViaTypeDrillPairs=False|PlotX2.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16842751~1,16973830~1,16973831~1,16973834~1,16973835~1,16973832~1,16973833~1,16908289~1|PlusApertureTolerance=50|Record=GerberX2View|Sorted=False|UncheckPlotDrillDrawingPair0_Backdrill=False|UncheckPlotDrillDrawingPair0_Checked=False|UncheckPlotDrillDrawingPair0_DrillType=Regular|UncheckPlotDrillDrawingPair0_FileName= |UncheckPlotDrillDrawingPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingPair0_LowLayer=Top Layer|UncheckPlotDrillGuidePair0_Backdrill=False|UncheckPlotDrillGuidePair0_Checked=False|UncheckPlotDrillGuidePair0_DrillType=Regular|UncheckPlotDrillGuidePair0_FileName= |UncheckPlotDrillGuidePair0_HighLayer=Bottom Layer|UncheckPlotDrillGuidePair0_LowLayer=Top Layer|DocumentPath=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELL_HOLDER.PcbDoc
-OutputType4=NC Drill
-OutputName4=NC Drill Files
-OutputCategory4=Fabrication
-OutputDocumentPath4=ETR_CELLMETER_CELL_HOLDER.PcbDoc
+Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELL_HOLDER.PcbDoc
+OutputType4=PCBDrawing
+OutputName4=Draftsman
+OutputCategory4=Documentation
+OutputDocumentPath4=ETR_CELLMETER_CELL_HOLDER.PCBDwf
 OutputVariantName4=
 OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
-OutputEnabled4_OutputMedium2=0
-OutputEnabled4_OutputMedium3=2
+OutputEnabled4_OutputMedium2=2
+OutputEnabled4_OutputMedium3=0
 OutputEnabled4_OutputMedium4=0
 OutputDefault4=0
-Configuration4_Name1=OutputConfigurationParameter1
-Configuration4_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELL_HOLDER.PcbDoc
-OutputType5=PCBDrawing
-OutputName5=Draftsman
-OutputCategory5=Documentation
-OutputDocumentPath5=ETR_CELLMETER_CELL_HOLDER.PCBDwf
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType5=Gerber
+OutputName5=Gerber Files
+OutputCategory5=Fabrication
+OutputDocumentPath5=ETR_CELLMETER_CELL_HOLDER.PcbDoc
 OutputVariantName5=
 OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
-OutputEnabled5_OutputMedium2=2
-OutputEnabled5_OutputMedium3=0
+OutputEnabled5_OutputMedium2=0
+OutputEnabled5_OutputMedium3=2
 OutputEnabled5_OutputMedium4=0
 OutputDefault5=0
-PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration5_Name1=OutputConfigurationParameter1
+Configuration5_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|BoardID=RSEKATTB|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=False|GenerateDRCRulesFile=False|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|OutputFormat=Different|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16777217~1,16842751~1,16973830~1,16973831~1,16973834~1,16973835~1,16973832~1,16973833~1,16908289~1|PlotBoardProfile=True|PlotBoardProfileFileName= |PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UncheckPlotDrillDrawingLayerPair0_Backdrill=False|UncheckPlotDrillDrawingLayerPair0_Checked=False|UncheckPlotDrillDrawingLayerPair0_DrillType=Regular|UncheckPlotDrillDrawingLayerPair0_FileName= |UncheckPlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingLayerPair0_LowLayer=Top Layer|UncheckPlotDrillGuideLayerPair0_Backdrill=False|UncheckPlotDrillGuideLayerPair0_Checked=False|UncheckPlotDrillGuideLayerPair0_DrillType=Regular|UncheckPlotDrillGuideLayerPair0_FileName= |UncheckPlotDrillGuideLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillGuideLayerPair0_LowLayer=Top Layer|DocumentPath=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELL_HOLDER.PcbDoc
 
 [PublishSettings]
-OutputFilePath2=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\Job1.PDF
+OutputFilePath2=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELLHOLDER.PDF
 ReleaseManaged2=0
-OutputBasePath2=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
+OutputBasePath2=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -148,9 +148,9 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
+OutputFilePath3=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
 ReleaseManaged3=0
-OutputBasePath3=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
+OutputBasePath3=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -163,7 +163,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=
+OutputBasePath4=Project Outputs for ETR_CELLMETER_CELL_HOLDER
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -200,9 +200,9 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\Job1.PDF
+RelativeOutputPath2=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\ETR_CELLMETER_CELLHOLDER.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\Users\xenia\Documents\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
+RelativeOutputPath3=C:\Users\berna\OneDrive\download\New\download\Documentos\GitHub\CAPACIMETER\HW\2_Altium project\ETR_CELLMETER_CELL_HOLDER\Project Outputs for ETR_CELLMETER_CELL_HOLDER\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
