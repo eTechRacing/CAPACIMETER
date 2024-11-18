@@ -21,6 +21,8 @@
 #include "analog.h"
 #include "stdlib.h"
 #include "MCP3302.h"
+#include "state_manager.h"
+#include "can_comunication_cellmeter.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -104,7 +106,7 @@ int main(void)
   MX_SPI1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-//HAL_ADC_Start_DMA(&hadc1, ADC_NTC_CURR, 3);
+HAL_ADC_Start_DMA(&hadc1, ADC_NTC_CURR, 3);
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -12,8 +12,9 @@
 
 uint16_t OVER_VOLT[2];
 uint16_t UNDER_VOLT[2];
+uint32_t ADC_NTC_CURR[3];
 
-void ANALOG_LEC(SPI_HandleTypeDef spi_channel, ADC_HandleTypeDef adc){
+void ANALOG_LEC(SPI_HandleTypeDef spi_channel){
 	ADC_VOLT(spi_channel);
 	for(int i = 0;i <= 2;i++){
 		if(VOLTATGES[i] <= MIN_VOLT){
@@ -29,9 +30,6 @@ void ANALOG_LEC(SPI_HandleTypeDef spi_channel, ADC_HandleTypeDef adc){
 			OVER_VOLT[i] = 0;
 		}
 	}
-	HAL_ADC_Start(adc);
-	HAL_ADC_PollForConversion(adc, 20);
-	ADC_NTC_CURR = HAL_ADC_GetValue(adc);
 	for(int i = 0;i <= 2;i++){
 	if(ADC_NTC_CURR[i] >= MAX_TEMP){
 		OVER_TEMP[i] = 1;
