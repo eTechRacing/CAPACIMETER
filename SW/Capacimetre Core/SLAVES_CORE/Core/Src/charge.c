@@ -18,7 +18,7 @@ uint8_t CHECK_CHARGE_CYCLE_CONDITIONS(uint8_t selected_cell){ //1 si les condici
 	//REG0h status.........
 	//mp2770_etr_ReadOneSlave/mp2770_etr_ReadAllSlaves.......
 	//mp2770_etr_FaultRead.........
-	if(borrar == 0/*Condicions per considerar que les condicions son optimes per carregar..........*/){
+	if(borrar == 0/*Condicions per considerar que les condicions son optimes per carregar!!!!!!!!!!!!*/){
 		return 1;
 	}else{
 		return 0;
@@ -46,8 +46,8 @@ void SELECTED_CELL_CHARGE(SPI_HandleTypeDef spi_channel, uint8_t selected_cell){
 		 }
 		 break;
 	case 1:
-		//Kn2 to charge position.........
-		//Kn1 to CLOSE position..........
+		//Kn2 to charge position!!!!!!!!!!
+		//Kn1 to CLOSE position!!!!!!!!!!!!
 		SET_CHARGE_MODE_FOR_SELECTED_CELL(selected_cell);
 		//SEND: Charge started message to comunication manager---------------
 		break;

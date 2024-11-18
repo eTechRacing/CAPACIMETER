@@ -18,7 +18,7 @@
 uint8_t CELL_PRESENCE(uint8_t cell_to_check_presence){
 	uint8_t borrar = 0;
 	if(cell_to_check_presence == 1){//Valorar si hi ha cel·la 1
-		if(borrar == 0/*valorar presencia cel·la 1 lectura de voltatge superior a ..........*/){
+		if(borrar == 0/*valorar presencia cel·la 1 lectura de voltatge superior a .!!!!!!!!!!!!!*/){
 			return 1; //Si que hi ha cel·la
 		}else{
 			return 0; //No hi ha cel·la
@@ -26,7 +26,7 @@ uint8_t CELL_PRESENCE(uint8_t cell_to_check_presence){
 	}
 
 	else if(cell_to_check_presence == 2){//Valorar si hi ha cel·la 1
-		if(borrar == 0/*valorar presencia cel·la 1..........*/){
+		if(borrar == 0/*valorar presencia cel·la 1!!!!!!!!!!!*/){
 			return 1; //Si que hi ha cel·la
 		}else{
 			return 0; //No hi ha cel·la
@@ -47,7 +47,7 @@ void SELECTED_CELL_STANDBY(SPI_HandleTypeDef spi_channel, uint8_t selected_cell)
 		}
 		break;
 	case 1:
-		//Kn1 to open position.........
+		//Kn1 to open position!!!!!!!!!!!!!!
 		ANALOG_LEC(spi_channel);
 		if(VALUES_BETWEEN_MARGIN(selected_cell) == 1){
 			//SEND: value error-------------

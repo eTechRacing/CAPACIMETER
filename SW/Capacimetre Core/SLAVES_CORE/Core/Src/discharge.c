@@ -94,11 +94,11 @@ uint8_t VALUES_BETWEEN_MARGIN(uint8_t selected_cell){
 void DISCHARGE(SPI_HandleTypeDef spi_channel, uint8_t selected_cell){
 	uint8_t Estat = 0;
 	switch(Estat){
-	case 0://LECTURES
+	case 0:
 		ANALOG_LEC(spi_channel);
 		Estat = 1;
 		break;
-	case 1://VALORAR SI ESTA DINS ELS MARGES
+	case 1:
 		if(VALUES_BETWEEN_MARGIN(selected_cell) == 1){
 			//SEND: value error-------------
 			Estat = 0;
@@ -108,9 +108,9 @@ void DISCHARGE(SPI_HandleTypeDef spi_channel, uint8_t selected_cell){
 		}
 		break;
 	case 2:
-		//Set DAC output analog value...........
-		//Kn2 to discharge position...........
-		//Kn1 to CLOSE postion...............
+		//Set DAC output analog value.!!!!!!!!!!
+		//Kn2 to discharge position!!!!!!!!!!!!
+		//Kn1 to CLOSE postion!!!!!!!!!!!!
 		//SEND: Discharge started message-----------
 		if(selected_cell == 1){
 			is_Cell1_discharging = 1;
