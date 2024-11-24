@@ -21,8 +21,13 @@ extern uint16_t UNDER_VOLT[2];
 extern uint16_t OVER_TEMP[2];
 extern uint16_t UNDER_TEMP[2];
 extern uint16_t OVER_CURR[1];
-extern uint16_t ADC_NTC_CURR[3];
+extern uint32_t ADC_NTC_CURR[3];
 
-void ANALOG_LEC(SPI_HandleTypeDef spi_channel, ADC_HandleTypeDef adc);
+extern uint8_t UV_FLAG;
+extern uint8_t OV_FLAG;
+extern uint8_t UT_FLAG;
+extern uint8_t OT_FLAG;
+
+void ANALOG_LEC(SPI_HandleTypeDef spi_channel);
 
 #endif /* INC_ANALOG_H_ */

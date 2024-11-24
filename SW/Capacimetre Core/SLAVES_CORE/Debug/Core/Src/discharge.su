@@ -1,0 +1,3 @@
+../Core/Src/discharge.c:25:9:VALUES_BETWEEN_MARGIN	16	static
+../Core/Src/discharge.c:94:6:DISCHARGE	88	static
+../Core/Src/discharge.c:125:6:SELECTED_CELL_DISCHARGE	8	static

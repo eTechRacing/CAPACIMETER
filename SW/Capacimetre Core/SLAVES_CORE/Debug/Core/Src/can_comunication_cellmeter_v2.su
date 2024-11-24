@@ -1,0 +1,8 @@
+../Core/Src/can_comunication_cellmeter_v2.c:107:6:CAN_Filter	8	static
+../Core/Src/can_comunication_cellmeter_v2.c:120:6:CAN_TX_ERROR_SLAVEX_CACB	24	static
+../Core/Src/can_comunication_cellmeter_v2.c:166:6:CAN_TX_CELLA_LECTURES	24	static
+../Core/Src/can_comunication_cellmeter_v2.c:188:6:CAN_TX_CELLB_LECTURES	24	static
+../Core/Src/can_comunication_cellmeter_v2.c:210:6:CAN_TX_SLAVEX_CONTROL	24	static
+../Core/Src/can_comunication_cellmeter_v2.c:232:7:errors_reset_cellA	4	static
+../Core/Src/can_comunication_cellmeter_v2.c:250:7:errors_reset_cellB	4	static
+../Core/Src/can_comunication_cellmeter_v2.c:268:7:comunications_manager	16	static
