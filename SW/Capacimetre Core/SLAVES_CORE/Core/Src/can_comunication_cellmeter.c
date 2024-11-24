@@ -1,11 +1,11 @@
 /*
- * can_comunication_cellmeter_v2.c
+ * can_comunication_cellmeter.c
  *
  *  Created on: Nov 8, 2024
  *      Author: Carmen Unió Cruz
  */
 
-#include "can_comunication_cellmeter_v2.h"
+#include "can_comunication_cellmeter.h"
 #include <stdint.h>
 #include "main.h"
 
@@ -101,7 +101,7 @@ uint8_t cellB_resendcurrentcharge = 0;
 uint8_t cellB_resendmaxtemperature;
 uint8_t cellB_resendminvoltage = 2.5;
 uint8_t cellB_resendmaxvoltage = 4.2;
-uint8_t cell_resendcellstate;
+uint8_t cellB_resendcellstate;
 
 
 void CAN_Filter(CAN_FilterTypeDef filtercan){
@@ -223,6 +223,46 @@ void CAN_TX_SLAVEX_CONTROL(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader
 	txdata[5] = cellB_temperature << 8;
 	txdata[6] = cellB_timer;
 	txdata[7] = cellB_timer << 8;
+
+	if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
+		Error_Handler();
+	}
+}
+
+void CAN_TX_SLAVEX_CELLA_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader){
+	uint8_t txdata[7];
+	uint32_t txmailbox;
+	txheader.DLC = dlc_SLAVEX_RESEND_LECTURES;
+	txheader.StdId = (id_SLAVEX_RESEND_LECTURES + CELLA);
+	txheader.RTR = CAN_RTR_DATA;
+	txheader.IDE = CAN_ID_STD;
+
+	txdata[0] = cellA_resendcurrentdischarge;
+	txdata[1] = cellA_resendcurrentcharge;
+	txdata[2] = cellA_resendmaxtemperature;
+	txdata[3] = cellA_resendminvoltage;
+	txdata[4] = cellA_resendmaxvoltage;
+	txdata[5] = cellA_resendcellstate << 6;
+
+	if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
+		Error_Handler();
+	}
+}
+
+void CAN_TX_SLAVEX_CELLB_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader){
+	uint8_t txdata[7];
+	uint32_t txmailbox;
+	txheader.DLC = dlc_SLAVEX_RESEND_LECTURES;
+	txheader.StdId = (id_SLAVEX_RESEND_LECTURES + CELLB);
+	txheader.RTR = CAN_RTR_DATA;
+	txheader.IDE = CAN_ID_STD;
+
+	txdata[0] = cellB_resendcurrentdischarge;
+	txdata[1] = cellB_resendcurrentcharge;
+	txdata[2] = cellB_resendmaxtemperature;
+	txdata[3] = cellB_resendminvoltage;
+	txdata[4] = cellB_resendmaxvoltage;
+	txdata[5] = cellB_resendcellstate << 6;
 
 	if(HAL_CAN_AddTxMessage(&hcan1, &txheader, txdata, &txmailbox) != HAL_OK){
 		Error_Handler();

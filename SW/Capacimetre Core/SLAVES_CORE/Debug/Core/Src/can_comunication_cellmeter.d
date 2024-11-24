@@ -1,6 +1,6 @@
 Core/Src/can_comunication_cellmeter.o: \
  ../Core/Src/can_comunication_cellmeter.c \
- ../Core/Inc/can_comunication_cellmeter.h ../Core/Inc/main.h \
+ ../Core/Inc/can_comunication_cellmeter.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -30,7 +30,6 @@ Core/Src/can_comunication_cellmeter.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Core/Inc/main.h
 ../Core/Inc/can_comunication_cellmeter.h:
-../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:

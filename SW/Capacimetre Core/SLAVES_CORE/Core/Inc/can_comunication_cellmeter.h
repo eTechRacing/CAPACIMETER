@@ -1,12 +1,12 @@
 /*
- * can_comunication_cellmeter_v2.h
+ * can_comunication_cellmeter.h
  *
  *  Created on: Nov 8, 2024
  *      Author: Carmen Unió Cruz
  */
 
-#ifndef INC_CAN_COMUNICATION_CELLMETER_V2_H_
-#define INC_CAN_COMUNICATION_CELLMETER_V2_H_
+#ifndef INC_CAN_COMUNICATION_CELLMETER_H_
+#define INC_CAN_COMUNICATION_CELLMETER_H_
 
 #include <stdint.h>
 #include "stm32f1xx_hal.h"
@@ -123,8 +123,26 @@ extern uint8_t cellB_resendmaxvoltage;
 extern uint8_t cell_resendcellstate;
 
 
+void CAN_Filter(CAN_FilterTypeDef filtercan);
+
+void CAN_TX_ERROR_SLAVEX_CACB(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void CAN_TX_CELLA_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void CAN_TX_CELLB_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void CAN_TX_SLAVEX_CONTROL(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void CAN_TX_SLAVEX_CELLA_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void CAN_TX_SLAVEX_CELLB_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader);
+
+void errors_reset_cellA(void);
+
+void errors_reset_cellB(void);
+
 void comunications_manager(CAN_HandleTypeDef hcan1,
 	    CAN_RxHeaderTypeDef rxheader,
 	    uint8_t *rxdata);
 
-#endif /* INC_CAN_COMUNICATION_CELLMETER_V2_H_ */
+#endif /* INC_CAN_COMUNICATION_CELLMETER_H_ */

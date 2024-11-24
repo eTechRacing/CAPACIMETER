@@ -585,53 +585,179 @@ Discarded input sections
  .text          0x00000000        0x0 ./Core/Src/can_comunication_cellmeter.o
  .data          0x00000000        0x0 ./Core/Src/can_comunication_cellmeter.o
  .bss           0x00000000        0x0 ./Core/Src/can_comunication_cellmeter.o
- .bss.TxHeader  0x00000000       0x18 ./Core/Src/can_comunication_cellmeter.o
- .bss.RxHeader  0x00000000       0x1c ./Core/Src/can_comunication_cellmeter.o
- .bss.CANFilter
-                0x00000000       0x28 ./Core/Src/can_comunication_cellmeter.o
- .text.canfilter
+ .bss.cellA_generalerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_NTCOvertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_NTCUndertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_chargegeneralerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_thermalshutdown
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_watchdogerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_overvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_dischargegeneralerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_overcurrentrequested
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_Rovertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_overcurrent
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_undercurrent
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_undervoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_temptransistor
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_generalerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_NTCOvertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_NTCUndertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_chargegeneralerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_thermalshutdown
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_watchdogerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_overvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_dischargegeneralerror
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_overcurrentrequested
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_Rovertemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_overcurrent
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_undercurrent
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_undervoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_temptransistor
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_voltage
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_current
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_temperature
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_timer
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_voltage
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_current
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_temperature
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_timer
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.master_keepalive
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.slaveX_keepalive
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_cellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_cellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_tempdischargesystem
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_tempdischargesystem
+                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_setcurrentdischarge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_setcurrentcharge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_setmaxtemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellA_setminvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellA_setmaxvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_setcellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_setlectures_recieved
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_setcurrentdischarge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_setcurrentcharge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_setmaxtemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellB_setminvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellB_setmaxvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_setcellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_setlectures_recieved
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_resendcurrentdischarge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_resendcurrentcharge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_resendmaxtemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellA_resendminvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellA_resendmaxvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellA_resendcellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_resendcurrentdischarge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_resendcurrentcharge
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_resendmaxtemperature
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellB_resendminvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .data.cellB_resendmaxvoltage
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .bss.cellB_resendcellstate
+                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_Filter
                 0x00000000       0x40 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxCellErrors
-                0x00000000       0x6e ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxCurrent1_4
-                0x00000000       0xa6 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxCurrent5_8
-                0x00000000       0xa6 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxTimerCell
-                0x00000000       0x7a ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxControlCurrent
-                0x00000000       0x5c ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxVoltage1_4
-                0x00000000       0xa6 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxVoltage5_8
-                0x00000000       0x90 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxTemperatures
-                0x00000000       0x7a ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxDischargeReTemp
-                0x00000000       0x7a ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxRPMRefri
-                0x00000000       0x56 ./Core/Src/can_comunication_cellmeter.o
- .text.CAN_TxCellDisconnect
-                0x00000000       0x50 ./Core/Src/can_comunication_cellmeter.o
- .text.rx_sorter
-                0x00000000       0x8a ./Core/Src/can_comunication_cellmeter.o
- .debug_info    0x00000000      0xbb1 ./Core/Src/can_comunication_cellmeter.o
- .debug_abbrev  0x00000000      0x210 ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_ERROR_SLAVEX_CACB
+                0x00000000      0x378 ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_CELLA_LECTURES
+                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_CELLB_LECTURES
+                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_SLAVEX_CONTROL
+                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_SLAVEX_CELLA_RESEND_LECTURES
+                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter.o
+ .text.CAN_TX_SLAVEX_CELLB_RESEND_LECTURES
+                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter.o
+ .text.errors_reset_cellA
+                0x00000000       0x98 ./Core/Src/can_comunication_cellmeter.o
+ .text.errors_reset_cellB
+                0x00000000       0x98 ./Core/Src/can_comunication_cellmeter.o
+ .text.comunications_manager
+                0x00000000      0x284 ./Core/Src/can_comunication_cellmeter.o
+ .debug_info    0x00000000      0xf5d ./Core/Src/can_comunication_cellmeter.o
+ .debug_abbrev  0x00000000      0x256 ./Core/Src/can_comunication_cellmeter.o
  .debug_aranges
-                0x00000000       0x80 ./Core/Src/can_comunication_cellmeter.o
+                0x00000000       0x68 ./Core/Src/can_comunication_cellmeter.o
  .debug_rnglists
-                0x00000000       0x60 ./Core/Src/can_comunication_cellmeter.o
- .debug_macro   0x00000000      0x1d3 ./Core/Src/can_comunication_cellmeter.o
+                0x00000000       0x52 ./Core/Src/can_comunication_cellmeter.o
+ .debug_macro   0x00000000      0x1cf ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000      0xaa8 ./Core/Src/can_comunication_cellmeter.o
- .debug_macro   0x00000000      0x227 ./Core/Src/can_comunication_cellmeter.o
- .debug_macro   0x00000000       0x2e ./Core/Src/can_comunication_cellmeter.o
- .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x8e ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x51 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000      0x103 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x6a ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000      0x1df ./Core/Src/can_comunication_cellmeter.o
+ .debug_macro   0x00000000      0x227 ./Core/Src/can_comunication_cellmeter.o
+ .debug_macro   0x00000000       0x2e ./Core/Src/can_comunication_cellmeter.o
+ .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x1c ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0xbd ./Core/Src/can_comunication_cellmeter.o
@@ -661,261 +787,13 @@ Discarded input sections
  .debug_macro   0x00000000      0x140 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000      0x217 ./Core/Src/can_comunication_cellmeter.o
  .debug_macro   0x00000000       0xdf ./Core/Src/can_comunication_cellmeter.o
- .debug_macro   0x00000000       0xd0 ./Core/Src/can_comunication_cellmeter.o
- .debug_line    0x00000000      0xa89 ./Core/Src/can_comunication_cellmeter.o
- .debug_str     0x00000000    0xadd47 ./Core/Src/can_comunication_cellmeter.o
+ .debug_macro   0x00000000       0x52 ./Core/Src/can_comunication_cellmeter.o
+ .debug_line    0x00000000      0xb10 ./Core/Src/can_comunication_cellmeter.o
+ .debug_str     0x00000000    0xae03e ./Core/Src/can_comunication_cellmeter.o
  .comment       0x00000000       0x44 ./Core/Src/can_comunication_cellmeter.o
- .debug_frame   0x00000000      0x270 ./Core/Src/can_comunication_cellmeter.o
+ .debug_frame   0x00000000      0x1c8 ./Core/Src/can_comunication_cellmeter.o
  .ARM.attributes
                 0x00000000       0x2d ./Core/Src/can_comunication_cellmeter.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .group         0x00000000        0xc ./Core/Src/can_comunication_cellmeter_v2.o
- .text          0x00000000        0x0 ./Core/Src/can_comunication_cellmeter_v2.o
- .data          0x00000000        0x0 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss           0x00000000        0x0 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_generalerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_NTCOvertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_NTCUndertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_chargegeneralerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_thermalshutdown
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_watchdogerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_overvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_dischargegeneralerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_overcurrentrequested
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_Rovertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_overcurrent
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_undercurrent
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_undervoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_temptransistor
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_generalerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_NTCOvertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_NTCUndertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_chargegeneralerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_thermalshutdown
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_watchdogerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_overvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_dischargegeneralerror
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_overcurrentrequested
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_Rovertemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_overcurrent
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_undercurrent
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_undervoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_temptransistor
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_voltage
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_current
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_temperature
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_timer
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_voltage
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_current
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_temperature
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_timer
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.master_keepalive
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.slaveX_keepalive
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_cellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_cellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_tempdischargesystem
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_tempdischargesystem
-                0x00000000        0x2 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_setcurrentdischarge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_setcurrentcharge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_setmaxtemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellA_setminvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellA_setmaxvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_setcellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_setlectures_recieved
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_setcurrentdischarge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_setcurrentcharge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_setmaxtemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellB_setminvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellB_setmaxvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_setcellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_setlectures_recieved
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_resendcurrentdischarge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_resendcurrentcharge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_resendmaxtemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellA_resendminvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellA_resendmaxvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellA_resendcellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_resendcurrentdischarge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_resendcurrentcharge
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cellB_resendmaxtemperature
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellB_resendminvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .data.cellB_resendmaxvoltage
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .bss.cell_resendcellstate
-                0x00000000        0x1 ./Core/Src/can_comunication_cellmeter_v2.o
- .text.CAN_Filter
-                0x00000000       0x40 ./Core/Src/can_comunication_cellmeter_v2.o
- .text.CAN_TX_ERROR_SLAVEX_CACB
-                0x00000000      0x378 ./Core/Src/can_comunication_cellmeter_v2.o
- .text.CAN_TX_CELLA_LECTURES
-                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter_v2.o
- .text.CAN_TX_CELLB_LECTURES
-                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter_v2.o
- .text.CAN_TX_SLAVEX_CONTROL
-                0x00000000       0x8c ./Core/Src/can_comunication_cellmeter_v2.o
- .text.errors_reset_cellA
-                0x00000000       0x98 ./Core/Src/can_comunication_cellmeter_v2.o
- .text.errors_reset_cellB
-                0x00000000       0x98 ./Core/Src/can_comunication_cellmeter_v2.o
- .text.comunications_manager
-                0x00000000      0x284 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_info    0x00000000      0xec4 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_abbrev  0x00000000      0x257 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_aranges
-                0x00000000       0x58 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_rnglists
-                0x00000000       0x44 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x1cf ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0xaa8 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x8e ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x51 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x103 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x6a ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x1df ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x227 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x2e ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x1c ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x22 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0xbd ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0xd23 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000    0x14912 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x6d ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000     0x34a2 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x189 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x5c ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x5bc ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x644 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x1cb ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x114 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x214 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x27 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x13c ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x1bc ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x30 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x3c ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x40f ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x57 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x46a ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x1c3 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x87 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x24f ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x287 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x140 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000      0x217 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0xdf ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_macro   0x00000000       0x52 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_line    0x00000000      0xaac ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_str     0x00000000    0xadffb ./Core/Src/can_comunication_cellmeter_v2.o
- .comment       0x00000000       0x44 ./Core/Src/can_comunication_cellmeter_v2.o
- .debug_frame   0x00000000      0x168 ./Core/Src/can_comunication_cellmeter_v2.o
- .ARM.attributes
-                0x00000000       0x2d ./Core/Src/can_comunication_cellmeter_v2.o
  .group         0x00000000        0xc ./Core/Src/charge.o
  .group         0x00000000        0xc ./Core/Src/charge.o
  .group         0x00000000        0xc ./Core/Src/charge.o
@@ -1051,9 +929,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Core/Src/charge.o
  .debug_macro   0x00000000       0x29 ./Core/Src/charge.o
  .debug_macro   0x00000000       0x1c ./Core/Src/charge.o
- .debug_macro   0x00000000       0xd6 ./Core/Src/charge.o
+ .debug_macro   0x00000000       0x58 ./Core/Src/charge.o
  .debug_line    0x00000000      0x92c ./Core/Src/charge.o
- .debug_str     0x00000000    0xb0d8e ./Core/Src/charge.o
+ .debug_str     0x00000000    0xb0bda ./Core/Src/charge.o
  .comment       0x00000000       0x44 ./Core/Src/charge.o
  .debug_frame   0x00000000       0xb8 ./Core/Src/charge.o
  .ARM.attributes
@@ -1336,7 +1214,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x29 ./Core/Src/main.o
  .debug_macro   0x00000000       0x22 ./Core/Src/main.o
  .debug_macro   0x00000000       0x1c ./Core/Src/main.o
- .debug_macro   0x00000000       0xd6 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x58 ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/standby.o
  .group         0x00000000        0xc ./Core/Src/standby.o
  .group         0x00000000        0xc ./Core/Src/standby.o
@@ -1469,10 +1347,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Core/Src/standby.o
  .debug_macro   0x00000000       0x29 ./Core/Src/standby.o
  .debug_macro   0x00000000       0x1c ./Core/Src/standby.o
- .debug_macro   0x00000000       0xd6 ./Core/Src/standby.o
+ .debug_macro   0x00000000       0x58 ./Core/Src/standby.o
  .debug_macro   0x00000000       0x28 ./Core/Src/standby.o
  .debug_line    0x00000000      0x933 ./Core/Src/standby.o
- .debug_str     0x00000000    0xb0de2 ./Core/Src/standby.o
+ .debug_str     0x00000000    0xb0c2e ./Core/Src/standby.o
  .comment       0x00000000       0x44 ./Core/Src/standby.o
  .debug_frame   0x00000000       0x68 ./Core/Src/standby.o
  .ARM.attributes
@@ -1608,9 +1486,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Core/Src/state_manager.o
  .debug_macro   0x00000000       0x29 ./Core/Src/state_manager.o
  .debug_macro   0x00000000       0x1c ./Core/Src/state_manager.o
- .debug_macro   0x00000000       0xd6 ./Core/Src/state_manager.o
+ .debug_macro   0x00000000       0x58 ./Core/Src/state_manager.o
  .debug_line    0x00000000      0x8fb ./Core/Src/state_manager.o
- .debug_str     0x00000000    0xb0da7 ./Core/Src/state_manager.o
+ .debug_str     0x00000000    0xb0bf3 ./Core/Src/state_manager.o
  .comment       0x00000000       0x44 ./Core/Src/state_manager.o
  .debug_frame   0x00000000       0x40 ./Core/Src/state_manager.o
  .ARM.attributes
@@ -4530,7 +4408,6 @@ LOAD ./Core/Src/I2C_for_MCP23008.o
 LOAD ./Core/Src/MCP3302.o
 LOAD ./Core/Src/analog.o
 LOAD ./Core/Src/can_comunication_cellmeter.o
-LOAD ./Core/Src/can_comunication_cellmeter_v2.o
 LOAD ./Core/Src/charge.o
 LOAD ./Core/Src/discharge.o
 LOAD ./Core/Src/main.o
@@ -5215,40 +5092,40 @@ LOAD C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x0000dae3      0xc22 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
  .debug_line    0x0000e705     0x1d01 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o
 
-.debug_str      0x00000000    0xb4476
+.debug_str      0x00000000    0xb42c2
  .debug_str     0x00000000    0xb06b5 ./Core/Src/analog.o
                               0xb0a5f (size before relaxing)
- .debug_str     0x000b06b5      0xc6a ./Core/Src/main.o
-                              0xb1738 (size before relaxing)
- .debug_str     0x000b131f      0x4b4 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_str     0x000b06b5      0xab6 ./Core/Src/main.o
+                              0xb1584 (size before relaxing)
+ .debug_str     0x000b116b      0x4b4 ./Core/Src/stm32f1xx_hal_msp.o
                               0xae302 (size before relaxing)
- .debug_str     0x000b17d3       0xdc ./Core/Src/stm32f1xx_it.o
+ .debug_str     0x000b161f       0xdc ./Core/Src/stm32f1xx_it.o
                               0xad7af (size before relaxing)
- .debug_str     0x000b18af       0xb1 ./Core/Src/system_stm32f1xx.o
+ .debug_str     0x000b16fb       0xb1 ./Core/Src/system_stm32f1xx.o
                               0xad4bd (size before relaxing)
- .debug_str     0x000b1960       0x44 ./Core/Startup/startup_stm32f105rctx.o
+ .debug_str     0x000b17ac       0x44 ./Core/Startup/startup_stm32f105rctx.o
                                  0x96 (size before relaxing)
- .debug_str     0x000b19a4      0x384 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_str     0x000b17f0      0x384 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                               0xadc97 (size before relaxing)
- .debug_str     0x000b1d28      0x378 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_str     0x000b1b74      0x378 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
                               0xadb66 (size before relaxing)
- .debug_str     0x000b20a0      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+ .debug_str     0x000b1eec      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
                               0xadb36 (size before relaxing)
- .debug_str     0x000b2378      0x584 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.o
+ .debug_str     0x000b21c4      0x584 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.o
                               0xadc8a (size before relaxing)
- .debug_str     0x000b28fc      0x26c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_str     0x000b2748      0x26c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
                               0xadbd5 (size before relaxing)
- .debug_str     0x000b2b68      0x216 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_str     0x000b29b4      0x216 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
                               0xad82b (size before relaxing)
- .debug_str     0x000b2d7e      0x31d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_str     0x000b2bca      0x31d ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
                               0xad816 (size before relaxing)
- .debug_str     0x000b309b      0xb9c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
+ .debug_str     0x000b2ee7      0xb9c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
                               0xae549 (size before relaxing)
- .debug_str     0x000b3c37      0x224 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_str     0x000b3a83      0x224 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
                               0xad92c (size before relaxing)
- .debug_str     0x000b3e5b      0x104 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ .debug_str     0x000b3ca7      0x104 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
                               0xad73a (size before relaxing)
- .debug_str     0x000b3f5f      0x517 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o
+ .debug_str     0x000b3dab      0x517 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.o
                               0xaddae (size before relaxing)
 
 .comment        0x00000000       0x43
