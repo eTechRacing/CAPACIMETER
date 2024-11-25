@@ -15,7 +15,7 @@
 
 //CHARGE/DISCHARGE PARAMENTERS
 extern uint8_t controlcurrent[3];
-
+/*
 extern uint8_t Cell1_GeneralError;
 extern uint8_t Cell1_NTCOvertemperature;
 extern uint8_t Cell1_NTCUndertemperature;
@@ -40,6 +40,7 @@ extern uint8_t Cell2_Overtemperature;
 extern uint8_t Cell2_Overcurrent;
 extern uint8_t Cell2_Undercurrent;
 extern uint8_t Cell2_TempTransistor;
+*/
 
 void STATE_MANAGER(uint8_t *message, SPI_HandleTypeDef spi_channel, uint8_t selected_cell);
 
