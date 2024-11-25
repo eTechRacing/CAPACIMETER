@@ -122,6 +122,7 @@ extern uint8_t cellB_resendminvoltage;
 extern uint8_t cellB_resendmaxvoltage;
 extern uint8_t cell_resendcellstate;
 
+/* ---------------------------------------------------------------------------- FUNCTIONS */
 
 void CAN_Filter(CAN_FilterTypeDef filtercan);
 
@@ -141,8 +142,5 @@ void errors_reset_cellA(void);
 
 void errors_reset_cellB(void);
 
-void comunications_manager(CAN_HandleTypeDef hcan1,
-	    CAN_RxHeaderTypeDef rxheader,
-	    uint8_t *rxdata);
-
+void comunications_manager(CAN_HandleTypeDef hcan1,CAN_RxHeaderTypeDef rxheader,CAN_TxHeaderTypeDef txheader, uint8_t *rxdata);
 #endif /* INC_CAN_COMUNICATION_CELLMETER_H_ */

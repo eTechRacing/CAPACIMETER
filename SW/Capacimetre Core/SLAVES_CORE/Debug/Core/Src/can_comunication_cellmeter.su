@@ -7,4 +7,4 @@
 ../Core/Src/can_comunication_cellmeter.c:252:6:CAN_TX_SLAVEX_CELLB_RESEND_LECTURES	24	static
 ../Core/Src/can_comunication_cellmeter.c:272:7:errors_reset_cellA	4	static
 ../Core/Src/can_comunication_cellmeter.c:290:7:errors_reset_cellB	4	static
-../Core/Src/can_comunication_cellmeter.c:308:7:comunications_manager	16	static
+../Core/Src/can_comunication_cellmeter.c:308:7:comunications_manager	72	static

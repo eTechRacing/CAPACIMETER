@@ -306,7 +306,7 @@ void CAN_TX_SLAVEX_CELLB_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTy
 	}
 
 	void comunications_manager(CAN_HandleTypeDef hcan1,
-		    CAN_RxHeaderTypeDef rxheader,
+		    CAN_RxHeaderTypeDef rxheader,CAN_TxHeaderTypeDef txheader,
 		    uint8_t *rxdata){
 
 		if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &rxheader, rxdata) != HAL_OK)
@@ -329,36 +329,47 @@ void CAN_TX_SLAVEX_CELLB_RESEND_LECTURES(CAN_HandleTypeDef hcan1, CAN_TxHeaderTy
 		switch(msg)
 
 			case 1:
-				// send slave keep alive
+
+  				CAN_TX_SLAVEX_CONTROL(hcan1, txheader);
 				msg ++;
+
 			case 2:
-				if(cellA_generalerror == 1){
-					// send errors
+
+				if(cellA_generalerror == 1 || cellB_generalerror == 1){
+					CAN_TX_ERROR_SLAVEX_CACB(hcan1, txheader);
 					errors_reset_cellA();
-				} if (cellB_generalerror == 1){
-					// send errors
 					errors_reset_cellB();
 				}
 				msg ++;
+
 			case 3:
-				// send lectures cell A
+
+				CAN_TX_CELLA_LECTURES(hcan1, txheader);
 				msg ++;
+
 			case 4:
-				// send lectures cell B
+
+				CAN_TX_CELLB_LECTURES(hcan1, txheader);
 				msg ++;
+
 			case 5:
+
 				if (cellA_setlectures_recieved == 1){
-					// re send set lectures cell A
+					CAN_TX_SLAVEX_CELLA_RESEND_LECTURES(hcan1, txheader);
 					cellA_setlectures_recieved = 0;
 				}
 				msg ++;
+
 			case 6:
+
 				if (cellB_setlectures_recieved == 1){
-					// re send set lectures cell B
+					CAN_TX_SLAVEX_CELLB_RESEND_LECTURES(hcan1, txheader);
 					cellB_setlectures_recieved = 0;
 				}
 				msg = 0;
+
 		break;
+
 
 	case (id_SLAVEX_CELLX_SET_LECTURES + CELLA):
 
