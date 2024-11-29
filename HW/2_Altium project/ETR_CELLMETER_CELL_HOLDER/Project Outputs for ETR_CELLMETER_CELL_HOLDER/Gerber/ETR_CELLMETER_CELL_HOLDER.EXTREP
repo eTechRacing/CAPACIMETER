@@ -1,19 +1,9 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: ETR_CELLMETER_CELL_HOLDER.GBR   12/11/2024  22:02:51
+Gerber File Extension Report For: ETR_CELLMETER_CELL_HOLDER.GBR   21/11/2024  10:56:01
 ------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------
 Layer Extension     Layer Description                      
 ------------------------------------------------------------------------------------------
-.GTO                Top Overlay                             
-.GTP                Top Paste                               
-.GTS                Top Solder                              
-.GTL                Top Layer                               
-.GBL                Bottom Layer                            
-.GBS                Bottom Solder                           
-.GBP                Bottom Paste                            
-.GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
-.GM                 Profile                                 
 ------------------------------------------------------------------------------------------
