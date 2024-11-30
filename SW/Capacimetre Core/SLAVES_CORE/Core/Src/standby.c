@@ -44,15 +44,17 @@ void SELECTED_CELL_STANDBY(SPI_HandleTypeDef spi_channel, uint8_t selected_cell)
 		}else{
 			//Change cell state to standby........
 			//SEND: state message-----------
+			cellA_cellstate = 0;
+			cellB_cellstate = 0;
 		}
 		break;
 	case 1:
 		//Kn1 to open position!!!!!!!!!!!!!!
 		ANALOG_LEC(spi_channel);
 		if(VALUES_BETWEEN_MARGIN(selected_cell) == 1){
-			//SEND: value error-------------
+			//SEND: value error------------- HECHO DENTRO DE LA FUNCION
 		}else{
-			//SEND: Values to comunication manger-------------
+			//SEND: Values to comunication manger------------- QUE VALUES?
 		}
 		//SEND: Standby to communication manager----------
 		break;
