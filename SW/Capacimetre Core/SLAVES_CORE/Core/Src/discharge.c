@@ -108,7 +108,7 @@ void DISCHARGE(SPI_HandleTypeDef spi_channel, uint8_t selected_cell){
 		}
 		break;
 	case 2:
-		//Set DAC output analog value.!!!!!!!!!!
+		//Set DAC output analog value.!!!!!!!!!!(Ecuació que em passa en Bernat Co que diu quina tensió ha de sortir en funció de la corrent que ciculi per la cel·la)
 		//Kn2 to discharge position!!!!!!!!!!!!
 		//Kn1 to CLOSE postion!!!!!!!!!!!!
 		//SEND: Discharge started message-----------
