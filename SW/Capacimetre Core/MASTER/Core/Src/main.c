@@ -71,6 +71,19 @@ static void MX_TIM12_Init(void);
 /* USER CODE BEGIN 0 */
 
 uint8_t analog_buffer[3];
+uint8_t errors_byte=0;
+
+void errors_byte_control (void){
+	//set or reset general error bit if at least 1 error exisits
+	if(errors_byte<=1){
+		errors_byte=0;
+	}
+	else{
+		errors_byte=errors_byte|0b00000001;
+	}
+
+
+}
 
 void master_init(void){
 	//apagar supply slaves
@@ -95,6 +108,7 @@ void slave_supply_init(void){
 	}
 	//reset bit error slaves supply
 	//reset bit error slaves supply overcurrent
+	errors_byte=errors_byte&0b11111001;
 }
 
 void power_manager(void){
@@ -102,11 +116,13 @@ void power_manager(void){
 		HAL_GPIO_WritePin(DCDC_M_EN_GPIO_Port, DCDC_M_EN_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(DCDC_S_EN_GPIO_Port, DCDC_S_EN_Pin, GPIO_PIN_RESET);
 		//set bit error slaves supply
+		errors_byte=errors_byte|0b00000010;
 	}
 	if(HAL_GPIO_ReadPin(FUSE_FLTB_GPIO_Port, FUSE_FLTB_Pin)==0){
 		HAL_GPIO_WritePin(DCDC_M_EN_GPIO_Port, DCDC_M_EN_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(DCDC_S_EN_GPIO_Port, DCDC_S_EN_Pin, GPIO_PIN_RESET);
 		//set bit error slaves supply overcurrent
+		errors_byte=errors_byte|0b00000100;
 	}
 }
 
@@ -116,12 +132,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) { //funció conversió DM
     	//uint8_t ntc2=analog_buffer[1]
     	//uint8_t imon=analog_buffer[2]
     }
-}
-
-void analog_data_manager(void){
-	//uint8_t ntc1=analog_buffer[0]
-	//uint8_t ntc2=analog_buffer[1]
-	//uint8_t imon=analog_buffer[2]
 }
 
 void capacity_calculation(void){
