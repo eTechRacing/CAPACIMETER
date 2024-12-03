@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -46,6 +47,20 @@ CAN_HandleTypeDef hcan1;
 
 DAC_HandleTypeDef hdac;
 
+/* Definitions for CELL1 */
+osThreadId_t CELL1Handle;
+const osThreadAttr_t CELL1_attributes = {
+  .name = "CELL1",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for CELL2 */
+osThreadId_t CELL2Handle;
+const osThreadAttr_t CELL2_attributes = {
+  .name = "CELL2",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -56,6 +71,9 @@ static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_DAC_Init(void);
+void Cell1(void *argument);
+void Cell2(void *argument);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -100,6 +118,45 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
+
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* USER CODE BEGIN RTOS_MUTEX */
+  /* add mutexes, ... */
+  /* USER CODE END RTOS_MUTEX */
+
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
+  /* add semaphores, ... */
+  /* USER CODE END RTOS_SEMAPHORES */
+
+  /* USER CODE BEGIN RTOS_TIMERS */
+  /* start timers, add new ones, ... */
+  /* USER CODE END RTOS_TIMERS */
+
+  /* USER CODE BEGIN RTOS_QUEUES */
+  /* add queues, ... */
+  /* USER CODE END RTOS_QUEUES */
+
+  /* Create the thread(s) */
+  /* creation of CELL1 */
+  CELL1Handle = osThreadNew(Cell1, NULL, &CELL1_attributes);
+
+  /* creation of CELL2 */
+  CELL2Handle = osThreadNew(Cell2, NULL, &CELL2_attributes);
+
+  /* USER CODE BEGIN RTOS_THREADS */
+  /* add threads, ... */
+  /* USER CODE END RTOS_THREADS */
+
+  /* USER CODE BEGIN RTOS_EVENTS */
+  /* add events, ... */
+  /* USER CODE END RTOS_EVENTS */
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -152,7 +209,7 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV4;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -313,20 +370,32 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, K22_Pin|K21_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, K22_Pin|K21_Pin|U_LED1_Pin|U_LED2_Pin
+                          |U_LED3_Pin|U_LED4_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, CELL2_LED1_Pin|CELL2_LED2_Pin|CS_3V3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, K12_Pin|K11_Pin|CELL1_LED2_Pin|CELL1_LED1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, K12_Pin|K11_Pin|CH1_INT_Pin|CELL1_LED2_Pin
+                          |CELL1_LED1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : K22_Pin K21_Pin */
-  GPIO_InitStruct.Pin = K22_Pin|K21_Pin;
+  /*Configure GPIO pins : K22_Pin K21_Pin U_LED1_Pin U_LED2_Pin
+                           U_LED3_Pin U_LED4_Pin */
+  GPIO_InitStruct.Pin = K22_Pin|K21_Pin|U_LED1_Pin|U_LED2_Pin
+                          |U_LED3_Pin|U_LED4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : CH2_INT_Pin ID1_Pin ID2_Pin ID3_Pin
+                           ID4_Pin */
+  GPIO_InitStruct.Pin = CH2_INT_Pin|ID1_Pin|ID2_Pin|ID3_Pin
+                          |ID4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : CELL2_LED1_Pin CELL2_LED2_Pin CS_3V3_Pin */
   GPIO_InitStruct.Pin = CELL2_LED1_Pin|CELL2_LED2_Pin|CS_3V3_Pin;
@@ -341,8 +410,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : K12_Pin K11_Pin CELL1_LED2_Pin CELL1_LED1_Pin */
-  GPIO_InitStruct.Pin = K12_Pin|K11_Pin|CELL1_LED2_Pin|CELL1_LED1_Pin;
+  /*Configure GPIO pins : K12_Pin K11_Pin CH1_INT_Pin CELL1_LED2_Pin
+                           CELL1_LED1_Pin */
+  GPIO_InitStruct.Pin = K12_Pin|K11_Pin|CH1_INT_Pin|CELL1_LED2_Pin
+                          |CELL1_LED1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -364,6 +435,42 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
+
+/* USER CODE BEGIN Header_Cell1 */
+/**
+  * @brief  Function implementing the CELL1 thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_Cell1 */
+void Cell1(void *argument)
+{
+  /* USER CODE BEGIN 5 */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_Cell2 */
+/**
+* @brief Function implementing the CELL2 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Cell2 */
+void Cell2(void *argument)
+{
+  /* USER CODE BEGIN Cell2 */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END Cell2 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.
