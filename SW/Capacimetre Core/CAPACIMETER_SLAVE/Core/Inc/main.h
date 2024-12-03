@@ -57,6 +57,32 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define K22_Pin GPIO_PIN_3
+#define K22_GPIO_Port GPIOE
+#define K21_Pin GPIO_PIN_4
+#define K21_GPIO_Port GPIOE
+#define Csense2_Pin GPIO_PIN_1
+#define Csense2_GPIO_Port GPIOC
+#define NTC1_Pin GPIO_PIN_2
+#define NTC1_GPIO_Port GPIOC
+#define NTC2_Pin GPIO_PIN_3
+#define NTC2_GPIO_Port GPIOC
+#define CELL2_LED1_Pin GPIO_PIN_1
+#define CELL2_LED1_GPIO_Port GPIOA
+#define CELL2_LED2_Pin GPIO_PIN_2
+#define CELL2_LED2_GPIO_Port GPIOA
+#define CSense1_Pin GPIO_PIN_5
+#define CSense1_GPIO_Port GPIOC
+#define K12_Pin GPIO_PIN_11
+#define K12_GPIO_Port GPIOD
+#define K11_Pin GPIO_PIN_12
+#define K11_GPIO_Port GPIOD
+#define CS_3V3_Pin GPIO_PIN_15
+#define CS_3V3_GPIO_Port GPIOA
+#define CELL1_LED2_Pin GPIO_PIN_3
+#define CELL1_LED2_GPIO_Port GPIOD
+#define CELL1_LED1_Pin GPIO_PIN_4
+#define CELL1_LED1_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 
