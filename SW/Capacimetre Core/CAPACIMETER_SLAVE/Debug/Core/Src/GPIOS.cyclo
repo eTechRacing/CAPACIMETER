@@ -1,0 +1,8 @@
+../Core/Src/GPIOS.c:12:6:rele_K11	2
+../Core/Src/GPIOS.c:20:6:rele_K12	2
+../Core/Src/GPIOS.c:28:6:rele_K21	2
+../Core/Src/GPIOS.c:36:6:rele_K22	2
+../Core/Src/GPIOS.c:44:6:LED1	2
+../Core/Src/GPIOS.c:52:6:LED2	2
+../Core/Src/GPIOS.c:60:6:LED3	2
+../Core/Src/GPIOS.c:68:6:LED4	2

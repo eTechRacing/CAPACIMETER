@@ -83,10 +83,10 @@ void Error_Handler(void);
 #define U_LED3_GPIO_Port GPIOE
 #define U_LED4_Pin GPIO_PIN_10
 #define U_LED4_GPIO_Port GPIOE
-#define K12_Pin GPIO_PIN_11
-#define K12_GPIO_Port GPIOD
 #define K11_Pin GPIO_PIN_12
 #define K11_GPIO_Port GPIOD
+#define K12_Pin GPIO_PIN_13
+#define K12_GPIO_Port GPIOD
 #define ID1_Pin GPIO_PIN_6
 #define ID1_GPIO_Port GPIOC
 #define ID2_Pin GPIO_PIN_7

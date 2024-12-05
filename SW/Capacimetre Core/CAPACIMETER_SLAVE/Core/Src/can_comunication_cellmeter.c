@@ -118,7 +118,7 @@ void CAN_Filter(CAN_FilterTypeDef filtercan){
 }
 
 void CAN_TX_ERROR_SLAVEX_CACB(CAN_HandleTypeDef hcan1, CAN_TxHeaderTypeDef txheader){
-	uint8_t txdata[7];
+	uint8_t txdata[7] = {0,0,0,0,0,0,0};
 	uint32_t txmailbox;
 	txheader.DLC = dlc_ERROR_SLAVEX_CACB;
 	txheader.StdId = (id_ERROR_SLAVEX_CACB + SLAVEX);

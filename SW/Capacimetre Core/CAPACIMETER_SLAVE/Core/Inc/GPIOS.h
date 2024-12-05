@@ -43,4 +43,9 @@ void rele_K12(uint8_t ESTAT);
 void rele_K21(uint8_t ESTAT);
 void rele_K22(uint8_t ESTAT);
 
+void LED1(uint8_t ESTAT);
+void LED2(uint8_t ESTAT);
+void LED3(uint8_t ESTAT);
+void LED4(uint8_t ESTAT);
+
 #endif /* INC_GPIOS_H_ */

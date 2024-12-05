@@ -1,0 +1,8 @@
+../Core/Src/GPIOS.c:12:6:rele_K11	16	static
+../Core/Src/GPIOS.c:20:6:rele_K12	16	static
+../Core/Src/GPIOS.c:28:6:rele_K21	16	static
+../Core/Src/GPIOS.c:36:6:rele_K22	16	static
+../Core/Src/GPIOS.c:44:6:LED1	16	static
+../Core/Src/GPIOS.c:52:6:LED2	16	static
+../Core/Src/GPIOS.c:60:6:LED3	16	static
+../Core/Src/GPIOS.c:68:6:LED4	16	static
