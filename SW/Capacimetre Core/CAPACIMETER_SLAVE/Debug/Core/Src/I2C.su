@@ -1,9 +1,0 @@
-../Core/Src/I2C.c:14:7:mp2770_etr_ReadAllSlaves	64	dynamic
-../Core/Src/I2C.c:27:7:mp2770_etr_ReadOneSlave	32	static
-../Core/Src/I2C.c:40:7:mp2770_etr_WriteAllSlaves	64	dynamic
-../Core/Src/I2C.c:53:7:mp2770_etr_WriteOneSlave	32	static
-../Core/Src/I2C.c:66:7:mp2770_etr_init	96	static
-../Core/Src/I2C.c:84:7:mp2770_etr_ReadSortADC	96	static
-../Core/Src/I2C.c:121:7:mp2770_etr_FaultRead	96	static
-../Core/Src/I2C.c:139:7:mp2770_etr_StartOneCharge	96	static
-../Core/Src/I2C.c:151:7:mp2770_etr_StartAllCharge	96	static

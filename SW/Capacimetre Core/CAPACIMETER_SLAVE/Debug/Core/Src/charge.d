@@ -29,7 +29,7 @@ Core/Src/charge.o: ../Core/Src/charge.c ../Core/Inc/MCP3302.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Core/Inc/state_manager.h ../Core/Inc/can_comunication_cellmeter.h \
- ../Core/Inc/charge.h ../Core/Inc/main.h
+ ../Core/Inc/charge.h ../Core/Inc/main.h ../Core/Inc/MP2770_I2C.h
 ../Core/Inc/MCP3302.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -65,3 +65,4 @@ Core/Src/charge.o: ../Core/Src/charge.c ../Core/Inc/MCP3302.h \
 ../Core/Inc/can_comunication_cellmeter.h:
 ../Core/Inc/charge.h:
 ../Core/Inc/main.h:
+../Core/Inc/MP2770_I2C.h:

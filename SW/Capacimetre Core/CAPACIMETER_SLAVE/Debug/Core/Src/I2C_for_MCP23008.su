@@ -1,4 +1,0 @@
-../Core/Src/I2C_for_MCP23008.c:13:6:MPC_etr_WritePin	24	static
-../Core/Src/I2C_for_MCP23008.c:27:9:MPC_etr_ReadPin	24	static
-../Core/Src/I2C_for_MCP23008.c:34:6:MPC_etr_TogglePin	24	static
-../Core/Src/I2C_for_MCP23008.c:44:6:MCP_etr_init	24	static

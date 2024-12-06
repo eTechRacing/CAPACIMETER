@@ -6,9 +6,8 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Core/Src/GPIOS.c \
-../Core/Src/I2C.c \
-../Core/Src/I2C_for_MCP23008.c \
 ../Core/Src/MCP3302.c \
+../Core/Src/MP2770_I2C.c \
 ../Core/Src/analog.c \
 ../Core/Src/can_comunication_cellmeter.c \
 ../Core/Src/charge.c \
@@ -24,9 +23,8 @@ C_SRCS += \
 
 OBJS += \
 ./Core/Src/GPIOS.o \
-./Core/Src/I2C.o \
-./Core/Src/I2C_for_MCP23008.o \
 ./Core/Src/MCP3302.o \
+./Core/Src/MP2770_I2C.o \
 ./Core/Src/analog.o \
 ./Core/Src/can_comunication_cellmeter.o \
 ./Core/Src/charge.o \
@@ -42,9 +40,8 @@ OBJS += \
 
 C_DEPS += \
 ./Core/Src/GPIOS.d \
-./Core/Src/I2C.d \
-./Core/Src/I2C_for_MCP23008.d \
 ./Core/Src/MCP3302.d \
+./Core/Src/MP2770_I2C.d \
 ./Core/Src/analog.d \
 ./Core/Src/can_comunication_cellmeter.d \
 ./Core/Src/charge.d \
@@ -66,7 +63,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/GPIOS.cyclo ./Core/Src/GPIOS.d ./Core/Src/GPIOS.o ./Core/Src/GPIOS.su ./Core/Src/I2C.cyclo ./Core/Src/I2C.d ./Core/Src/I2C.o ./Core/Src/I2C.su ./Core/Src/I2C_for_MCP23008.cyclo ./Core/Src/I2C_for_MCP23008.d ./Core/Src/I2C_for_MCP23008.o ./Core/Src/I2C_for_MCP23008.su ./Core/Src/MCP3302.cyclo ./Core/Src/MCP3302.d ./Core/Src/MCP3302.o ./Core/Src/MCP3302.su ./Core/Src/analog.cyclo ./Core/Src/analog.d ./Core/Src/analog.o ./Core/Src/analog.su ./Core/Src/can_comunication_cellmeter.cyclo ./Core/Src/can_comunication_cellmeter.d ./Core/Src/can_comunication_cellmeter.o ./Core/Src/can_comunication_cellmeter.su ./Core/Src/charge.cyclo ./Core/Src/charge.d ./Core/Src/charge.o ./Core/Src/charge.su ./Core/Src/discharge.cyclo ./Core/Src/discharge.d ./Core/Src/discharge.o ./Core/Src/discharge.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/standby.cyclo ./Core/Src/standby.d ./Core/Src/standby.o ./Core/Src/standby.su ./Core/Src/state_manager.cyclo ./Core/Src/state_manager.d ./Core/Src/state_manager.o ./Core/Src/state_manager.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+	-$(RM) ./Core/Src/GPIOS.cyclo ./Core/Src/GPIOS.d ./Core/Src/GPIOS.o ./Core/Src/GPIOS.su ./Core/Src/MCP3302.cyclo ./Core/Src/MCP3302.d ./Core/Src/MCP3302.o ./Core/Src/MCP3302.su ./Core/Src/MP2770_I2C.cyclo ./Core/Src/MP2770_I2C.d ./Core/Src/MP2770_I2C.o ./Core/Src/MP2770_I2C.su ./Core/Src/analog.cyclo ./Core/Src/analog.d ./Core/Src/analog.o ./Core/Src/analog.su ./Core/Src/can_comunication_cellmeter.cyclo ./Core/Src/can_comunication_cellmeter.d ./Core/Src/can_comunication_cellmeter.o ./Core/Src/can_comunication_cellmeter.su ./Core/Src/charge.cyclo ./Core/Src/charge.d ./Core/Src/charge.o ./Core/Src/charge.su ./Core/Src/discharge.cyclo ./Core/Src/discharge.d ./Core/Src/discharge.o ./Core/Src/discharge.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/standby.cyclo ./Core/Src/standby.d ./Core/Src/standby.o ./Core/Src/standby.su ./Core/Src/state_manager.cyclo ./Core/Src/state_manager.d ./Core/Src/state_manager.o ./Core/Src/state_manager.su ./Core/Src/stm32f1xx_hal_msp.cyclo ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.cyclo ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
 
 .PHONY: clean-Core-2f-Src
 

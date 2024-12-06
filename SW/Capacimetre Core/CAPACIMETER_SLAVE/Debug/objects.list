@@ -1,7 +1,6 @@
 "./Core/Src/GPIOS.o"
-"./Core/Src/I2C.o"
-"./Core/Src/I2C_for_MCP23008.o"
 "./Core/Src/MCP3302.o"
+"./Core/Src/MP2770_I2C.o"
 "./Core/Src/analog.o"
 "./Core/Src/can_comunication_cellmeter.o"
 "./Core/Src/charge.o"

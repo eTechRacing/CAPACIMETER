@@ -42,7 +42,7 @@ extern uint8_t Cell2_Undercurrent;
 extern uint8_t Cell2_TempTransistor;
 */
 
-void STATE_MANAGER(uint8_t *message, SPI_HandleTypeDef spi_channel, uint8_t selected_cell);
+void STATE_MANAGER(uint8_t *message, I2C_HandleTypeDef i2c, SPI_HandleTypeDef spi_channel, uint8_t selected_cell, uint8_t *errors, uint16_t Cell_Voltages, uint16_t Cell_Current);
 
 
 #endif /* INC_STATE_MANAGER_H_ */

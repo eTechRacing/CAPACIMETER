@@ -60,8 +60,8 @@ all: main-build
 main-build: SLAVE_CAPACIMETER.elf secondary-outputs
 
 # Tool invocations
-SLAVE_CAPACIMETER.elf SLAVE_CAPACIMETER.map: $(OBJS) $(USER_OBJS) C:\Users\e-Tech\ Racing\Documents\GitHub\CAPACIMETER\SW\Capacimetre\ Core\CAPACIMETER_SLAVE\STM32F105VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SLAVE_CAPACIMETER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\e-Tech Racing\Documents\GitHub\CAPACIMETER\SW\Capacimetre Core\CAPACIMETER_SLAVE\STM32F105VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SLAVE_CAPACIMETER.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SLAVE_CAPACIMETER.elf SLAVE_CAPACIMETER.map: $(OBJS) $(USER_OBJS) C:\Users\Pol\Documents\GitHub\CAPACIMETER\SW\Capacimetre\ Core\CAPACIMETER_SLAVE\STM32F105VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SLAVE_CAPACIMETER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Pol\Documents\GitHub\CAPACIMETER\SW\Capacimetre Core\CAPACIMETER_SLAVE\STM32F105VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SLAVE_CAPACIMETER.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

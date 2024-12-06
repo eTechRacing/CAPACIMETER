@@ -15,11 +15,11 @@
 
 uint8_t controlcurrent [3];
 
-void STATE_MANAGER(uint8_t *message, SPI_HandleTypeDef spi_channel, uint8_t selected_cell){
+void STATE_MANAGER(uint8_t *message, I2C_HandleTypeDef i2c, SPI_HandleTypeDef spi_channel, uint8_t selected_cell, uint8_t *errors, uint16_t Cell_Voltages, uint16_t Cell_Current){
 	uint8_t state = message[0];
 	switch (state){
 		case 1://Charge request
-			SELECTED_CELL_CHARGE(spi_channel, selected_cell);
+			SELECTED_CELL_CHARGE(i2c, spi_channel, selected_cell, errors, Cell_Voltages, Cell_Current);
 			break;
 		case 2://Discharge request
 			SELECTED_CELL_DISCHARGE(spi_channel, selected_cell);
