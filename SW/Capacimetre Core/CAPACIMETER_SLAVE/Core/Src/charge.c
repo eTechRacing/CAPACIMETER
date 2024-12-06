@@ -14,10 +14,10 @@
 #include "main.h"
 #include "MP2770_I2C.h"
 
-uint8_t CHECK_CHARGE_CYCLE_CONDITIONS(I2C_HandleTypeDef i2c, uint8_t selected_cell){ //1 si les condicions SI son optimes/0 si les condicions NO son optimes per carregar
+uint8_t CHECK_CHARGE_CYCLE_CONDITIONS(I2C_HandleTypeDef i2c, uint8_t selected_cell, uint8_t *errors, uint16_t Cell_Voltages, uint16_t Cell_Current){ //1 si les condicions SI son optimes/0 si les condicions NO son optimes per carregar
 	uint8_t borrar = 0;
-	MP2770_Read(i2c, selected_cell, REG00h, 1); //REG0h status......... 	//mp2770_etr_FaultRead.........
-	//CHECK_ADC_VALUES_AND_FAULTS(i2c, selected_cell, &errors, &Cell_Voltages, &Cell_Current); //mp2770_etr_ReadOneSlave/mp2770_etr_ReadAllSlaves.......
+	MP2770_Read(i2c, selected_cell, REG0Eh, 1); //REG0h status......... 	//mp2770_etr_FaultRead.........
+	CHECK_ADC_VALUES_AND_FAULTS(i2c, selected_cell, errors, Cell_Voltages, Cell_Current); //mp2770_etr_ReadOneSlave/mp2770_etr_ReadAllSlaves.......
 
 	if(borrar == 0/*Condicions per considerar que les condicions son optimes per carregar!!!!!!!!!!!!*/){
 		return 1;
@@ -39,7 +39,7 @@ void SELECTED_CELL_CHARGE(I2C_HandleTypeDef i2c, SPI_HandleTypeDef spi_channel, 
 	uint8_t ESTAT = 0;
 	switch(ESTAT){
 	case 0:
-		 if(CHECK_CHARGE_CYCLE_CONDITIONS(i2c, selected_cell) == 1){
+		 if(CHECK_CHARGE_CYCLE_CONDITIONS(i2c, selected_cell, errors, Cell_Voltages, Cell_Current) == 1){
 			 ESTAT = 1;
 		 }else{
 			 CHECK_ADC_VALUES_AND_FAULTS(i2c, selected_cell, errors, Cell_Voltages, Cell_Current);
