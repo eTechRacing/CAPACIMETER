@@ -55,5 +55,6 @@ void MP2770_InitRead(I2C_HandleTypeDef i2c, uint8_t chip);
 void MP2770_ReadSortADC(I2C_HandleTypeDef i2c, uint8_t chip, uint16_t Cell_Voltages, uint16_t Cell_Current);
 void MP2770_StartCharge(I2C_HandleTypeDef i2c, uint8_t chip);
 void MP2770_ReadSortFaults(I2C_HandleTypeDef i2c, uint8_t chip, uint8_t *errors);
+uint8_t MP2770_CheckChargeReady(I2C_HandleTypeDef i2c, uint8_t chip);
 
 #endif /* INC_MP2770_I2C_H_ */
