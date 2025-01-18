@@ -1,0 +1,7 @@
+../Core/Src/MP2770_I2C.c:13:6:MP2770_Write	2
+../Core/Src/MP2770_I2C.c:23:6:MP2770_Read	3
+../Core/Src/MP2770_I2C.c:33:6:MP2770_InitConfig	1
+../Core/Src/MP2770_I2C.c:39:6:MP2770_ReadSortADC	1
+../Core/Src/MP2770_I2C.c:45:6:MP2770_StartCharge	1
+../Core/Src/MP2770_I2C.c:51:6:MP2770_ReadSortFaults	1
+../Core/Src/MP2770_I2C.c:57:9:MP2770_CheckChargeReady	5
