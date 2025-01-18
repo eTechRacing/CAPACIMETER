@@ -1,0 +1,9 @@
+../Core/Src/I2C.c:14:7:mp2770_etr_ReadAllSlaves	4
+../Core/Src/I2C.c:27:7:mp2770_etr_ReadOneSlave	4
+../Core/Src/I2C.c:40:7:mp2770_etr_WriteAllSlaves	4
+../Core/Src/I2C.c:53:7:mp2770_etr_WriteOneSlave	3
+../Core/Src/I2C.c:66:7:mp2770_etr_init	2
+../Core/Src/I2C.c:84:7:mp2770_etr_ReadSortADC	3
+../Core/Src/I2C.c:121:7:mp2770_etr_FaultRead	2
+../Core/Src/I2C.c:139:7:mp2770_etr_StartOneCharge	3
+../Core/Src/I2C.c:151:7:mp2770_etr_StartAllCharge	2
